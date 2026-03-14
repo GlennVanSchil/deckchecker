@@ -5,15 +5,14 @@ package be.deckchecker.app.config;
 
 import be.deckchecker.app.dto.CardDTO;
 import be.deckchecker.app.dto.WrapperDTO;
+import be.deckchecker.app.service.DeckDataProvider;
 import be.deckchecker.app.util.JsonReader;
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -30,12 +29,11 @@ public class AppConfig {
     }
 
     @Bean
-    public Map<String, CardDTO> cardIndex(JsonReader jsonReader) throws IOException {
-        WrapperDTO<CardDTO> cards = jsonReader.readJsonFile("cards.json", new TypeReference<>() {
-        });
+    public Map<String, CardDTO> cardIndex(DeckDataProvider dataProvider) throws IOException {
+        WrapperDTO<CardDTO> cards = dataProvider.loadCards();
         Map<String, CardDTO> cardIndex = new HashMap<>();
         for (CardDTO card : cards.getData()) {
-            cardIndex.put(card.getId(), card); // Assuming OwnedCard has a getCard() method returning CardDTO
+            cardIndex.put(card.getId(), card);
         }
         return cardIndex;
     }

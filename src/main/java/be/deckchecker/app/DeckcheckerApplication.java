@@ -5,11 +5,10 @@ import be.deckchecker.app.dto.DuplicateCardDTO;
 import be.deckchecker.app.dto.MissingCardDTO;
 import be.deckchecker.app.dto.WrapperDTO;
 import be.deckchecker.app.service.CardService;
+import be.deckchecker.app.service.DeckDataProvider;
 import be.deckchecker.app.dto.DeckCardDTO;
 import be.deckchecker.app.dto.OwnedCardDTO;
-import be.deckchecker.app.util.JsonReader;
 import be.deckchecker.app.service.impl.DeckServiceImpl;
-import com.fasterxml.jackson.core.type.TypeReference;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -21,12 +20,12 @@ import java.util.stream.Collectors;
 @SpringBootApplication
 public class DeckcheckerApplication implements CommandLineRunner {
 
-    private JsonReader jsonReader;
-    private DeckServiceImpl deckService;
-    private CardService cardService;
+    private final DeckDataProvider dataProvider;
+    private final DeckServiceImpl deckService;
+    private final CardService cardService;
 
-    public DeckcheckerApplication(JsonReader jsonReader, DeckServiceImpl deckService, CardService cardService) {
-        this.jsonReader = jsonReader;
+    public DeckcheckerApplication(DeckDataProvider dataProvider, DeckServiceImpl deckService, CardService cardService) {
+        this.dataProvider = dataProvider;
         this.deckService = deckService;
         this.cardService = cardService;
     }
@@ -37,16 +36,14 @@ public class DeckcheckerApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        String ownedCardsFile = readArg(args, "--owned", "owned_cards.json");
         String deckFile = readArg(args, "--deck", "deck.txt");
 
         try {
-            WrapperDTO<OwnedCardDTO> ownedCards = jsonReader.readJsonFile(ownedCardsFile, new TypeReference<>() {
-            });
+            WrapperDTO<OwnedCardDTO> ownedCards = dataProvider.loadOwnedCards();
             List<DeckCardDTO> deckCards = deckService.parseDeckFile(deckFile);
 
             DeckCheckResultDTO result = cardService.findMissingCards(ownedCards.getData(), deckCards);
-            printResult(result, deckFile, ownedCardsFile);
+            printResult(result, deckFile);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -54,10 +51,10 @@ public class DeckcheckerApplication implements CommandLineRunner {
 
     }
 
-    private void printResult(DeckCheckResultDTO result, String deckFile, String ownedCardsFile) {
+    private void printResult(DeckCheckResultDTO result, String deckFile) {
         System.out.printf("Deck check%n");
         System.out.printf("Deck file: %s%n", deckFile);
-        System.out.printf("Owned file: %s%n%n", ownedCardsFile);
+        System.out.printf("Owned source: API/cache%n%n");
 
         if (!result.getUnknownDeckCards().isEmpty()) {
             System.out.println("Unknown deck card numbers (not found in cards.json):");
