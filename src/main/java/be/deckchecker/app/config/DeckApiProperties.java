@@ -12,8 +12,6 @@ import org.springframework.stereotype.Component;
 public class DeckApiProperties {
     private String baseUrl = "https://api.deckplanet.net/items";
     private String siteUrl = "https://www.deckplanet.net";
-    private String email = "";
-    private String password = "";
     private String cacheDir = ".cache";
     private long cacheTtlMinutes = 360;
     private boolean forceRefresh = false;

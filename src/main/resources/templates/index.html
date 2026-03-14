@@ -9,6 +9,12 @@
 </head>
 <body>
 <main class="container">
+    <div class="topbar">
+        <div class="user-pill" th:text="${loggedInEmail}"></div>
+        <form method="post" th:action="@{/logout}">
+            <button type="submit" class="secondary-btn">Logout</button>
+        </form>
+    </div>
     <h1>Deck Checker</h1>
     <p class="subtitle">Paste a deck list, then compare against your cached API collection.</p>
 
@@ -77,10 +83,6 @@
                     <span>Min duplicates</span>
                     <input type="number" id="duplicateMin" min="1" value="1">
                 </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" id="duplicatesVersionOnly">
-                    <span>Version check only</span>
-                </label>
             </div>
             <table>
                 <thead>
@@ -94,6 +96,7 @@
                 </thead>
                 <tbody id="duplicateTableBody">
                 <tr th:each="card : ${result.duplicateCards}"
+                    th:classappend="${card.multipleVersions} ? 'manual-check-row' : ''"
                     th:attr="data-card-number=${card.cardNumber},
                              data-card-name=${card.cardName},
                              data-duplicates=${card.duplicateQuantity},

@@ -24,6 +24,25 @@ body {
     padding: 28px 16px 40px;
 }
 
+.container.narrow {
+    max-width: 520px;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.user-pill {
+    font-size: 0.85rem;
+    padding: 7px 10px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: #fff;
+}
+
 h1 {
     margin: 0;
     font-size: 2rem;
@@ -70,6 +89,10 @@ button {
     color: #fff;
     font-weight: 700;
     cursor: pointer;
+}
+
+.secondary-btn {
+    background: #4f463d;
 }
 
 .summary-grid {
@@ -122,12 +145,16 @@ button {
     padding: 8px;
 }
 
-.checkbox-label {
-    justify-content: flex-end;
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.checkbox-label input {
-    margin-right: 6px;
+.login-form input {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .filter-info {
@@ -147,6 +174,10 @@ th, td {
     border-bottom: 1px solid var(--line);
     text-align: left;
     padding: 8px 6px;
+}
+
+.manual-check-row td {
+    background: #fff3d9;
 }
 
 .warning {

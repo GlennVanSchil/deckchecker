@@ -23,6 +23,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.Duration;
 import java.time.Instant;
+import java.util.Locale;
 
 @Slf4j
 @Service
@@ -36,8 +37,6 @@ public class DeckDataProvider {
     private final ObjectMapper objectMapper;
     private final DeckApiProperties apiProperties;
     private final HttpClient httpClient;
-    private String cachedBearerToken;
-    private String cachedUserId;
 
     public DeckDataProvider(ObjectMapper objectMapper, DeckApiProperties apiProperties) {
         this.objectMapper = objectMapper;
@@ -56,14 +55,16 @@ public class DeckDataProvider {
         );
     }
 
-    public WrapperDTO<OwnedCardDTO> loadOwnedCards() throws IOException {
-        AuthContext authContext = resolveAuthContext();
-        return readWithCache(
-                resolveCachePath("owned_cards_cache.json"),
-                buildOwnedUri(authContext.userId()),
-                authContext.bearerToken(),
-                OWNED_WRAPPER_TYPE
-        );
+    public WrapperDTO<OwnedCardDTO> loadOwnedCards(AuthContext authContext) throws IOException {
+        Path cachePath = resolveCachePath("owned_cards_cache_" + sanitizeFilePart(authContext.userId()) + ".json");
+        return readWithCache(cachePath, buildOwnedUri(authContext.userId()), authContext.bearerToken(), OWNED_WRAPPER_TYPE);
+    }
+
+    public AuthContext authenticate(String email, String password) throws IOException {
+        if (email == null || email.isBlank() || password == null || password.isBlank()) {
+            throw new IllegalArgumentException("Email and password are required.");
+        }
+        return loginAndFetchAuthContext(email, password);
     }
 
     private <T> T readWithCache(Path cachePath, URI uri, String bearerToken, TypeReference<T> typeReference)
@@ -130,23 +131,7 @@ public class DeckDataProvider {
         return response.body();
     }
 
-    private AuthContext resolveAuthContext() throws IOException {
-        if (cachedBearerToken != null && !cachedBearerToken.isBlank()
-                && cachedUserId != null && !cachedUserId.isBlank()) {
-            return new AuthContext(cachedBearerToken, cachedUserId);
-        }
-        if (apiProperties.getEmail() == null || apiProperties.getEmail().isBlank()
-                || apiProperties.getPassword() == null || apiProperties.getPassword().isBlank()) {
-            throw new IllegalArgumentException("No credentials configured. Set deckchecker.api.email/password.");
-        }
-
-        AuthContext authContext = loginAndFetchAuthContext();
-        cachedBearerToken = authContext.bearerToken();
-        cachedUserId = authContext.userId();
-        return authContext;
-    }
-
-    private AuthContext loginAndFetchAuthContext() throws IOException {
+    private AuthContext loginAndFetchAuthContext(String email, String password) throws IOException {
         try {
             CookieManager cookieManager = new CookieManager();
             cookieManager.setCookiePolicy(CookiePolicy.ACCEPT_ALL);
@@ -158,7 +143,7 @@ public class DeckDataProvider {
 
             String siteUrl = trimTrailingSlash(apiProperties.getSiteUrl());
             String csrfToken = fetchCsrfToken(authClient, siteUrl);
-            performCredentialsLogin(authClient, siteUrl, csrfToken);
+            performCredentialsLogin(authClient, siteUrl, csrfToken, email, password);
             return fetchAuthFromSession(authClient, siteUrl);
         } catch (IOException e) {
             throw e;
@@ -190,13 +175,13 @@ public class DeckDataProvider {
         return csrfToken;
     }
 
-    private void performCredentialsLogin(HttpClient authClient, String siteUrl, String csrfToken)
+    private void performCredentialsLogin(HttpClient authClient, String siteUrl, String csrfToken, String email, String password)
             throws IOException, InterruptedException {
         URI callbackUri = URI.create(siteUrl + "/api/auth/callback/credentials");
         String callbackUrl = siteUrl + "/fusion_world/login";
 
-        String body = "email=" + encode(apiProperties.getEmail())
-                + "&password=" + encode(apiProperties.getPassword())
+        String body = "email=" + encode(email)
+                + "&password=" + encode(password)
                 + "&csrfToken=" + encode(csrfToken)
                 + "&callbackUrl=" + encode(callbackUrl)
                 + "&json=true";
@@ -272,10 +257,17 @@ public class DeckDataProvider {
         return Path.of(apiProperties.getCacheDir(), filename);
     }
 
+    private String sanitizeFilePart(String value) {
+        if (value == null || value.isBlank()) {
+            return "unknown";
+        }
+        return value.toLowerCase(Locale.ROOT).replaceAll("[^a-z0-9_-]", "_");
+    }
+
     private String encode(String value) {
         return URLEncoder.encode(value, StandardCharsets.UTF_8);
     }
 
-    private record AuthContext(String bearerToken, String userId) {
+    public record AuthContext(String bearerToken, String userId) {
     }
 }
