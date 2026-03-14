@@ -9,6 +9,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +26,7 @@ public class DeckServiceImpl implements DeckService {
      */
     @Override
     public List<DeckCardDTO> parseDeckFile(String filename) throws IOException {
-        try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream(filename)) {
+        try (InputStream inputStream = openInputStream(filename)) {
             if (inputStream == null) {
                 throw new IllegalArgumentException("File not found: " + filename);
             }
@@ -48,29 +50,44 @@ public class DeckServiceImpl implements DeckService {
                         continue;
                     }
 
-                    String[] parts = line.split(" ", 3);
-                    if (parts.length < 2) {
+                    if (line.startsWith("#")) {
+                        log.debug("Skipping comment line {}", lineIndex);
+                        continue;
+                    }
+
+                    String[] parts = line.split("\\s+", 3);
+                    if (parts.length < 1) {
                         log.debug("Skipping malformed line in line {}", lineIndex);
                         continue;
                     }
 
-                    if (lineIndex == 2) {
-                        log.debug("Adding leader card {}", lineIndex);
-                        String cardId = parts[0];
-                        deckCards.add(new DeckCardDTO(cardId, 1));
-                    } else {
+                    if (Character.isDigit(parts[0].charAt(0))) {
+                        if (parts.length < 2) {
+                            log.warn("Skipping malformed regular card line {}: {}", lineIndex, line);
+                            continue;
+                        }
                         try {
-                            log.debug("Adding regular cards {}", lineIndex);
                             int quantity = Integer.parseInt(parts[0]);
                             String cardId = parts[1];
                             deckCards.add(new DeckCardDTO(cardId, quantity));
                         } catch (NumberFormatException e) {
-                            log.error("Error parsing line {}", lineIndex, e);
+                            log.warn("Skipping line with invalid quantity {}: {}", lineIndex, line);
                         }
+                    } else {
+                        String cardId = parts[0];
+                        deckCards.add(new DeckCardDTO(cardId, 1));
                     }
                 }
             }
             return deckCards;
         }
+    }
+
+    private InputStream openInputStream(String filename) throws IOException {
+        Path path = Path.of(filename);
+        if (Files.exists(path)) {
+            return Files.newInputStream(path);
+        }
+        return getClass().getClassLoader().getResourceAsStream(filename);
     }
 }

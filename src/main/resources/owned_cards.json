@@ -1,3189 +1,5716 @@
 {
   "data": [
     {
-      "id": 4270,
+      "card_id": 1426,
+      "date_updated": null,
+      "id": "10729",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1425,
+      "date_updated": null,
+      "id": "10730",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1424,
+      "date_updated": null,
+      "id": "10731",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1303,
+      "date_updated": null,
+      "id": "10732",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1428,
+      "date_updated": null,
+      "id": "10733",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1427,
+      "date_updated": null,
+      "id": "10734",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1406,
+      "date_updated": null,
+      "id": "10735",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1423,
+      "date_updated": null,
+      "id": "10736",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1422,
+      "date_updated": null,
+      "id": "10737",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1405,
+      "date_updated": null,
+      "id": "10738",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1421,
+      "date_updated": null,
+      "id": "10739",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1404,
+      "date_updated": null,
+      "id": "10740",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1420,
+      "date_updated": null,
+      "id": "10741",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1403,
+      "date_updated": null,
+      "id": "10742",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1419,
+      "date_updated": null,
+      "id": "10743",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1418,
+      "date_updated": null,
+      "id": "10744",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1417,
+      "date_updated": null,
+      "id": "10745",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1302,
+      "date_updated": null,
+      "id": "10746",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1167,
+      "date_updated": null,
+      "id": "10747",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1175,
+      "date_updated": null,
+      "id": "10748",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1174,
+      "date_updated": null,
+      "id": "10749",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1173,
+      "date_updated": null,
+      "id": "10750",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1172,
+      "date_updated": null,
+      "id": "10751",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1171,
+      "date_updated": null,
+      "id": "10752",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1159,
+      "date_updated": null,
+      "id": "10753",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1170,
+      "date_updated": null,
+      "id": "10754",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1169,
+      "date_updated": null,
+      "id": "10755",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1168,
+      "date_updated": null,
+      "id": "10756",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1158,
+      "date_updated": null,
+      "id": "10757",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1157,
+      "date_updated": null,
+      "id": "10758",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1156,
+      "date_updated": null,
+      "id": "10759",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1155,
+      "date_updated": null,
+      "id": "10760",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1154,
+      "date_updated": null,
+      "id": "10761",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1153,
+      "date_updated": null,
+      "id": "10762",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1146,
+      "date_updated": null,
+      "id": "11465",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 997,
+      "date_updated": null,
+      "id": "11466",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 998,
+      "date_updated": null,
+      "id": "11467",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1004,
+      "date_updated": null,
+      "id": "11468",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1007,
+      "date_updated": null,
+      "id": "11469",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 990,
+      "date_updated": null,
+      "id": "11470",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1130,
+      "date_updated": null,
+      "id": "11471",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 978,
+      "date_updated": null,
+      "id": "11472",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 987,
+      "date_updated": null,
+      "id": "11473",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 976,
+      "date_updated": null,
+      "id": "11474",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1072,
+      "date_updated": null,
+      "id": "11475",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1073,
+      "date_updated": null,
+      "id": "11476",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1001,
+      "date_updated": null,
+      "id": "11477",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1074,
+      "date_updated": null,
+      "id": "11478",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1077,
+      "date_updated": null,
+      "id": "11479",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1078,
+      "date_updated": null,
+      "id": "11480",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1002,
+      "date_updated": null,
+      "id": "11481",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1079,
+      "date_updated": null,
+      "id": "11482",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1080,
+      "date_updated": null,
+      "id": "11483",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1003,
+      "date_updated": null,
+      "id": "11484",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1081,
+      "date_updated": null,
+      "id": "11485",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1082,
+      "date_updated": null,
+      "id": "11486",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 973,
+      "date_updated": null,
+      "id": "11487",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1083,
+      "date_updated": null,
+      "id": "11488",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1084,
+      "date_updated": null,
+      "id": "11489",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1085,
+      "date_updated": null,
+      "id": "11490",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1086,
+      "date_updated": null,
+      "id": "11491",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1005,
+      "date_updated": null,
+      "id": "11492",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1006,
+      "date_updated": null,
+      "id": "11493",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1087,
+      "date_updated": null,
+      "id": "11494",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1088,
+      "date_updated": null,
+      "id": "11495",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1058,
+      "date_updated": null,
+      "id": "11496",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 995,
+      "date_updated": null,
+      "id": "11497",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1059,
+      "date_updated": null,
+      "id": "11498",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 996,
+      "date_updated": null,
+      "id": "11499",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1060,
+      "date_updated": null,
+      "id": "11500",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1061,
+      "date_updated": null,
+      "id": "11501",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1063,
+      "date_updated": null,
+      "id": "11502",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1064,
+      "date_updated": null,
+      "id": "11503",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 972,
+      "date_updated": null,
+      "id": "11504",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1066,
+      "date_updated": null,
+      "id": "11505",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1067,
+      "date_updated": null,
+      "id": "11506",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1068,
+      "date_updated": null,
+      "id": "11507",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1069,
+      "date_updated": null,
+      "id": "11508",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 980,
+      "date_updated": null,
+      "id": "11509",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1070,
+      "date_updated": null,
+      "id": "11510",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 999,
+      "date_updated": null,
+      "id": "11511",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1071,
+      "date_updated": null,
+      "id": "11512",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1043,
+      "date_updated": null,
+      "id": "11513",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1044,
+      "date_updated": null,
+      "id": "11514",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1045,
+      "date_updated": null,
+      "id": "11515",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 991,
+      "date_updated": null,
+      "id": "11516",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1046,
+      "date_updated": null,
+      "id": "11517",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1048,
+      "date_updated": null,
+      "id": "11518",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1049,
+      "date_updated": null,
+      "id": "11519",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1050,
+      "date_updated": null,
+      "id": "11520",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1051,
+      "date_updated": null,
+      "id": "11521",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1052,
+      "date_updated": null,
+      "id": "11522",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1053,
+      "date_updated": null,
+      "id": "11523",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1055,
+      "date_updated": null,
+      "id": "11524",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1056,
+      "date_updated": null,
+      "id": "11525",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1057,
+      "date_updated": null,
+      "id": "11526",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 993,
+      "date_updated": null,
+      "id": "11527",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 971,
+      "date_updated": null,
+      "id": "11528",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 994,
+      "date_updated": null,
+      "id": "11529",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 979,
+      "date_updated": null,
+      "id": "11530",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 977,
+      "date_updated": null,
+      "id": "11531",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 989,
+      "date_updated": null,
+      "id": "11532",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 988,
+      "date_updated": null,
+      "id": "11533",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1042,
+      "date_updated": null,
+      "id": "11534",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1041,
+      "date_updated": null,
+      "id": "11535",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1040,
+      "date_updated": null,
+      "id": "11536",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1039,
+      "date_updated": null,
+      "id": "11537",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1037,
+      "date_updated": null,
+      "id": "11538",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 986,
+      "date_updated": null,
+      "id": "11539",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1036,
+      "date_updated": null,
+      "id": "11540",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 985,
+      "date_updated": null,
+      "id": "11541",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1033,
+      "date_updated": null,
+      "id": "11542",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1032,
+      "date_updated": null,
+      "id": "11543",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1031,
+      "date_updated": null,
+      "id": "11544",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1028,
+      "date_updated": null,
+      "id": "11545",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 970,
+      "date_updated": null,
+      "id": "11546",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1027,
+      "date_updated": null,
+      "id": "11547",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1026,
+      "date_updated": null,
+      "id": "11548",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 975,
+      "date_updated": null,
+      "id": "11549",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 898,
+      "date_updated": null,
+      "id": "11599",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1025,
+      "date_updated": null,
+      "id": "11701",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1023,
+      "date_updated": null,
+      "id": "11702",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1022,
+      "date_updated": null,
+      "id": "11703",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1021,
+      "date_updated": null,
+      "id": "11704",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1020,
+      "date_updated": null,
+      "id": "11705",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 983,
+      "date_updated": null,
+      "id": "11706",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1019,
+      "date_updated": null,
+      "id": "11707",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1018,
+      "date_updated": null,
+      "id": "11708",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 969,
+      "date_updated": null,
+      "id": "11709",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1017,
+      "date_updated": null,
+      "id": "11710",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1016,
+      "date_updated": null,
+      "id": "11711",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1015,
+      "date_updated": null,
+      "id": "11712",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1014,
+      "date_updated": null,
+      "id": "11713",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1013,
+      "date_updated": null,
+      "id": "11714",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1012,
+      "date_updated": null,
+      "id": "11715",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1011,
+      "date_updated": null,
+      "id": "11716",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1010,
+      "date_updated": null,
+      "id": "11717",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1009,
+      "date_updated": null,
+      "id": "11718",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 968,
+      "date_updated": null,
+      "id": "11719",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1123,
+      "date_updated": null,
+      "id": "11720",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1100,
+      "date_updated": null,
+      "id": "11721",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 981,
+      "date_updated": "2025-07-22T22:06:37.755Z",
+      "id": "18255",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1000,
+      "date_updated": "2025-07-22T22:34:24.418Z",
+      "id": "18256",
       "quantity": 6,
-      "card_id": 104
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4271,
+      "card_id": 1062,
+      "date_updated": "2025-07-22T22:34:24.364Z",
+      "id": "18257",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1065,
+      "date_updated": null,
+      "id": "18258",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1054,
+      "date_updated": "2025-07-22T22:16:13.343Z",
+      "id": "18259",
       "quantity": 4,
-      "card_id": 103
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4272,
+      "card_id": 1047,
+      "date_updated": "2025-07-22T22:16:13.457Z",
+      "id": "18260",
+      "quantity": 6,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 992,
+      "date_updated": "2025-07-22T22:16:13.109Z",
+      "id": "18261",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1038,
+      "date_updated": "2025-07-22T21:54:19.818Z",
+      "id": "18262",
+      "quantity": 6,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1034,
+      "date_updated": "2025-07-22T21:54:19.755Z",
+      "id": "18263",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 1035,
+      "date_updated": "2025-07-22T21:54:19.675Z",
+      "id": "18264",
       "quantity": 4,
-      "card_id": 217
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4273,
+      "card_id": 1024,
+      "date_updated": "2025-07-22T20:45:12.366Z",
+      "id": "18265",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 984,
+      "date_updated": "2025-07-22T20:45:12.232Z",
+      "id": "18266",
       "quantity": 4,
-      "card_id": 96
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4274,
+      "card_id": 169,
+      "date_updated": null,
+      "id": "22843",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 24,
+      "date_updated": null,
+      "id": "22844",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 164,
+      "date_updated": null,
+      "id": "22845",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 48,
+      "date_updated": null,
+      "id": "22846",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 132,
+      "date_updated": null,
+      "id": "22847",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 44,
+      "date_updated": null,
+      "id": "22848",
       "quantity": 4,
-      "card_id": 101
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4275,
+      "card_id": 41,
+      "date_updated": null,
+      "id": "22849",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 39,
+      "date_updated": null,
+      "id": "22850",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 242,
+      "date_updated": null,
+      "id": "22851",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 544,
+      "date_updated": null,
+      "id": "22852",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 14,
+      "date_updated": null,
+      "id": "22853",
       "quantity": 4,
-      "card_id": 99
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4276,
+      "card_id": 157,
+      "date_updated": null,
+      "id": "22854",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 111,
+      "date_updated": null,
+      "id": "22855",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 108,
+      "date_updated": null,
+      "id": "22856",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 151,
+      "date_updated": null,
+      "id": "22857",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 243,
+      "date_updated": null,
+      "id": "22858",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 901,
+      "date_updated": null,
+      "id": "25546",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 718,
+      "date_updated": null,
+      "id": "25547",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 742,
+      "date_updated": "2025-07-22T21:14:09.449Z",
+      "id": "25548",
+      "quantity": 0,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 740,
+      "date_updated": null,
+      "id": "25549",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 737,
+      "date_updated": null,
+      "id": "25550",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 711,
+      "date_updated": null,
+      "id": "25551",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 756,
+      "date_updated": null,
+      "id": "25552",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 714,
+      "date_updated": null,
+      "id": "25553",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 733,
+      "date_updated": null,
+      "id": "25554",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 732,
+      "date_updated": null,
+      "id": "25555",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 852,
+      "date_updated": null,
+      "id": "25556",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 851,
+      "date_updated": null,
+      "id": "25557",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 850,
+      "date_updated": null,
+      "id": "25558",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 755,
+      "date_updated": null,
+      "id": "25559",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 754,
+      "date_updated": null,
+      "id": "25560",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 846,
+      "date_updated": null,
+      "id": "25561",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 845,
+      "date_updated": null,
+      "id": "25562",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 719,
+      "date_updated": null,
+      "id": "25563",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 844,
+      "date_updated": null,
+      "id": "25564",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 843,
+      "date_updated": null,
+      "id": "25565",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 842,
+      "date_updated": null,
+      "id": "25566",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 841,
+      "date_updated": null,
+      "id": "25567",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 840,
+      "date_updated": null,
+      "id": "25568",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 838,
+      "date_updated": null,
+      "id": "25569",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 837,
+      "date_updated": null,
+      "id": "25570",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 835,
+      "date_updated": null,
+      "id": "25571",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 834,
+      "date_updated": null,
+      "id": "25572",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 833,
+      "date_updated": null,
+      "id": "25573",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 832,
+      "date_updated": null,
+      "id": "25574",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 728,
+      "date_updated": null,
+      "id": "25575",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 830,
+      "date_updated": null,
+      "id": "25576",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 753,
+      "date_updated": null,
+      "id": "25577",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 828,
+      "date_updated": null,
+      "id": "25578",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 827,
+      "date_updated": null,
+      "id": "25579",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 826,
+      "date_updated": null,
+      "id": "25580",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 825,
+      "date_updated": null,
+      "id": "25581",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 723,
+      "date_updated": null,
+      "id": "25582",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 824,
+      "date_updated": null,
+      "id": "25583",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 823,
+      "date_updated": null,
+      "id": "25584",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 752,
+      "date_updated": null,
+      "id": "25585",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 822,
+      "date_updated": null,
+      "id": "25586",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 820,
+      "date_updated": null,
+      "id": "25587",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 818,
+      "date_updated": null,
+      "id": "25588",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 817,
+      "date_updated": null,
+      "id": "25589",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 816,
+      "date_updated": null,
+      "id": "25590",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 751,
+      "date_updated": null,
+      "id": "25591",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 815,
+      "date_updated": null,
+      "id": "25592",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 727,
+      "date_updated": null,
+      "id": "25593",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 814,
+      "date_updated": null,
+      "id": "25594",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 813,
+      "date_updated": null,
+      "id": "25595",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 811,
+      "date_updated": null,
+      "id": "25596",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 810,
+      "date_updated": null,
+      "id": "25597",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 750,
+      "date_updated": null,
+      "id": "25598",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 808,
+      "date_updated": null,
+      "id": "25599",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 806,
+      "date_updated": null,
+      "id": "25600",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 805,
+      "date_updated": null,
+      "id": "25601",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 716,
+      "date_updated": null,
+      "id": "25602",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 804,
+      "date_updated": null,
+      "id": "25603",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 722,
+      "date_updated": null,
+      "id": "25604",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 803,
+      "date_updated": null,
+      "id": "25605",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 800,
+      "date_updated": null,
+      "id": "25606",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 799,
+      "date_updated": null,
+      "id": "25607",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 798,
+      "date_updated": null,
+      "id": "25608",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 797,
+      "date_updated": null,
+      "id": "25609",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 796,
+      "date_updated": null,
+      "id": "25610",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 726,
+      "date_updated": null,
+      "id": "25611",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 795,
+      "date_updated": null,
+      "id": "25612",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 794,
+      "date_updated": null,
+      "id": "25613",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 793,
+      "date_updated": null,
+      "id": "25614",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 792,
+      "date_updated": null,
+      "id": "25615",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 721,
+      "date_updated": null,
+      "id": "25616",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 790,
+      "date_updated": null,
+      "id": "25617",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 789,
+      "date_updated": null,
+      "id": "25618",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 748,
+      "date_updated": null,
+      "id": "25619",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 788,
+      "date_updated": null,
+      "id": "25620",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 787,
+      "date_updated": null,
+      "id": "25621",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 786,
+      "date_updated": null,
+      "id": "25622",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 715,
+      "date_updated": null,
+      "id": "25623",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 785,
+      "date_updated": null,
+      "id": "25624",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 783,
+      "date_updated": null,
+      "id": "25625",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 781,
+      "date_updated": null,
+      "id": "25626",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 741,
+      "date_updated": null,
+      "id": "25627",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 738,
+      "date_updated": null,
+      "id": "25628",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 736,
+      "date_updated": null,
+      "id": "25629",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 729,
+      "date_updated": null,
+      "id": "25630",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 779,
+      "date_updated": null,
+      "id": "25631",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 778,
+      "date_updated": null,
+      "id": "25632",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 777,
+      "date_updated": null,
+      "id": "25633",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 776,
+      "date_updated": null,
+      "id": "25634",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 775,
+      "date_updated": null,
+      "id": "25635",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 774,
+      "date_updated": null,
+      "id": "25636",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 773,
+      "date_updated": null,
+      "id": "25637",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 710,
+      "date_updated": null,
+      "id": "25638",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 772,
+      "date_updated": null,
+      "id": "25639",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 720,
+      "date_updated": null,
+      "id": "25640",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 731,
+      "date_updated": null,
+      "id": "25641",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 769,
+      "date_updated": null,
+      "id": "25642",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 768,
+      "date_updated": null,
+      "id": "25643",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 767,
+      "date_updated": null,
+      "id": "25644",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 765,
+      "date_updated": null,
+      "id": "25645",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 763,
+      "date_updated": null,
+      "id": "25646",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 762,
+      "date_updated": null,
+      "id": "25647",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 730,
+      "date_updated": null,
+      "id": "25648",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 743,
+      "date_updated": "2024-11-17T01:17:07.991Z",
+      "id": "26570",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 849,
+      "date_updated": "2024-11-17T01:17:08.104Z",
+      "id": "26571",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 847,
+      "date_updated": "2024-11-17T01:17:08.054Z",
+      "id": "26572",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 839,
+      "date_updated": "2024-11-17T01:17:07.917Z",
+      "id": "26573",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 724,
+      "date_updated": "2024-11-17T01:17:07.991Z",
+      "id": "26574",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 495,
+      "date_updated": null,
+      "id": "26575",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 535,
+      "date_updated": null,
+      "id": "26576",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 631,
+      "date_updated": "2025-01-30T01:11:23.031Z",
+      "id": "26577",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 630,
+      "date_updated": null,
+      "id": "26578",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 629,
+      "date_updated": null,
+      "id": "26579",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 628,
+      "date_updated": null,
+      "id": "26580",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 627,
+      "date_updated": null,
+      "id": "26581",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 626,
+      "date_updated": null,
+      "id": "26582",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 625,
+      "date_updated": null,
+      "id": "26583",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 624,
+      "date_updated": "2025-01-30T01:11:23.119Z",
+      "id": "26584",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 623,
+      "date_updated": "2025-01-30T01:11:22.934Z",
+      "id": "26585",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 506,
+      "date_updated": null,
+      "id": "26586",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 622,
+      "date_updated": "2025-01-30T01:11:23.177Z",
+      "id": "26587",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 621,
+      "date_updated": null,
+      "id": "26588",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 494,
+      "date_updated": "2025-01-30T01:11:22.934Z",
+      "id": "26589",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 620,
+      "date_updated": null,
+      "id": "26590",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 619,
+      "date_updated": null,
+      "id": "26591",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 618,
+      "date_updated": "2025-01-30T01:11:22.934Z",
+      "id": "26592",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 510,
+      "date_updated": null,
+      "id": "26593",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 617,
+      "date_updated": "2025-01-30T01:11:23.031Z",
+      "id": "26594",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 616,
+      "date_updated": null,
+      "id": "26595",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 615,
+      "date_updated": null,
+      "id": "26596",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 534,
+      "date_updated": "2025-01-30T01:11:22.934Z",
+      "id": "26597",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 614,
+      "date_updated": null,
+      "id": "26598",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 613,
+      "date_updated": null,
+      "id": "26599",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 612,
+      "date_updated": null,
+      "id": "26600",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 611,
+      "date_updated": null,
+      "id": "26601",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 493,
+      "date_updated": null,
+      "id": "26602",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 501,
+      "date_updated": null,
+      "id": "26603",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 610,
+      "date_updated": null,
+      "id": "26604",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 491,
+      "date_updated": "2025-01-30T01:11:23.031Z",
+      "id": "26605",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 492,
+      "date_updated": null,
+      "id": "26606",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 542,
+      "date_updated": null,
+      "id": "26607",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 960,
+      "date_updated": null,
+      "id": "26608",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 706,
+      "date_updated": null,
+      "id": "26609",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 880,
+      "date_updated": null,
+      "id": "26610",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 275,
+      "date_updated": null,
+      "id": "26611",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 267,
+      "date_updated": null,
+      "id": "26612",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 261,
+      "date_updated": null,
+      "id": "26613",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 251,
+      "date_updated": null,
+      "id": "26614",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 211,
+      "date_updated": null,
+      "id": "26615",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 505,
+      "date_updated": null,
+      "id": "26616",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 533,
+      "date_updated": null,
+      "id": "26617",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 323,
+      "date_updated": null,
+      "id": "26618",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 299,
+      "date_updated": null,
+      "id": "26619",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 320,
+      "date_updated": null,
+      "id": "26620",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 181,
+      "date_updated": null,
+      "id": "26621",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 831,
+      "date_updated": "2024-11-17T00:53:01.269Z",
+      "id": "26622",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 717,
+      "date_updated": "2024-11-17T00:53:01.269Z",
+      "id": "26623",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 829,
+      "date_updated": "2024-11-17T00:53:01.122Z",
+      "id": "26624",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 821,
+      "date_updated": "2024-11-17T00:53:01.203Z",
+      "id": "26625",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 609,
+      "date_updated": null,
+      "id": "26626",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 528,
+      "date_updated": null,
+      "id": "26627",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 608,
+      "date_updated": null,
+      "id": "26628",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 607,
+      "date_updated": null,
+      "id": "26629",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 606,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26630",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 605,
+      "date_updated": null,
+      "id": "26631",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 604,
+      "date_updated": null,
+      "id": "26632",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 603,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26633",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 602,
+      "date_updated": null,
+      "id": "26634",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 601,
+      "date_updated": null,
+      "id": "26635",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 600,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26636",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 599,
+      "date_updated": null,
+      "id": "26637",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 598,
+      "date_updated": null,
+      "id": "26638",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 597,
+      "date_updated": null,
+      "id": "26639",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 596,
+      "date_updated": null,
+      "id": "26640",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 527,
+      "date_updated": null,
+      "id": "26641",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 504,
+      "date_updated": null,
+      "id": "26642",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 595,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26643",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 594,
+      "date_updated": null,
+      "id": "26644",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 593,
+      "date_updated": null,
+      "id": "26645",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 520,
+      "date_updated": null,
+      "id": "26646",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 592,
+      "date_updated": null,
+      "id": "26647",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 519,
+      "date_updated": null,
+      "id": "26648",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 421,
+      "date_updated": "2025-01-30T01:50:31.397Z",
+      "id": "26649",
       "quantity": 7,
-      "card_id": 102
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4277,
-      "quantity": 4,
-      "card_id": 97
-    },
-    {
-      "id": 4278,
-      "quantity": 4,
-      "card_id": 220
-    },
-    {
-      "id": 4279,
-      "quantity": 4,
-      "card_id": 100
-    },
-    {
-      "id": 4280,
+      "card_id": 420,
+      "date_updated": null,
+      "id": "26650",
       "quantity": 2,
-      "card_id": 94
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4281,
+      "card_id": 303,
+      "date_updated": null,
+      "id": "26651",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 419,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26652",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 418,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26653",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 417,
+      "date_updated": null,
+      "id": "26654",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 416,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26655",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 415,
+      "date_updated": "2025-01-30T01:50:31.317Z",
+      "id": "26656",
+      "quantity": 6,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 321,
+      "date_updated": null,
+      "id": "26657",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 414,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26658",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 298,
+      "date_updated": "2025-01-30T01:50:30.593Z",
+      "id": "26659",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 413,
+      "date_updated": "2025-01-30T01:50:31.476Z",
+      "id": "26660",
+      "quantity": 8,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 412,
+      "date_updated": null,
+      "id": "26661",
       "quantity": 4,
-      "card_id": 95
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4282,
+      "card_id": 411,
+      "date_updated": null,
+      "id": "26662",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 410,
+      "date_updated": "2025-01-30T01:50:30.593Z",
+      "id": "26663",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 297,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26664",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 409,
+      "date_updated": "2025-01-30T01:50:31.397Z",
+      "id": "26665",
+      "quantity": 7,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 296,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26666",
       "quantity": 4,
-      "card_id": 98
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4283,
+      "card_id": 408,
+      "date_updated": "2025-01-30T01:50:31.397Z",
+      "id": "26667",
+      "quantity": 7,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 407,
+      "date_updated": "2025-01-30T01:50:30.593Z",
+      "id": "26668",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 314,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26669",
       "quantity": 4,
-      "card_id": 105
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4284,
+      "card_id": 406,
+      "date_updated": "2025-01-30T01:50:30.593Z",
+      "id": "26670",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 405,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26671",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 404,
+      "date_updated": null,
+      "id": "26672",
       "quantity": 4,
-      "card_id": 218
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4285,
-      "quantity": 4,
-      "card_id": 219
-    },
-    {
-      "id": 4286,
-      "quantity": 4,
-      "card_id": 90
-    },
-    {
-      "id": 4287,
-      "quantity": 4,
-      "card_id": 91
-    },
-    {
-      "id": 4288,
-      "quantity": 4,
-      "card_id": 635
-    },
-    {
-      "id": 4289,
-      "quantity": 4,
-      "card_id": 536
-    },
-    {
-      "id": 4290,
-      "quantity": 4,
-      "card_id": 222
-    },
-    {
-      "id": 4291,
-      "quantity": 4,
-      "card_id": 639
-    },
-    {
-      "id": 4292,
-      "quantity": 4,
-      "card_id": 489
-    },
-    {
-      "id": 4293,
+      "card_id": 403,
+      "date_updated": "2025-01-30T01:50:30.497Z",
+      "id": "26673",
       "quantity": 2,
-      "card_id": 484
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4294,
-      "quantity": 4,
-      "card_id": 83
-    },
-    {
-      "id": 4295,
-      "quantity": 4,
-      "card_id": 88
-    },
-    {
-      "id": 4296,
-      "quantity": 4,
-      "card_id": 87
-    },
-    {
-      "id": 4297,
-      "quantity": 4,
-      "card_id": 224
-    },
-    {
-      "id": 4298,
-      "quantity": 4,
-      "card_id": 223
-    },
-    {
-      "id": 4299,
-      "quantity": 4,
-      "card_id": 488
-    },
-    {
-      "id": 4300,
-      "quantity": 4,
-      "card_id": 84
-    },
-    {
-      "id": 4301,
-      "quantity": 4,
-      "card_id": 92
-    },
-    {
-      "id": 4302,
-      "quantity": 4,
-      "card_id": 490
-    },
-    {
-      "id": 4303,
-      "quantity": 4,
-      "card_id": 636
-    },
-    {
-      "id": 4304,
-      "quantity": 4,
-      "card_id": 486
-    },
-    {
-      "id": 4305,
-      "quantity": 4,
-      "card_id": 85
-    },
-    {
-      "id": 4306,
-      "quantity": 4,
-      "card_id": 485
-    },
-    {
-      "id": 4307,
-      "quantity": 4,
-      "card_id": 637
-    },
-    {
-      "id": 4308,
-      "quantity": 4,
-      "card_id": 633
-    },
-    {
-      "id": 4309,
+      "card_id": 402,
+      "date_updated": null,
+      "id": "26674",
       "quantity": 2,
-      "card_id": 82
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4310,
+      "card_id": 313,
+      "date_updated": null,
+      "id": "26675",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 401,
+      "date_updated": "2025-01-30T01:50:31.397Z",
+      "id": "26676",
+      "quantity": 7,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 400,
+      "date_updated": "2025-01-30T01:50:30.593Z",
+      "id": "26677",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 399,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26678",
       "quantity": 4,
-      "card_id": 89
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4311,
+      "card_id": 189,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26679",
       "quantity": 4,
-      "card_id": 634
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4312,
-      "quantity": 4,
-      "card_id": 86
+      "card_id": 150,
+      "date_updated": null,
+      "id": "26680",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4313,
-      "quantity": 4,
-      "card_id": 221
+      "card_id": 149,
+      "date_updated": "2025-01-30T01:50:31.317Z",
+      "id": "26681",
+      "quantity": 6,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4314,
-      "quantity": 4,
-      "card_id": 638
+      "card_id": 188,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26682",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4315,
-      "quantity": 4,
-      "card_id": 632
-    },
-    {
-      "id": 4316,
-      "quantity": 4,
-      "card_id": 93
-    },
-    {
-      "id": 4317,
-      "quantity": 4,
-      "card_id": 487
-    },
-    {
-      "id": 4318,
-      "quantity": 2,
-      "card_id": 68
-    },
-    {
-      "id": 4319,
-      "quantity": 4,
-      "card_id": 70
-    },
-    {
-      "id": 4320,
-      "quantity": 4,
-      "card_id": 75
-    },
-    {
-      "id": 4321,
-      "quantity": 4,
-      "card_id": 69
-    },
-    {
-      "id": 4322,
-      "quantity": 4,
-      "card_id": 226
-    },
-    {
-      "id": 4323,
-      "quantity": 4,
-      "card_id": 72
-    },
-    {
-      "id": 4324,
+      "card_id": 131,
+      "date_updated": "2025-01-30T01:50:31.541Z",
+      "id": "26683",
       "quantity": 10,
-      "card_id": 76
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4325,
-      "quantity": 4,
-      "card_id": 77
+      "card_id": 186,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26684",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4326,
-      "quantity": 4,
-      "card_id": 81
-    },
-    {
-      "id": 4327,
-      "quantity": 4,
-      "card_id": 73
-    },
-    {
-      "id": 4328,
-      "quantity": 4,
-      "card_id": 80
-    },
-    {
-      "id": 4329,
-      "quantity": 4,
-      "card_id": 79
-    },
-    {
-      "id": 4330,
-      "quantity": 2,
-      "card_id": 74
-    },
-    {
-      "id": 4331,
-      "quantity": 4,
-      "card_id": 225
-    },
-    {
-      "id": 4332,
-      "quantity": 8,
-      "card_id": 71
-    },
-    {
-      "id": 4333,
-      "quantity": 4,
-      "card_id": 78
-    },
-    {
-      "id": 4334,
-      "quantity": 4,
-      "card_id": 3
-    },
-    {
-      "id": 4335,
-      "quantity": 6,
-      "card_id": 52
-    },
-    {
-      "id": 4336,
-      "quantity": 4,
-      "card_id": 53
-    },
-    {
-      "id": 4337,
-      "quantity": 4,
-      "card_id": 59
-    },
-    {
-      "id": 4338,
-      "quantity": 4,
-      "card_id": 56
-    },
-    {
-      "id": 4339,
-      "quantity": 2,
-      "card_id": 1
-    },
-    {
-      "id": 4340,
-      "quantity": 8,
-      "card_id": 58
-    },
-    {
-      "id": 4341,
-      "quantity": 4,
-      "card_id": 49
-    },
-    {
-      "id": 4342,
-      "quantity": 4,
-      "card_id": 50
-    },
-    {
-      "id": 4343,
-      "quantity": 4,
-      "card_id": 51
-    },
-    {
-      "id": 4344,
-      "quantity": 4,
-      "card_id": 2
-    },
-    {
-      "id": 4345,
-      "quantity": 4,
-      "card_id": 57
-    },
-    {
-      "id": 4346,
-      "quantity": 4,
-      "card_id": 54
-    },
-    {
-      "id": 4347,
-      "quantity": 4,
-      "card_id": 55
-    },
-    {
-      "id": 4348,
-      "quantity": 4,
-      "card_id": 228
-    },
-    {
-      "id": 4349,
-      "quantity": 8,
-      "card_id": 227
-    },
-    {
-      "id": 4350,
+      "card_id": 47,
+      "date_updated": null,
+      "id": "26685",
       "quantity": 1,
-      "card_id": 713
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4351,
-      "quantity": 4,
-      "card_id": 853
+      "card_id": 130,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26686",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4352,
-      "quantity": 4,
-      "card_id": 854
+      "card_id": 46,
+      "date_updated": "2025-01-30T01:50:30.593Z",
+      "id": "26687",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4353,
-      "quantity": 4,
-      "card_id": 746
-    },
-    {
-      "id": 4354,
+      "card_id": 184,
+      "date_updated": "2025-01-30T01:50:30.497Z",
+      "id": "26688",
       "quantity": 2,
-      "card_id": 747
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4355,
+      "card_id": 129,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26689",
       "quantity": 4,
-      "card_id": 855
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4356,
+      "card_id": 45,
+      "date_updated": "2025-01-30T01:50:30.593Z",
+      "id": "26690",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 148,
+      "date_updated": null,
+      "id": "26691",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 183,
+      "date_updated": null,
+      "id": "26692",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 182,
+      "date_updated": "2025-01-30T01:50:30.593Z",
+      "id": "26693",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 128,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26694",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 42,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26695",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 135,
+      "date_updated": "2025-01-30T01:50:30.497Z",
+      "id": "26696",
       "quantity": 2,
-      "card_id": 761
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4357,
-      "quantity": 2,
-      "card_id": 856
+      "card_id": 40,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26697",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4358,
-      "quantity": 2,
-      "card_id": 857
+      "card_id": 147,
+      "date_updated": null,
+      "id": "26698",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4359,
+      "card_id": 127,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26699",
       "quantity": 4,
-      "card_id": 858
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4360,
-      "quantity": 2,
-      "card_id": 859
+      "card_id": 38,
+      "date_updated": null,
+      "id": "26700",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4361,
+      "card_id": 37,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26701",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 681,
+      "date_updated": null,
+      "id": "26702",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 502,
+      "date_updated": null,
+      "id": "26703",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 294,
+      "date_updated": null,
+      "id": "26704",
       "quantity": 4,
-      "card_id": 860
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4362,
+      "card_id": 456,
+      "date_updated": null,
+      "id": "26705",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 319,
+      "date_updated": null,
+      "id": "26706",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 311,
+      "date_updated": null,
+      "id": "26707",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 173,
+      "date_updated": null,
+      "id": "26708",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 172,
+      "date_updated": null,
+      "id": "26709",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 812,
+      "date_updated": "2024-11-17T00:32:44.080Z",
+      "id": "26710",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 802,
+      "date_updated": "2024-11-17T00:32:44.080Z",
+      "id": "26711",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 801,
+      "date_updated": "2024-11-17T00:32:44.080Z",
+      "id": "26712",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 526,
+      "date_updated": null,
+      "id": "26713",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 514,
+      "date_updated": null,
+      "id": "26714",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 591,
+      "date_updated": null,
+      "id": "26715",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 590,
+      "date_updated": null,
+      "id": "26716",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 589,
+      "date_updated": null,
+      "id": "26717",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 588,
+      "date_updated": null,
+      "id": "26718",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 587,
+      "date_updated": null,
+      "id": "26719",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 586,
+      "date_updated": "2024-11-13T22:40:53.350Z",
+      "id": "26720",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 525,
+      "date_updated": null,
+      "id": "26721",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 585,
+      "date_updated": null,
+      "id": "26722",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 500,
+      "date_updated": "2024-11-13T22:40:53.350Z",
+      "id": "26723",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 584,
+      "date_updated": null,
+      "id": "26724",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 583,
+      "date_updated": null,
+      "id": "26725",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 540,
+      "date_updated": null,
+      "id": "26726",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 582,
+      "date_updated": null,
+      "id": "26727",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 581,
+      "date_updated": null,
+      "id": "26728",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 580,
+      "date_updated": null,
+      "id": "26729",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 518,
+      "date_updated": null,
+      "id": "26730",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 579,
+      "date_updated": "2024-11-13T22:40:53.350Z",
+      "id": "26731",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 578,
+      "date_updated": null,
+      "id": "26732",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 577,
+      "date_updated": null,
+      "id": "26733",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 513,
+      "date_updated": null,
+      "id": "26734",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 398,
+      "date_updated": null,
+      "id": "26735",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 302,
+      "date_updated": null,
+      "id": "26736",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 397,
+      "date_updated": null,
+      "id": "26737",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 396,
+      "date_updated": null,
+      "id": "26738",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 395,
+      "date_updated": null,
+      "id": "26739",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 394,
+      "date_updated": null,
+      "id": "26740",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 393,
+      "date_updated": null,
+      "id": "26741",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 392,
+      "date_updated": null,
+      "id": "26742",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 391,
+      "date_updated": null,
+      "id": "26743",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 390,
+      "date_updated": null,
+      "id": "26744",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 389,
+      "date_updated": null,
+      "id": "26745",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 312,
+      "date_updated": null,
+      "id": "26746",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 388,
+      "date_updated": null,
+      "id": "26747",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 387,
+      "date_updated": null,
+      "id": "26748",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 293,
+      "date_updated": null,
+      "id": "26749",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 386,
+      "date_updated": null,
+      "id": "26750",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 385,
+      "date_updated": null,
+      "id": "26751",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 292,
+      "date_updated": null,
+      "id": "26752",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 384,
+      "date_updated": null,
+      "id": "26753",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 383,
+      "date_updated": "2024-11-13T22:40:53.350Z",
+      "id": "26754",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 291,
+      "date_updated": null,
+      "id": "26755",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 382,
+      "date_updated": null,
+      "id": "26756",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 381,
+      "date_updated": null,
+      "id": "26757",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 380,
+      "date_updated": null,
+      "id": "26758",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 318,
+      "date_updated": null,
+      "id": "26759",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 379,
+      "date_updated": null,
+      "id": "26760",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 310,
+      "date_updated": null,
+      "id": "26761",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 378,
+      "date_updated": null,
+      "id": "26762",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 377,
+      "date_updated": null,
+      "id": "26763",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 376,
+      "date_updated": null,
+      "id": "26764",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 375,
+      "date_updated": null,
+      "id": "26765",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 146,
+      "date_updated": null,
+      "id": "26766",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 126,
+      "date_updated": null,
+      "id": "26767",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 179,
+      "date_updated": null,
+      "id": "26768",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 178,
+      "date_updated": "2024-11-13T22:27:36.373Z",
+      "id": "26769",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 36,
+      "date_updated": null,
+      "id": "26770",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 177,
+      "date_updated": null,
+      "id": "26771",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 125,
+      "date_updated": null,
+      "id": "26772",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 35,
+      "date_updated": null,
+      "id": "26773",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 34,
+      "date_updated": null,
+      "id": "26774",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 124,
+      "date_updated": null,
+      "id": "26775",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 175,
+      "date_updated": null,
+      "id": "26776",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 33,
+      "date_updated": null,
+      "id": "26777",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 145,
+      "date_updated": null,
+      "id": "26778",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 32,
+      "date_updated": null,
+      "id": "26779",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 123,
+      "date_updated": "2024-11-13T22:40:53.435Z",
+      "id": "26780",
       "quantity": 7,
-      "card_id": 20
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4363,
+      "card_id": 144,
+      "date_updated": null,
+      "id": "26781",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 31,
+      "date_updated": null,
+      "id": "26782",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 30,
+      "date_updated": null,
+      "id": "26783",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 143,
+      "date_updated": null,
+      "id": "26784",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 29,
+      "date_updated": null,
+      "id": "26785",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 28,
+      "date_updated": null,
+      "id": "26786",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 174,
+      "date_updated": null,
+      "id": "26787",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 27,
+      "date_updated": null,
+      "id": "26788",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 171,
+      "date_updated": null,
+      "id": "26789",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 26,
+      "date_updated": null,
+      "id": "26790",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 122,
+      "date_updated": null,
+      "id": "26791",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 170,
+      "date_updated": null,
+      "id": "26792",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 121,
+      "date_updated": null,
+      "id": "26793",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 120,
+      "date_updated": null,
+      "id": "26794",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 887,
+      "date_updated": null,
+      "id": "26795",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 531,
+      "date_updated": null,
+      "id": "26796",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 367,
+      "date_updated": null,
+      "id": "26797",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 308,
+      "date_updated": null,
+      "id": "26798",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 453,
+      "date_updated": null,
+      "id": "26799",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 286,
+      "date_updated": null,
+      "id": "26800",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 165,
+      "date_updated": null,
+      "id": "26801",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 749,
+      "date_updated": "2024-11-17T00:05:36.310Z",
+      "id": "26802",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 784,
+      "date_updated": "2024-11-17T00:05:36.310Z",
+      "id": "26803",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 782,
+      "date_updated": "2024-11-17T00:05:36.382Z",
+      "id": "26804",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 780,
+      "date_updated": "2024-11-17T00:05:36.537Z",
+      "id": "26805",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 576,
+      "date_updated": null,
+      "id": "26806",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 517,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26807",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 524,
+      "date_updated": null,
+      "id": "26808",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 575,
+      "date_updated": null,
+      "id": "26809",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 523,
+      "date_updated": "2025-01-30T01:50:30.593Z",
+      "id": "26810",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 574,
+      "date_updated": null,
+      "id": "26811",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 573,
+      "date_updated": "2025-01-30T01:50:30.497Z",
+      "id": "26812",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 572,
+      "date_updated": null,
+      "id": "26813",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 571,
+      "date_updated": null,
+      "id": "26814",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 570,
+      "date_updated": null,
+      "id": "26815",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 569,
+      "date_updated": null,
+      "id": "26816",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 568,
+      "date_updated": "2025-01-30T01:50:30.497Z",
+      "id": "26817",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 567,
+      "date_updated": null,
+      "id": "26818",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 566,
+      "date_updated": "2025-01-30T01:50:30.497Z",
+      "id": "26819",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 565,
+      "date_updated": null,
+      "id": "26820",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 497,
+      "date_updated": null,
+      "id": "26821",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 564,
+      "date_updated": null,
+      "id": "26822",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 512,
+      "date_updated": null,
+      "id": "26823",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 563,
+      "date_updated": null,
+      "id": "26824",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 562,
+      "date_updated": null,
+      "id": "26825",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 561,
+      "date_updated": null,
+      "id": "26826",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 560,
+      "date_updated": "2025-01-30T01:50:30.497Z",
+      "id": "26827",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 511,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26828",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 301,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26829",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 374,
+      "date_updated": null,
+      "id": "26830",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 373,
+      "date_updated": "2025-01-30T01:50:31.476Z",
+      "id": "26831",
+      "quantity": 8,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 372,
+      "date_updated": null,
+      "id": "26832",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 371,
+      "date_updated": "2025-01-30T01:50:31.317Z",
+      "id": "26833",
+      "quantity": 6,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 370,
+      "date_updated": null,
+      "id": "26834",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 309,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26835",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 289,
+      "date_updated": "2025-01-30T01:50:30.593Z",
+      "id": "26836",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 366,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26837",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 365,
+      "date_updated": null,
+      "id": "26838",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 364,
+      "date_updated": "2025-01-30T01:50:31.476Z",
+      "id": "26839",
+      "quantity": 8,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 363,
+      "date_updated": "2025-01-30T01:50:31.397Z",
+      "id": "26840",
+      "quantity": 7,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 362,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26841",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 361,
+      "date_updated": null,
+      "id": "26842",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 360,
+      "date_updated": "2025-01-30T01:50:31.317Z",
+      "id": "26843",
+      "quantity": 6,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 359,
+      "date_updated": null,
+      "id": "26844",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 358,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26845",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 357,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26846",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 317,
+      "date_updated": null,
+      "id": "26847",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 288,
+      "date_updated": "2025-01-30T01:50:31.397Z",
+      "id": "26848",
+      "quantity": 7,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 287,
+      "date_updated": "2025-01-30T01:50:31.397Z",
+      "id": "26849",
+      "quantity": 7,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 356,
+      "date_updated": "2025-01-30T01:50:30.497Z",
+      "id": "26850",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 355,
+      "date_updated": null,
+      "id": "26851",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 354,
+      "date_updated": null,
+      "id": "26852",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 353,
+      "date_updated": null,
+      "id": "26853",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 307,
+      "date_updated": null,
+      "id": "26854",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 352,
+      "date_updated": null,
+      "id": "26855",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 351,
+      "date_updated": "2025-01-30T01:50:31.317Z",
+      "id": "26856",
+      "quantity": 6,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 350,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26857",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 168,
+      "date_updated": "2025-01-30T01:50:30.593Z",
+      "id": "26858",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 119,
+      "date_updated": "2025-01-30T01:50:30.497Z",
+      "id": "26859",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 118,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26860",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 166,
+      "date_updated": "2025-01-30T01:50:30.497Z",
+      "id": "26861",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 117,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26862",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 25,
+      "date_updated": "2025-01-30T01:50:31.317Z",
+      "id": "26863",
+      "quantity": 6,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 142,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26864",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 116,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26865",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 23,
+      "date_updated": "2025-01-30T01:50:31.476Z",
+      "id": "26866",
+      "quantity": 8,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 115,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26867",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 114,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26868",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 22,
+      "date_updated": null,
+      "id": "26869",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 21,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26870",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 162,
+      "date_updated": null,
+      "id": "26871",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 141,
+      "date_updated": "2025-01-30T01:50:30.695Z",
+      "id": "26872",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 19,
+      "date_updated": "2025-01-30T01:50:30.593Z",
+      "id": "26873",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 18,
+      "date_updated": "2025-01-30T01:50:30.593Z",
+      "id": "26874",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 17,
+      "date_updated": null,
+      "id": "26875",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 161,
+      "date_updated": "2025-01-30T01:50:30.829Z",
+      "id": "26876",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 113,
+      "date_updated": null,
+      "id": "26877",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 16,
+      "date_updated": "2025-01-30T01:50:31.317Z",
+      "id": "26878",
+      "quantity": 6,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 140,
+      "date_updated": "2025-01-30T01:50:31.317Z",
+      "id": "26879",
+      "quantity": 6,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 15,
+      "date_updated": null,
+      "id": "26880",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 160,
+      "date_updated": null,
+      "id": "26881",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 537,
+      "date_updated": null,
+      "id": "26882",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 673,
+      "date_updated": null,
+      "id": "26883",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 509,
+      "date_updated": null,
+      "id": "26884",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 156,
+      "date_updated": null,
+      "id": "26885",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 155,
+      "date_updated": null,
+      "id": "26886",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 337,
+      "date_updated": null,
+      "id": "26887",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 284,
+      "date_updated": null,
+      "id": "26888",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 725,
+      "date_updated": "2024-11-16T23:35:40.554Z",
+      "id": "26889",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 771,
+      "date_updated": "2024-11-16T23:35:40.554Z",
+      "id": "26890",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 770,
+      "date_updated": "2024-11-16T23:35:40.622Z",
+      "id": "26891",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 764,
+      "date_updated": "2024-11-16T23:35:40.424Z",
+      "id": "26892",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 522,
+      "date_updated": null,
+      "id": "26893",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 559,
+      "date_updated": null,
+      "id": "26894",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 558,
+      "date_updated": null,
+      "id": "26895",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 538,
+      "date_updated": "2025-01-28T23:58:23.959Z",
+      "id": "26896",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 516,
+      "date_updated": null,
+      "id": "26897",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 530,
+      "date_updated": null,
+      "id": "26898",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 557,
+      "date_updated": "2025-01-28T23:58:23.959Z",
+      "id": "26899",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 556,
+      "date_updated": null,
+      "id": "26900",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 555,
+      "date_updated": "2025-01-28T23:58:24.012Z",
+      "id": "26901",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 554,
+      "date_updated": "2025-01-28T23:58:24.065Z",
+      "id": "26902",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 515,
+      "date_updated": null,
+      "id": "26903",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 553,
+      "date_updated": null,
+      "id": "26904",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 552,
+      "date_updated": null,
+      "id": "26905",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 551,
+      "date_updated": null,
+      "id": "26906",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 550,
+      "date_updated": null,
+      "id": "26907",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 508,
+      "date_updated": null,
+      "id": "26908",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 549,
+      "date_updated": "2025-01-28T23:58:24.130Z",
+      "id": "26909",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 548,
+      "date_updated": null,
+      "id": "26910",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 547,
+      "date_updated": null,
+      "id": "26911",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 546,
+      "date_updated": null,
+      "id": "26912",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 545,
+      "date_updated": null,
+      "id": "26913",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 300,
+      "date_updated": "2025-01-28T23:57:35.786Z",
+      "id": "26914",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 349,
+      "date_updated": "2025-01-28T23:57:35.853Z",
+      "id": "26915",
+      "quantity": 7,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 348,
+      "date_updated": null,
+      "id": "26916",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 283,
+      "date_updated": "2025-01-28T23:57:35.939Z",
+      "id": "26917",
+      "quantity": 8,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 347,
+      "date_updated": null,
+      "id": "26918",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 306,
+      "date_updated": null,
+      "id": "26919",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 316,
+      "date_updated": "2025-01-28T23:57:35.524Z",
+      "id": "26920",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 346,
+      "date_updated": null,
+      "id": "26921",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 345,
+      "date_updated": "2025-01-28T23:57:35.939Z",
+      "id": "26922",
+      "quantity": 8,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 305,
+      "date_updated": null,
+      "id": "26923",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 344,
+      "date_updated": "2025-01-28T23:57:35.939Z",
+      "id": "26924",
+      "quantity": 8,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 343,
+      "date_updated": "2025-01-28T23:57:35.589Z",
+      "id": "26925",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 342,
+      "date_updated": "2025-01-29T07:57:26.270Z",
+      "id": "26926",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 341,
+      "date_updated": "2025-01-28T23:57:35.786Z",
+      "id": "26927",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 340,
+      "date_updated": "2025-01-28T23:57:35.524Z",
+      "id": "26928",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 339,
+      "date_updated": "2025-01-28T23:57:35.853Z",
+      "id": "26929",
+      "quantity": 7,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 282,
+      "date_updated": "2025-01-28T23:57:35.524Z",
+      "id": "26930",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 336,
+      "date_updated": null,
+      "id": "26931",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 281,
+      "date_updated": "2025-01-28T23:57:35.589Z",
+      "id": "26932",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 335,
+      "date_updated": "2025-01-28T23:57:35.786Z",
+      "id": "26933",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 334,
+      "date_updated": "2025-01-28T23:57:35.853Z",
+      "id": "26934",
+      "quantity": 7,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 333,
+      "date_updated": "2025-01-29T00:20:05.780Z",
+      "id": "26935",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 332,
+      "date_updated": "2025-01-28T23:57:35.853Z",
+      "id": "26936",
+      "quantity": 7,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 331,
+      "date_updated": "2025-01-28T23:57:35.786Z",
+      "id": "26937",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 330,
+      "date_updated": null,
+      "id": "26938",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 329,
+      "date_updated": null,
+      "id": "26939",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 328,
+      "date_updated": "2025-01-28T23:57:35.853Z",
+      "id": "26940",
+      "quantity": 7,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 327,
+      "date_updated": "2025-01-28T23:57:35.589Z",
+      "id": "26941",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 326,
+      "date_updated": null,
+      "id": "26942",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 325,
+      "date_updated": "2025-01-28T23:57:35.715Z",
+      "id": "26943",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 324,
+      "date_updated": "2025-01-28T23:54:28.906Z",
+      "id": "26944",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 112,
+      "date_updated": "2025-01-28T23:54:29.141Z",
+      "id": "26945",
+      "quantity": 9,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 159,
+      "date_updated": "2025-01-28T23:54:28.682Z",
+      "id": "26946",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 139,
+      "date_updated": "2025-01-28T23:54:29.141Z",
+      "id": "26947",
+      "quantity": 9,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 158,
+      "date_updated": "2025-01-28T23:54:29.016Z",
+      "id": "26948",
+      "quantity": 7,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 13,
+      "date_updated": "2025-01-28T23:54:28.773Z",
+      "id": "26949",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 12,
+      "date_updated": "2025-01-28T23:54:28.607Z",
+      "id": "26950",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 11,
+      "date_updated": "2025-01-28T23:54:28.773Z",
+      "id": "26951",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 9,
+      "date_updated": "2025-01-28T23:54:28.773Z",
+      "id": "26952",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 154,
+      "date_updated": "2025-01-28T23:54:28.773Z",
+      "id": "26953",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 110,
+      "date_updated": "2025-01-28T23:54:28.906Z",
+      "id": "26954",
+      "quantity": 5,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 109,
+      "date_updated": "2025-01-28T23:54:28.773Z",
+      "id": "26955",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 138,
+      "date_updated": "2025-01-28T23:54:28.959Z",
+      "id": "26956",
+      "quantity": 6,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 107,
+      "date_updated": "2025-01-28T23:54:28.773Z",
+      "id": "26957",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 153,
+      "date_updated": "2025-01-28T23:54:28.607Z",
+      "id": "26958",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 8,
+      "date_updated": "2025-01-28T23:54:28.607Z",
+      "id": "26959",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 133,
+      "date_updated": "2025-01-28T23:54:28.682Z",
+      "id": "26960",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 7,
+      "date_updated": "2025-01-28T23:54:28.607Z",
+      "id": "26961",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 152,
+      "date_updated": "2025-01-28T23:54:28.682Z",
+      "id": "26962",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 6,
+      "date_updated": "2025-01-28T23:54:28.682Z",
+      "id": "26963",
+      "quantity": 3,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 5,
+      "date_updated": null,
+      "id": "26964",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 4,
+      "date_updated": "2025-01-28T23:54:29.086Z",
+      "id": "26965",
+      "quantity": 8,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 483,
+      "date_updated": null,
+      "id": "26966",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 499,
+      "date_updated": null,
+      "id": "26967",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 496,
+      "date_updated": null,
+      "id": "26968",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 507,
+      "date_updated": null,
+      "id": "26969",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 458,
+      "date_updated": null,
+      "id": "26970",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 295,
+      "date_updated": null,
+      "id": "26971",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 290,
+      "date_updated": null,
+      "id": "26972",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 285,
+      "date_updated": null,
+      "id": "26973",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 280,
+      "date_updated": null,
+      "id": "26974",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 66,
+      "date_updated": null,
+      "id": "26975",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 65,
+      "date_updated": null,
+      "id": "26976",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 64,
+      "date_updated": null,
+      "id": "26977",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 63,
+      "date_updated": null,
+      "id": "26978",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 60,
+      "date_updated": null,
+      "id": "26979",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 10,
+      "date_updated": "2025-01-28T23:54:29.141Z",
+      "id": "26980",
+      "quantity": 9,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 106,
+      "date_updated": "2025-01-28T23:54:29.016Z",
+      "id": "26981",
+      "quantity": 7,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 868,
+      "date_updated": null,
+      "id": "26982",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 867,
+      "date_updated": null,
+      "id": "26983",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 866,
+      "date_updated": null,
+      "id": "26984",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 865,
+      "date_updated": null,
+      "id": "26985",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 864,
+      "date_updated": null,
+      "id": "26986",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 745,
+      "date_updated": null,
+      "id": "26987",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 760,
+      "date_updated": null,
+      "id": "26988",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 863,
+      "date_updated": null,
+      "id": "26989",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 862,
+      "date_updated": null,
+      "id": "26990",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 744,
+      "date_updated": null,
+      "id": "26991",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 861,
+      "date_updated": null,
+      "id": "26992",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 712,
+      "date_updated": null,
+      "id": "26993",
+      "quantity": 1,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 369,
+      "date_updated": "2025-01-30T01:50:31.541Z",
+      "id": "26994",
       "quantity": 10,
-      "card_id": 369
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4364,
-      "quantity": 1,
-      "card_id": 712
-    },
-    {
-      "id": 4365,
-      "quantity": 4,
-      "card_id": 861
-    },
-    {
-      "id": 4366,
-      "quantity": 2,
-      "card_id": 744
-    },
-    {
-      "id": 4367,
-      "quantity": 4,
-      "card_id": 862
-    },
-    {
-      "id": 4368,
-      "quantity": 2,
-      "card_id": 863
-    },
-    {
-      "id": 4369,
-      "quantity": 2,
-      "card_id": 760
-    },
-    {
-      "id": 4370,
-      "quantity": 4,
-      "card_id": 745
-    },
-    {
-      "id": 4371,
-      "quantity": 4,
-      "card_id": 864
-    },
-    {
-      "id": 4372,
-      "quantity": 4,
-      "card_id": 865
-    },
-    {
-      "id": 4373,
-      "quantity": 2,
-      "card_id": 866
-    },
-    {
-      "id": 4374,
-      "quantity": 2,
-      "card_id": 867
-    },
-    {
-      "id": 4375,
-      "quantity": 4,
-      "card_id": 868
-    },
-    {
-      "id": 4376,
+      "card_id": 20,
+      "date_updated": "2025-01-30T01:50:31.397Z",
+      "id": "26995",
       "quantity": 7,
-      "card_id": 106
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4377,
-      "quantity": 9,
-      "card_id": 10
+      "card_id": 860,
+      "date_updated": null,
+      "id": "26996",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4378,
-      "quantity": 1,
-      "card_id": 60
-    },
-    {
-      "id": 4379,
-      "quantity": 1,
-      "card_id": 63
-    },
-    {
-      "id": 4380,
+      "card_id": 859,
+      "date_updated": null,
+      "id": "26997",
       "quantity": 2,
-      "card_id": 64
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4381,
+      "card_id": 858,
+      "date_updated": null,
+      "id": "26998",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 857,
+      "date_updated": null,
+      "id": "26999",
       "quantity": 2,
-      "card_id": 65
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4382,
-      "quantity": 1,
-      "card_id": 66
-    },
-    {
-      "id": 4383,
+      "card_id": 856,
+      "date_updated": null,
+      "id": "27000",
       "quantity": 2,
-      "card_id": 280
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4384,
-      "quantity": 1,
-      "card_id": 285
-    },
-    {
-      "id": 4385,
+      "card_id": 761,
+      "date_updated": null,
+      "id": "27001",
       "quantity": 2,
-      "card_id": 290
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4386,
+      "card_id": 855,
+      "date_updated": null,
+      "id": "27002",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 747,
+      "date_updated": null,
+      "id": "27003",
       "quantity": 2,
-      "card_id": 295
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4387,
+      "card_id": 746,
+      "date_updated": null,
+      "id": "27004",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 854,
+      "date_updated": null,
+      "id": "27005",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 853,
+      "date_updated": null,
+      "id": "27006",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 713,
+      "date_updated": null,
+      "id": "27007",
       "quantity": 1,
-      "card_id": 458
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4388,
-      "quantity": 1,
-      "card_id": 507
-    },
-    {
-      "id": 4389,
-      "quantity": 1,
-      "card_id": 496
-    },
-    {
-      "id": 4390,
-      "quantity": 2,
-      "card_id": 499
-    },
-    {
-      "id": 4391,
-      "quantity": 1,
-      "card_id": 483
-    },
-    {
-      "id": 4392,
+      "card_id": 227,
+      "date_updated": "2024-11-13T21:52:10.965Z",
+      "id": "27008",
       "quantity": 8,
-      "card_id": 4
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4393,
-      "quantity": 2,
-      "card_id": 5
-    },
-    {
-      "id": 4394,
-      "quantity": 3,
-      "card_id": 6
-    },
-    {
-      "id": 4395,
-      "quantity": 3,
-      "card_id": 152
-    },
-    {
-      "id": 4396,
-      "quantity": 2,
-      "card_id": 7
-    },
-    {
-      "id": 4397,
-      "quantity": 3,
-      "card_id": 133
-    },
-    {
-      "id": 4398,
-      "quantity": 2,
-      "card_id": 8
-    },
-    {
-      "id": 4399,
-      "quantity": 2,
-      "card_id": 153
-    },
-    {
-      "id": 4400,
+      "card_id": 228,
+      "date_updated": null,
+      "id": "27009",
       "quantity": 4,
-      "card_id": 107
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4401,
-      "quantity": 6,
-      "card_id": 138
-    },
-    {
-      "id": 4402,
+      "card_id": 55,
+      "date_updated": null,
+      "id": "27010",
       "quantity": 4,
-      "card_id": 109
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4403,
-      "quantity": 5,
-      "card_id": 110
-    },
-    {
-      "id": 4404,
+      "card_id": 54,
+      "date_updated": null,
+      "id": "27011",
       "quantity": 4,
-      "card_id": 154
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4405,
+      "card_id": 57,
+      "date_updated": null,
+      "id": "27012",
       "quantity": 4,
-      "card_id": 9
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4406,
+      "card_id": 2,
+      "date_updated": null,
+      "id": "27013",
       "quantity": 4,
-      "card_id": 11
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4407,
-      "quantity": 2,
-      "card_id": 12
-    },
-    {
-      "id": 4408,
+      "card_id": 51,
+      "date_updated": null,
+      "id": "27014",
       "quantity": 4,
-      "card_id": 13
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4409,
-      "quantity": 7,
-      "card_id": 158
-    },
-    {
-      "id": 4410,
-      "quantity": 9,
-      "card_id": 139
-    },
-    {
-      "id": 4411,
-      "quantity": 3,
-      "card_id": 159
-    },
-    {
-      "id": 4412,
-      "quantity": 9,
-      "card_id": 112
-    },
-    {
-      "id": 4413,
-      "quantity": 5,
-      "card_id": 324
-    },
-    {
-      "id": 4414,
+      "card_id": 50,
+      "date_updated": null,
+      "id": "27015",
       "quantity": 4,
-      "card_id": 325
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4415,
-      "quantity": 2,
-      "card_id": 326
-    },
-    {
-      "id": 4416,
-      "quantity": 3,
-      "card_id": 327
-    },
-    {
-      "id": 4417,
-      "quantity": 7,
-      "card_id": 328
-    },
-    {
-      "id": 4418,
-      "quantity": 1,
-      "card_id": 329
-    },
-    {
-      "id": 4419,
-      "quantity": 2,
-      "card_id": 330
-    },
-    {
-      "id": 4420,
-      "quantity": 5,
-      "card_id": 331
-    },
-    {
-      "id": 4421,
-      "quantity": 7,
-      "card_id": 332
-    },
-    {
-      "id": 4422,
-      "quantity": 3,
-      "card_id": 333
-    },
-    {
-      "id": 4423,
-      "quantity": 7,
-      "card_id": 334
-    },
-    {
-      "id": 4424,
-      "quantity": 5,
-      "card_id": 335
-    },
-    {
-      "id": 4425,
-      "quantity": 3,
-      "card_id": 281
-    },
-    {
-      "id": 4426,
+      "card_id": 49,
+      "date_updated": null,
+      "id": "27016",
       "quantity": 4,
-      "card_id": 336
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4427,
-      "quantity": 2,
-      "card_id": 282
-    },
-    {
-      "id": 4428,
-      "quantity": 7,
-      "card_id": 339
-    },
-    {
-      "id": 4429,
-      "quantity": 2,
-      "card_id": 340
-    },
-    {
-      "id": 4430,
-      "quantity": 5,
-      "card_id": 341
-    },
-    {
-      "id": 4431,
-      "quantity": 2,
-      "card_id": 342
-    },
-    {
-      "id": 4432,
-      "quantity": 3,
-      "card_id": 343
-    },
-    {
-      "id": 4433,
+      "card_id": 58,
+      "date_updated": "2024-11-13T21:52:10.965Z",
+      "id": "27017",
       "quantity": 8,
-      "card_id": 344
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4434,
+      "card_id": 1,
+      "date_updated": null,
+      "id": "27018",
       "quantity": 2,
-      "card_id": 305
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4435,
+      "card_id": 56,
+      "date_updated": null,
+      "id": "27019",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 59,
+      "date_updated": null,
+      "id": "27020",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 53,
+      "date_updated": null,
+      "id": "27021",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 52,
+      "date_updated": "2025-01-28T23:54:28.959Z",
+      "id": "27022",
+      "quantity": 6,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 3,
+      "date_updated": null,
+      "id": "27023",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 78,
+      "date_updated": null,
+      "id": "27024",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 71,
+      "date_updated": "2024-11-13T21:46:48.573Z",
+      "id": "27025",
       "quantity": 8,
-      "card_id": 345
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4436,
+      "card_id": 225,
+      "date_updated": null,
+      "id": "27026",
       "quantity": 4,
-      "card_id": 346
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4437,
+      "card_id": 74,
+      "date_updated": null,
+      "id": "27027",
       "quantity": 2,
-      "card_id": 316
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4438,
-      "quantity": 2,
-      "card_id": 306
-    },
-    {
-      "id": 4439,
-      "quantity": 1,
-      "card_id": 347
-    },
-    {
-      "id": 4440,
-      "quantity": 8,
-      "card_id": 283
-    },
-    {
-      "id": 4441,
-      "quantity": 3,
-      "card_id": 348
-    },
-    {
-      "id": 4442,
-      "quantity": 7,
-      "card_id": 349
-    },
-    {
-      "id": 4443,
-      "quantity": 5,
-      "card_id": 300
-    },
-    {
-      "id": 4444,
-      "quantity": 4,
-      "card_id": 545
-    },
-    {
-      "id": 4445,
-      "quantity": 2,
-      "card_id": 546
-    },
-    {
-      "id": 4446,
-      "quantity": 1,
-      "card_id": 547
-    },
-    {
-      "id": 4447,
-      "quantity": 4,
-      "card_id": 548
-    },
-    {
-      "id": 4448,
-      "quantity": 5,
-      "card_id": 549
-    },
-    {
-      "id": 4449,
-      "quantity": 1,
-      "card_id": 508
-    },
-    {
-      "id": 4450,
-      "quantity": 2,
-      "card_id": 550
-    },
-    {
-      "id": 4451,
-      "quantity": 3,
-      "card_id": 551
-    },
-    {
-      "id": 4452,
-      "quantity": 3,
-      "card_id": 552
-    },
-    {
-      "id": 4453,
-      "quantity": 3,
-      "card_id": 553
-    },
-    {
-      "id": 4454,
-      "quantity": 2,
-      "card_id": 515
-    },
-    {
-      "id": 4455,
-      "quantity": 4,
-      "card_id": 554
-    },
-    {
-      "id": 4456,
-      "quantity": 3,
-      "card_id": 555
-    },
-    {
-      "id": 4457,
-      "quantity": 1,
-      "card_id": 556
-    },
-    {
-      "id": 4458,
-      "quantity": 2,
-      "card_id": 557
-    },
-    {
-      "id": 4459,
-      "quantity": 1,
-      "card_id": 530
-    },
-    {
-      "id": 4460,
-      "quantity": 3,
-      "card_id": 516
-    },
-    {
-      "id": 4461,
-      "quantity": 2,
-      "card_id": 538
-    },
-    {
-      "id": 4462,
-      "quantity": 2,
-      "card_id": 558
-    },
-    {
-      "id": 4463,
-      "quantity": 4,
-      "card_id": 559
-    },
-    {
-      "id": 4464,
-      "quantity": 3,
-      "card_id": 522
-    },
-    {
-      "id": 4465,
-      "quantity": 3,
-      "card_id": 764
-    },
-    {
-      "id": 4466,
-      "quantity": 5,
-      "card_id": 770
-    },
-    {
-      "id": 4467,
-      "quantity": 4,
-      "card_id": 771
-    },
-    {
-      "id": 4468,
-      "quantity": 4,
-      "card_id": 725
-    },
-    {
-      "id": 4469,
-      "quantity": 1,
-      "card_id": 284
-    },
-    {
-      "id": 4470,
-      "quantity": 1,
-      "card_id": 337
-    },
-    {
-      "id": 4471,
-      "quantity": 1,
-      "card_id": 155
-    },
-    {
-      "id": 4472,
-      "quantity": 1,
-      "card_id": 156
-    },
-    {
-      "id": 4473,
-      "quantity": 1,
-      "card_id": 509
-    },
-    {
-      "id": 4474,
-      "quantity": 1,
-      "card_id": 673
-    },
-    {
-      "id": 4475,
-      "quantity": 1,
-      "card_id": 537
-    },
-    {
-      "id": 4476,
-      "quantity": 1,
-      "card_id": 160
-    },
-    {
-      "id": 4477,
-      "quantity": 2,
-      "card_id": 15
-    },
-    {
-      "id": 4478,
-      "quantity": 6,
-      "card_id": 140
-    },
-    {
-      "id": 4479,
-      "quantity": 6,
-      "card_id": 16
-    },
-    {
-      "id": 4480,
-      "quantity": 1,
-      "card_id": 113
-    },
-    {
-      "id": 4481,
-      "quantity": 5,
-      "card_id": 161
-    },
-    {
-      "id": 4482,
-      "quantity": 1,
-      "card_id": 17
-    },
-    {
-      "id": 4483,
-      "quantity": 3,
-      "card_id": 18
-    },
-    {
-      "id": 4484,
-      "quantity": 3,
-      "card_id": 19
-    },
-    {
-      "id": 4485,
-      "quantity": 4,
-      "card_id": 141
-    },
-    {
-      "id": 4486,
-      "quantity": 1,
-      "card_id": 162
-    },
-    {
-      "id": 4487,
-      "quantity": 5,
-      "card_id": 21
-    },
-    {
-      "id": 4488,
-      "quantity": 1,
-      "card_id": 22
-    },
-    {
-      "id": 4489,
-      "quantity": 4,
-      "card_id": 114
-    },
-    {
-      "id": 4490,
-      "quantity": 5,
-      "card_id": 115
-    },
-    {
-      "id": 4491,
-      "quantity": 8,
-      "card_id": 23
-    },
-    {
-      "id": 4492,
-      "quantity": 5,
-      "card_id": 116
-    },
-    {
-      "id": 4493,
-      "quantity": 5,
-      "card_id": 142
-    },
-    {
-      "id": 4494,
-      "quantity": 6,
-      "card_id": 25
-    },
-    {
-      "id": 4495,
-      "quantity": 4,
-      "card_id": 117
-    },
-    {
-      "id": 4496,
-      "quantity": 2,
-      "card_id": 166
-    },
-    {
-      "id": 4497,
-      "quantity": 5,
-      "card_id": 118
-    },
-    {
-      "id": 4498,
-      "quantity": 2,
-      "card_id": 119
-    },
-    {
-      "id": 4499,
-      "quantity": 3,
-      "card_id": 168
-    },
-    {
-      "id": 4500,
-      "quantity": 5,
-      "card_id": 350
-    },
-    {
-      "id": 4501,
-      "quantity": 6,
-      "card_id": 351
-    },
-    {
-      "id": 4502,
-      "quantity": 3,
-      "card_id": 352
-    },
-    {
-      "id": 4503,
-      "quantity": 3,
-      "card_id": 307
-    },
-    {
-      "id": 4504,
-      "quantity": 3,
-      "card_id": 353
-    },
-    {
-      "id": 4505,
-      "quantity": 1,
-      "card_id": 354
-    },
-    {
-      "id": 4506,
-      "quantity": 3,
-      "card_id": 355
-    },
-    {
-      "id": 4507,
-      "quantity": 2,
-      "card_id": 356
-    },
-    {
-      "id": 4508,
-      "quantity": 7,
-      "card_id": 287
-    },
-    {
-      "id": 4509,
-      "quantity": 7,
-      "card_id": 288
-    },
-    {
-      "id": 4510,
-      "quantity": 1,
-      "card_id": 317
-    },
-    {
-      "id": 4511,
-      "quantity": 4,
-      "card_id": 357
-    },
-    {
-      "id": 4512,
-      "quantity": 4,
-      "card_id": 358
-    },
-    {
-      "id": 4513,
-      "quantity": 4,
-      "card_id": 359
-    },
-    {
-      "id": 4514,
-      "quantity": 6,
-      "card_id": 360
-    },
-    {
-      "id": 4515,
-      "quantity": 3,
-      "card_id": 361
-    },
-    {
-      "id": 4516,
-      "quantity": 4,
-      "card_id": 362
-    },
-    {
-      "id": 4517,
-      "quantity": 7,
-      "card_id": 363
-    },
-    {
-      "id": 4518,
-      "quantity": 8,
-      "card_id": 364
-    },
-    {
-      "id": 4519,
-      "quantity": 2,
-      "card_id": 365
-    },
-    {
-      "id": 4520,
-      "quantity": 4,
-      "card_id": 366
-    },
-    {
-      "id": 4521,
-      "quantity": 3,
-      "card_id": 289
-    },
-    {
-      "id": 4522,
-      "quantity": 4,
-      "card_id": 309
-    },
-    {
-      "id": 4523,
-      "quantity": 4,
-      "card_id": 370
-    },
-    {
-      "id": 4524,
-      "quantity": 6,
-      "card_id": 371
-    },
-    {
-      "id": 4525,
-      "quantity": 2,
-      "card_id": 372
-    },
-    {
-      "id": 4526,
-      "quantity": 8,
-      "card_id": 373
-    },
-    {
-      "id": 4527,
-      "quantity": 2,
-      "card_id": 374
-    },
-    {
-      "id": 4528,
-      "quantity": 5,
-      "card_id": 301
-    },
-    {
-      "id": 4529,
-      "quantity": 4,
-      "card_id": 511
-    },
-    {
-      "id": 4530,
-      "quantity": 2,
-      "card_id": 560
-    },
-    {
-      "id": 4531,
-      "quantity": 3,
-      "card_id": 561
-    },
-    {
-      "id": 4532,
-      "quantity": 4,
-      "card_id": 562
-    },
-    {
-      "id": 4533,
-      "quantity": 4,
-      "card_id": 563
-    },
-    {
-      "id": 4534,
-      "quantity": 2,
-      "card_id": 512
-    },
-    {
-      "id": 4535,
-      "quantity": 3,
-      "card_id": 564
-    },
-    {
-      "id": 4536,
-      "quantity": 3,
-      "card_id": 497
-    },
-    {
-      "id": 4537,
-      "quantity": 1,
-      "card_id": 565
-    },
-    {
-      "id": 4538,
-      "quantity": 2,
-      "card_id": 566
-    },
-    {
-      "id": 4539,
-      "quantity": 3,
-      "card_id": 567
-    },
-    {
-      "id": 4540,
-      "quantity": 2,
-      "card_id": 568
-    },
-    {
-      "id": 4541,
-      "quantity": 4,
-      "card_id": 569
-    },
-    {
-      "id": 4542,
-      "quantity": 3,
-      "card_id": 570
-    },
-    {
-      "id": 4543,
-      "quantity": 3,
-      "card_id": 571
-    },
-    {
-      "id": 4544,
-      "quantity": 1,
-      "card_id": 572
-    },
-    {
-      "id": 4545,
-      "quantity": 2,
-      "card_id": 573
-    },
-    {
-      "id": 4546,
-      "quantity": 2,
-      "card_id": 574
-    },
-    {
-      "id": 4547,
-      "quantity": 3,
-      "card_id": 523
-    },
-    {
-      "id": 4548,
-      "quantity": 1,
-      "card_id": 575
-    },
-    {
-      "id": 4549,
-      "quantity": 1,
-      "card_id": 524
-    },
-    {
-      "id": 4550,
-      "quantity": 4,
-      "card_id": 517
-    },
-    {
-      "id": 4551,
-      "quantity": 2,
-      "card_id": 576
-    },
-    {
-      "id": 4552,
-      "quantity": 5,
-      "card_id": 780
-    },
-    {
-      "id": 4553,
-      "quantity": 4,
-      "card_id": 782
-    },
-    {
-      "id": 4554,
-      "quantity": 2,
-      "card_id": 784
-    },
-    {
-      "id": 4555,
-      "quantity": 2,
-      "card_id": 749
-    },
-    {
-      "id": 4556,
-      "quantity": 2,
-      "card_id": 165
-    },
-    {
-      "id": 4557,
-      "quantity": 1,
-      "card_id": 286
-    },
-    {
-      "id": 4558,
-      "quantity": 1,
-      "card_id": 453
-    },
-    {
-      "id": 4559,
-      "quantity": 1,
-      "card_id": 308
-    },
-    {
-      "id": 4560,
-      "quantity": 1,
-      "card_id": 367
-    },
-    {
-      "id": 4561,
-      "quantity": 1,
-      "card_id": 531
-    },
-    {
-      "id": 4562,
-      "quantity": 1,
-      "card_id": 887
-    },
-    {
-      "id": 4563,
-      "quantity": 4,
-      "card_id": 120
-    },
-    {
-      "id": 4564,
-      "quantity": 4,
-      "card_id": 121
-    },
-    {
-      "id": 4565,
-      "quantity": 4,
-      "card_id": 170
-    },
-    {
-      "id": 4566,
-      "quantity": 4,
-      "card_id": 122
-    },
-    {
-      "id": 4567,
-      "quantity": 4,
-      "card_id": 26
-    },
-    {
-      "id": 4568,
-      "quantity": 4,
-      "card_id": 171
-    },
-    {
-      "id": 4569,
-      "quantity": 4,
-      "card_id": 27
-    },
-    {
-      "id": 4570,
-      "quantity": 4,
-      "card_id": 174
-    },
-    {
-      "id": 4571,
-      "quantity": 4,
-      "card_id": 28
-    },
-    {
-      "id": 4572,
-      "quantity": 4,
-      "card_id": 29
-    },
-    {
-      "id": 4573,
-      "quantity": 4,
-      "card_id": 143
-    },
-    {
-      "id": 4574,
-      "quantity": 4,
-      "card_id": 30
-    },
-    {
-      "id": 4575,
-      "quantity": 4,
-      "card_id": 31
-    },
-    {
-      "id": 4576,
-      "quantity": 4,
-      "card_id": 144
-    },
-    {
-      "id": 4577,
-      "quantity": 7,
-      "card_id": 123
-    },
-    {
-      "id": 4578,
-      "quantity": 4,
-      "card_id": 32
-    },
-    {
-      "id": 4579,
-      "quantity": 4,
-      "card_id": 145
-    },
-    {
-      "id": 4580,
-      "quantity": 4,
-      "card_id": 33
-    },
-    {
-      "id": 4581,
-      "quantity": 4,
-      "card_id": 175
-    },
-    {
-      "id": 4582,
-      "quantity": 4,
-      "card_id": 124
-    },
-    {
-      "id": 4583,
-      "quantity": 4,
-      "card_id": 34
-    },
-    {
-      "id": 4584,
-      "quantity": 4,
-      "card_id": 35
-    },
-    {
-      "id": 4585,
-      "quantity": 4,
-      "card_id": 125
-    },
-    {
-      "id": 4586,
-      "quantity": 4,
-      "card_id": 177
-    },
-    {
-      "id": 4587,
-      "quantity": 4,
-      "card_id": 36
-    },
-    {
-      "id": 4588,
-      "quantity": 4,
-      "card_id": 178
-    },
-    {
-      "id": 4589,
-      "quantity": 4,
-      "card_id": 179
-    },
-    {
-      "id": 4590,
-      "quantity": 4,
-      "card_id": 126
-    },
-    {
-      "id": 4591,
-      "quantity": 4,
-      "card_id": 146
-    },
-    {
-      "id": 4592,
-      "quantity": 4,
-      "card_id": 375
-    },
-    {
-      "id": 4593,
-      "quantity": 4,
-      "card_id": 376
-    },
-    {
-      "id": 4594,
-      "quantity": 4,
-      "card_id": 377
-    },
-    {
-      "id": 4595,
-      "quantity": 4,
-      "card_id": 378
-    },
-    {
-      "id": 4596,
-      "quantity": 4,
-      "card_id": 310
-    },
-    {
-      "id": 4597,
-      "quantity": 4,
-      "card_id": 379
-    },
-    {
-      "id": 4598,
-      "quantity": 4,
-      "card_id": 318
-    },
-    {
-      "id": 4599,
-      "quantity": 4,
-      "card_id": 380
-    },
-    {
-      "id": 4600,
-      "quantity": 4,
-      "card_id": 381
-    },
-    {
-      "id": 4601,
-      "quantity": 4,
-      "card_id": 382
-    },
-    {
-      "id": 4602,
-      "quantity": 4,
-      "card_id": 291
-    },
-    {
-      "id": 4603,
-      "quantity": 5,
-      "card_id": 383
-    },
-    {
-      "id": 4604,
-      "quantity": 4,
-      "card_id": 384
-    },
-    {
-      "id": 4605,
-      "quantity": 4,
-      "card_id": 292
-    },
-    {
-      "id": 4606,
-      "quantity": 4,
-      "card_id": 385
-    },
-    {
-      "id": 4607,
-      "quantity": 4,
-      "card_id": 386
-    },
-    {
-      "id": 4608,
-      "quantity": 4,
-      "card_id": 293
-    },
-    {
-      "id": 4609,
-      "quantity": 4,
-      "card_id": 387
-    },
-    {
-      "id": 4610,
-      "quantity": 4,
-      "card_id": 388
-    },
-    {
-      "id": 4611,
-      "quantity": 4,
-      "card_id": 312
-    },
-    {
-      "id": 4612,
-      "quantity": 4,
-      "card_id": 389
-    },
-    {
-      "id": 4613,
-      "quantity": 4,
-      "card_id": 390
-    },
-    {
-      "id": 4614,
-      "quantity": 4,
-      "card_id": 391
-    },
-    {
-      "id": 4615,
-      "quantity": 4,
-      "card_id": 392
-    },
-    {
-      "id": 4616,
-      "quantity": 4,
-      "card_id": 393
-    },
-    {
-      "id": 4617,
+      "card_id": 79,
+      "date_updated": null,
+      "id": "27028",
       "quantity": 4,
-      "card_id": 394
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4618,
+      "card_id": 80,
+      "date_updated": null,
+      "id": "27029",
       "quantity": 4,
-      "card_id": 395
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4619,
+      "card_id": 73,
+      "date_updated": null,
+      "id": "27030",
       "quantity": 4,
-      "card_id": 396
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4620,
+      "card_id": 81,
+      "date_updated": null,
+      "id": "27031",
       "quantity": 4,
-      "card_id": 397
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4621,
+      "card_id": 77,
+      "date_updated": null,
+      "id": "27032",
       "quantity": 4,
-      "card_id": 302
-    },
-    {
-      "id": 4622,
-      "quantity": 4,
-      "card_id": 398
-    },
-    {
-      "id": 4623,
-      "quantity": 4,
-      "card_id": 513
-    },
-    {
-      "id": 4624,
-      "quantity": 4,
-      "card_id": 577
-    },
-    {
-      "id": 4625,
-      "quantity": 4,
-      "card_id": 578
-    },
-    {
-      "id": 4626,
-      "quantity": 5,
-      "card_id": 579
-    },
-    {
-      "id": 4627,
-      "quantity": 4,
-      "card_id": 518
-    },
-    {
-      "id": 4628,
-      "quantity": 4,
-      "card_id": 580
-    },
-    {
-      "id": 4629,
-      "quantity": 4,
-      "card_id": 581
-    },
-    {
-      "id": 4630,
-      "quantity": 4,
-      "card_id": 582
-    },
-    {
-      "id": 4631,
-      "quantity": 4,
-      "card_id": 540
-    },
-    {
-      "id": 4632,
-      "quantity": 4,
-      "card_id": 583
-    },
-    {
-      "id": 4633,
-      "quantity": 4,
-      "card_id": 584
-    },
-    {
-      "id": 4634,
-      "quantity": 5,
-      "card_id": 500
-    },
-    {
-      "id": 4635,
-      "quantity": 4,
-      "card_id": 585
-    },
-    {
-      "id": 4636,
-      "quantity": 4,
-      "card_id": 525
-    },
-    {
-      "id": 4637,
-      "quantity": 5,
-      "card_id": 586
-    },
-    {
-      "id": 4638,
-      "quantity": 4,
-      "card_id": 587
-    },
-    {
-      "id": 4639,
-      "quantity": 4,
-      "card_id": 588
-    },
-    {
-      "id": 4640,
-      "quantity": 4,
-      "card_id": 589
-    },
-    {
-      "id": 4641,
-      "quantity": 4,
-      "card_id": 590
-    },
-    {
-      "id": 4642,
-      "quantity": 4,
-      "card_id": 591
-    },
-    {
-      "id": 4643,
-      "quantity": 4,
-      "card_id": 514
-    },
-    {
-      "id": 4644,
-      "quantity": 4,
-      "card_id": 526
-    },
-    {
-      "id": 4645,
-      "quantity": 5,
-      "card_id": 801
-    },
-    {
-      "id": 4646,
-      "quantity": 5,
-      "card_id": 802
-    },
-    {
-      "id": 4647,
-      "quantity": 5,
-      "card_id": 812
-    },
-    {
-      "id": 4648,
-      "quantity": 4,
-      "card_id": 172
-    },
-    {
-      "id": 4649,
-      "quantity": 4,
-      "card_id": 173
-    },
-    {
-      "id": 4650,
-      "quantity": 2,
-      "card_id": 311
-    },
-    {
-      "id": 4651,
-      "quantity": 1,
-      "card_id": 319
-    },
-    {
-      "id": 4652,
-      "quantity": 1,
-      "card_id": 456
-    },
-    {
-      "id": 4653,
-      "quantity": 4,
-      "card_id": 294
-    },
-    {
-      "id": 4654,
-      "quantity": 1,
-      "card_id": 502
-    },
-    {
-      "id": 4655,
-      "quantity": 1,
-      "card_id": 681
-    },
-    {
-      "id": 4656,
-      "quantity": 5,
-      "card_id": 37
-    },
-    {
-      "id": 4657,
-      "quantity": 1,
-      "card_id": 38
-    },
-    {
-      "id": 4658,
-      "quantity": 4,
-      "card_id": 127
-    },
-    {
-      "id": 4659,
-      "quantity": 3,
-      "card_id": 147
-    },
-    {
-      "id": 4660,
-      "quantity": 5,
-      "card_id": 40
-    },
-    {
-      "id": 4661,
-      "quantity": 2,
-      "card_id": 135
-    },
-    {
-      "id": 4662,
-      "quantity": 5,
-      "card_id": 42
-    },
-    {
-      "id": 4663,
-      "quantity": 5,
-      "card_id": 128
-    },
-    {
-      "id": 4664,
-      "quantity": 3,
-      "card_id": 182
-    },
-    {
-      "id": 4665,
-      "quantity": 1,
-      "card_id": 183
-    },
-    {
-      "id": 4666,
-      "quantity": 1,
-      "card_id": 148
-    },
-    {
-      "id": 4667,
-      "quantity": 3,
-      "card_id": 45
-    },
-    {
-      "id": 4668,
-      "quantity": 4,
-      "card_id": 129
-    },
-    {
-      "id": 4669,
-      "quantity": 2,
-      "card_id": 184
-    },
-    {
-      "id": 4670,
-      "quantity": 3,
-      "card_id": 46
-    },
-    {
-      "id": 4671,
-      "quantity": 5,
-      "card_id": 130
-    },
-    {
-      "id": 4672,
-      "quantity": 1,
-      "card_id": 47
-    },
-    {
-      "id": 4673,
-      "quantity": 5,
-      "card_id": 186
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4674,
+      "card_id": 76,
+      "date_updated": "2024-11-13T22:25:39.141Z",
+      "id": "27033",
       "quantity": 10,
-      "card_id": 131
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4675,
-      "quantity": 5,
-      "card_id": 188
+      "card_id": 72,
+      "date_updated": null,
+      "id": "27034",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4676,
+      "card_id": 226,
+      "date_updated": null,
+      "id": "27035",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 69,
+      "date_updated": null,
+      "id": "27036",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 75,
+      "date_updated": null,
+      "id": "27037",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 70,
+      "date_updated": null,
+      "id": "27038",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 68,
+      "date_updated": null,
+      "id": "27039",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 487,
+      "date_updated": null,
+      "id": "27040",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 93,
+      "date_updated": null,
+      "id": "27041",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 632,
+      "date_updated": null,
+      "id": "27042",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 638,
+      "date_updated": null,
+      "id": "27043",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 221,
+      "date_updated": null,
+      "id": "27044",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 86,
+      "date_updated": null,
+      "id": "27045",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 634,
+      "date_updated": null,
+      "id": "27046",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 89,
+      "date_updated": null,
+      "id": "27047",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 82,
+      "date_updated": null,
+      "id": "27048",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 633,
+      "date_updated": null,
+      "id": "27049",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 637,
+      "date_updated": null,
+      "id": "27050",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 485,
+      "date_updated": null,
+      "id": "27051",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 85,
+      "date_updated": null,
+      "id": "27052",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 486,
+      "date_updated": null,
+      "id": "27053",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 636,
+      "date_updated": null,
+      "id": "27054",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 490,
+      "date_updated": null,
+      "id": "27055",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 92,
+      "date_updated": null,
+      "id": "27056",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 84,
+      "date_updated": null,
+      "id": "27057",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 488,
+      "date_updated": null,
+      "id": "27058",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 223,
+      "date_updated": null,
+      "id": "27059",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 224,
+      "date_updated": null,
+      "id": "27060",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 87,
+      "date_updated": null,
+      "id": "27061",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 88,
+      "date_updated": null,
+      "id": "27062",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 83,
+      "date_updated": null,
+      "id": "27063",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 484,
+      "date_updated": null,
+      "id": "27064",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 489,
+      "date_updated": null,
+      "id": "27065",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 639,
+      "date_updated": null,
+      "id": "27066",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 222,
+      "date_updated": null,
+      "id": "27067",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 536,
+      "date_updated": null,
+      "id": "27068",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 635,
+      "date_updated": null,
+      "id": "27069",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 91,
+      "date_updated": null,
+      "id": "27070",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 90,
+      "date_updated": null,
+      "id": "27071",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 219,
+      "date_updated": null,
+      "id": "27072",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 218,
+      "date_updated": null,
+      "id": "27073",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 105,
+      "date_updated": null,
+      "id": "27074",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 98,
+      "date_updated": null,
+      "id": "27075",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 95,
+      "date_updated": null,
+      "id": "27076",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 94,
+      "date_updated": null,
+      "id": "27077",
+      "quantity": 2,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 100,
+      "date_updated": null,
+      "id": "27078",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 220,
+      "date_updated": null,
+      "id": "27079",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 97,
+      "date_updated": null,
+      "id": "27080",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 102,
+      "date_updated": "2025-01-30T01:16:58.566Z",
+      "id": "27081",
+      "quantity": 7,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 99,
+      "date_updated": null,
+      "id": "27082",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 101,
+      "date_updated": null,
+      "id": "27083",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 96,
+      "date_updated": null,
+      "id": "27084",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 217,
+      "date_updated": null,
+      "id": "27085",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 103,
+      "date_updated": null,
+      "id": "27086",
+      "quantity": 4,
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
+    },
+    {
+      "card_id": 104,
+      "date_updated": "2025-01-30T01:16:58.510Z",
+      "id": "27087",
       "quantity": 6,
-      "card_id": 149
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4677,
+      "card_id": 1491,
+      "date_updated": null,
+      "id": "33209",
       "quantity": 1,
-      "card_id": 150
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 4678,
-      "quantity": 4,
-      "card_id": 189
-    },
-    {
-      "id": 4679,
-      "quantity": 4,
-      "card_id": 399
-    },
-    {
-      "id": 4680,
-      "quantity": 3,
-      "card_id": 400
-    },
-    {
-      "id": 4681,
-      "quantity": 7,
-      "card_id": 401
-    },
-    {
-      "id": 4682,
-      "quantity": 1,
-      "card_id": 313
-    },
-    {
-      "id": 4683,
-      "quantity": 2,
-      "card_id": 402
-    },
-    {
-      "id": 4684,
-      "quantity": 2,
-      "card_id": 403
-    },
-    {
-      "id": 4685,
-      "quantity": 4,
-      "card_id": 404
-    },
-    {
-      "id": 4686,
-      "quantity": 5,
-      "card_id": 405
-    },
-    {
-      "id": 4687,
-      "quantity": 3,
-      "card_id": 406
-    },
-    {
-      "id": 4688,
-      "quantity": 4,
-      "card_id": 314
-    },
-    {
-      "id": 4689,
-      "quantity": 3,
-      "card_id": 407
-    },
-    {
-      "id": 4690,
-      "quantity": 7,
-      "card_id": 408
-    },
-    {
-      "id": 4691,
-      "quantity": 4,
-      "card_id": 296
-    },
-    {
-      "id": 4692,
-      "quantity": 7,
-      "card_id": 409
-    },
-    {
-      "id": 4693,
-      "quantity": 5,
-      "card_id": 297
-    },
-    {
-      "id": 4694,
-      "quantity": 3,
-      "card_id": 410
-    },
-    {
-      "id": 4695,
-      "quantity": 1,
-      "card_id": 411
-    },
-    {
-      "id": 4696,
-      "quantity": 4,
-      "card_id": 412
-    },
-    {
-      "id": 4697,
-      "quantity": 8,
-      "card_id": 413
-    },
-    {
-      "id": 4698,
-      "quantity": 3,
-      "card_id": 298
-    },
-    {
-      "id": 4699,
-      "quantity": 5,
-      "card_id": 414
-    },
-    {
-      "id": 4700,
-      "quantity": 3,
-      "card_id": 321
-    },
-    {
-      "id": 4701,
-      "quantity": 6,
-      "card_id": 415
-    },
-    {
-      "id": 4702,
-      "quantity": 5,
-      "card_id": 416
-    },
-    {
-      "id": 4703,
-      "quantity": 3,
-      "card_id": 417
-    },
-    {
-      "id": 4704,
-      "quantity": 5,
-      "card_id": 418
-    },
-    {
-      "id": 4705,
-      "quantity": 5,
-      "card_id": 419
-    },
-    {
-      "id": 4706,
-      "quantity": 3,
-      "card_id": 303
-    },
-    {
-      "id": 4707,
-      "quantity": 2,
-      "card_id": 420
-    },
-    {
-      "id": 4708,
-      "quantity": 7,
-      "card_id": 421
-    },
-    {
-      "id": 4709,
-      "quantity": 3,
-      "card_id": 519
-    },
-    {
-      "id": 4710,
-      "quantity": 1,
-      "card_id": 592
-    },
-    {
-      "id": 4711,
-      "quantity": 1,
-      "card_id": 520
-    },
-    {
-      "id": 4712,
-      "quantity": 2,
-      "card_id": 593
-    },
-    {
-      "id": 4713,
-      "quantity": 2,
-      "card_id": 594
-    },
-    {
-      "id": 4714,
-      "quantity": 4,
-      "card_id": 595
-    },
-    {
-      "id": 4715,
-      "quantity": 2,
-      "card_id": 504
-    },
-    {
-      "id": 4716,
-      "quantity": 1,
-      "card_id": 527
-    },
-    {
-      "id": 4717,
-      "quantity": 1,
-      "card_id": 596
-    },
-    {
-      "id": 4718,
-      "quantity": 3,
-      "card_id": 597
-    },
-    {
-      "id": 4719,
-      "quantity": 4,
-      "card_id": 598
-    },
-    {
-      "id": 4720,
-      "quantity": 2,
-      "card_id": 599
-    },
-    {
-      "id": 4721,
-      "quantity": 5,
-      "card_id": 600
-    },
-    {
-      "id": 4722,
-      "quantity": 1,
-      "card_id": 601
-    },
-    {
-      "id": 4723,
-      "quantity": 1,
-      "card_id": 602
-    },
-    {
-      "id": 4724,
-      "quantity": 4,
-      "card_id": 603
-    },
-    {
-      "id": 4725,
-      "quantity": 3,
-      "card_id": 604
-    },
-    {
-      "id": 4726,
-      "quantity": 3,
-      "card_id": 605
-    },
-    {
-      "id": 4727,
-      "quantity": 4,
-      "card_id": 606
-    },
-    {
-      "id": 4728,
-      "quantity": 3,
-      "card_id": 607
-    },
-    {
-      "id": 4729,
-      "quantity": 1,
-      "card_id": 608
-    },
-    {
-      "id": 4730,
-      "quantity": 2,
-      "card_id": 528
-    },
-    {
-      "id": 4731,
-      "quantity": 4,
-      "card_id": 609
-    },
-    {
-      "id": 4732,
-      "quantity": 4,
-      "card_id": 821
-    },
-    {
-      "id": 4733,
-      "quantity": 3,
-      "card_id": 829
-    },
-    {
-      "id": 4734,
-      "quantity": 5,
-      "card_id": 717
-    },
-    {
-      "id": 4735,
-      "quantity": 5,
-      "card_id": 831
-    },
-    {
-      "id": 4736,
-      "quantity": 1,
-      "card_id": 181
-    },
-    {
-      "id": 4737,
-      "quantity": 1,
-      "card_id": 320
-    },
-    {
-      "id": 4738,
-      "quantity": 1,
-      "card_id": 299
-    },
-    {
-      "id": 4739,
-      "quantity": 1,
-      "card_id": 323
-    },
-    {
-      "id": 4740,
-      "quantity": 1,
-      "card_id": 533
-    },
-    {
-      "id": 4741,
-      "quantity": 1,
-      "card_id": 505
-    },
-    {
-      "id": 4742,
-      "quantity": 1,
-      "card_id": 211
-    },
-    {
-      "id": 4743,
-      "quantity": 1,
-      "card_id": 251
-    },
-    {
-      "id": 4744,
-      "quantity": 1,
-      "card_id": 261
-    },
-    {
-      "id": 4745,
-      "quantity": 1,
-      "card_id": 267
-    },
-    {
-      "id": 4746,
-      "quantity": 1,
-      "card_id": 275
-    },
-    {
-      "id": 4747,
-      "quantity": 1,
-      "card_id": 880
-    },
-    {
-      "id": 4748,
-      "quantity": 1,
-      "card_id": 706
-    },
-    {
-      "id": 4749,
-      "quantity": 1,
-      "card_id": 960
-    },
-    {
-      "id": 4750,
-      "quantity": 1,
-      "card_id": 542
-    },
-    {
-      "id": 4751,
-      "quantity": 1,
-      "card_id": 492
-    },
-    {
-      "id": 4752,
-      "quantity": 3,
-      "card_id": 491
-    },
-    {
-      "id": 4753,
-      "quantity": 3,
-      "card_id": 610
-    },
-    {
-      "id": 4754,
-      "quantity": 2,
-      "card_id": 501
-    },
-    {
-      "id": 4755,
-      "quantity": 4,
-      "card_id": 493
-    },
-    {
-      "id": 4756,
-      "quantity": 3,
-      "card_id": 611
-    },
-    {
-      "id": 4757,
-      "quantity": 1,
-      "card_id": 612
-    },
-    {
-      "id": 4758,
-      "quantity": 4,
-      "card_id": 613
-    },
-    {
-      "id": 4759,
-      "quantity": 1,
-      "card_id": 614
-    },
-    {
-      "id": 4760,
-      "quantity": 2,
-      "card_id": 534
-    },
-    {
-      "id": 4761,
-      "quantity": 1,
-      "card_id": 615
-    },
-    {
-      "id": 4762,
-      "quantity": 1,
-      "card_id": 616
-    },
-    {
-      "id": 4763,
-      "quantity": 3,
-      "card_id": 617
-    },
-    {
-      "id": 4764,
-      "quantity": 2,
-      "card_id": 510
-    },
-    {
-      "id": 4765,
-      "quantity": 2,
-      "card_id": 618
-    },
-    {
-      "id": 4766,
-      "quantity": 2,
-      "card_id": 619
-    },
-    {
-      "id": 4767,
-      "quantity": 3,
-      "card_id": 620
-    },
-    {
-      "id": 4768,
-      "quantity": 2,
-      "card_id": 494
-    },
-    {
-      "id": 4769,
-      "quantity": 4,
-      "card_id": 621
-    },
-    {
-      "id": 4770,
-      "quantity": 5,
-      "card_id": 622
-    },
-    {
-      "id": 4771,
-      "quantity": 2,
-      "card_id": 506
-    },
-    {
-      "id": 4772,
-      "quantity": 2,
-      "card_id": 623
-    },
-    {
-      "id": 4773,
-      "quantity": 4,
-      "card_id": 624
-    },
-    {
-      "id": 4774,
-      "quantity": 4,
-      "card_id": 625
-    },
-    {
-      "id": 4775,
-      "quantity": 5,
-      "card_id": 626
-    },
-    {
-      "id": 4776,
-      "quantity": 1,
-      "card_id": 627
-    },
-    {
-      "id": 4777,
-      "quantity": 3,
-      "card_id": 628
-    },
-    {
-      "id": 4778,
-      "quantity": 2,
-      "card_id": 629
-    },
-    {
-      "id": 4779,
-      "quantity": 1,
-      "card_id": 630
-    },
-    {
-      "id": 4780,
-      "quantity": 3,
-      "card_id": 631
-    },
-    {
-      "id": 4781,
-      "quantity": 1,
-      "card_id": 535
-    },
-    {
-      "id": 4782,
-      "quantity": 3,
-      "card_id": 495
-    },
-    {
-      "id": 4783,
-      "quantity": 3,
-      "card_id": 724
-    },
-    {
-      "id": 4784,
-      "quantity": 2,
-      "card_id": 839
-    },
-    {
-      "id": 4785,
-      "quantity": 4,
-      "card_id": 847
-    },
-    {
-      "id": 4786,
-      "quantity": 5,
-      "card_id": 849
-    },
-    {
-      "id": 4787,
-      "quantity": 3,
-      "card_id": 743
-    },
-    {
-      "id": 5747,
-      "quantity": 1,
-      "card_id": 730
-    },
-    {
-      "id": 5748,
-      "quantity": 2,
-      "card_id": 762
-    },
-    {
-      "id": 5749,
-      "quantity": 2,
-      "card_id": 763
-    },
-    {
-      "id": 5750,
-      "quantity": 1,
-      "card_id": 765
-    },
-    {
-      "id": 5751,
-      "quantity": 1,
-      "card_id": 767
-    },
-    {
-      "id": 5752,
-      "quantity": 1,
-      "card_id": 768
-    },
-    {
-      "id": 5753,
-      "quantity": 5,
-      "card_id": 769
-    },
-    {
-      "id": 5754,
-      "quantity": 1,
-      "card_id": 731
-    },
-    {
-      "id": 5755,
-      "quantity": 4,
-      "card_id": 720
-    },
-    {
-      "id": 5756,
-      "quantity": 4,
-      "card_id": 772
-    },
-    {
-      "id": 5757,
-      "quantity": 3,
-      "card_id": 710
-    },
-    {
-      "id": 5758,
-      "quantity": 2,
-      "card_id": 773
-    },
-    {
-      "id": 5759,
-      "quantity": 1,
-      "card_id": 774
-    },
-    {
-      "id": 5760,
-      "quantity": 4,
-      "card_id": 775
-    },
-    {
-      "id": 5761,
-      "quantity": 4,
-      "card_id": 776
-    },
-    {
-      "id": 5762,
-      "quantity": 1,
-      "card_id": 777
-    },
-    {
-      "id": 5763,
-      "quantity": 4,
-      "card_id": 778
-    },
-    {
-      "id": 5764,
-      "quantity": 2,
-      "card_id": 779
-    },
-    {
-      "id": 5765,
-      "quantity": 2,
-      "card_id": 729
-    },
-    {
-      "id": 5766,
-      "quantity": 1,
-      "card_id": 736
-    },
-    {
-      "id": 5767,
-      "quantity": 1,
-      "card_id": 738
-    },
-    {
-      "id": 5768,
-      "quantity": 1,
-      "card_id": 741
-    },
-    {
-      "id": 5769,
-      "quantity": 4,
-      "card_id": 781
-    },
-    {
-      "id": 5770,
-      "quantity": 1,
-      "card_id": 783
-    },
-    {
-      "id": 5771,
-      "quantity": 4,
-      "card_id": 785
-    },
-    {
-      "id": 5772,
-      "quantity": 4,
-      "card_id": 715
-    },
-    {
-      "id": 5773,
-      "quantity": 3,
-      "card_id": 786
-    },
-    {
-      "id": 5774,
-      "quantity": 4,
-      "card_id": 787
-    },
-    {
-      "id": 5775,
-      "quantity": 2,
-      "card_id": 788
-    },
-    {
-      "id": 5776,
-      "quantity": 1,
-      "card_id": 748
-    },
-    {
-      "id": 5777,
-      "quantity": 2,
-      "card_id": 789
-    },
-    {
-      "id": 5778,
-      "quantity": 2,
-      "card_id": 790
-    },
-    {
-      "id": 5779,
-      "quantity": 4,
-      "card_id": 721
-    },
-    {
-      "id": 5780,
-      "quantity": 1,
-      "card_id": 792
-    },
-    {
-      "id": 5781,
-      "quantity": 2,
-      "card_id": 793
-    },
-    {
-      "id": 5782,
-      "quantity": 1,
-      "card_id": 794
-    },
-    {
-      "id": 5783,
-      "quantity": 1,
-      "card_id": 795
-    },
-    {
-      "id": 5784,
-      "quantity": 4,
-      "card_id": 726
-    },
-    {
-      "id": 5785,
+      "card_id": 1445,
+      "date_updated": null,
+      "id": "33210",
       "quantity": 1,
-      "card_id": 796
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5786,
-      "quantity": 4,
-      "card_id": 797
-    },
-    {
-      "id": 5787,
-      "quantity": 1,
-      "card_id": 798
-    },
-    {
-      "id": 5788,
-      "quantity": 2,
-      "card_id": 799
-    },
-    {
-      "id": 5789,
-      "quantity": 4,
-      "card_id": 800
-    },
-    {
-      "id": 5790,
-      "quantity": 2,
-      "card_id": 803
-    },
-    {
-      "id": 5791,
-      "quantity": 2,
-      "card_id": 722
-    },
-    {
-      "id": 5792,
-      "quantity": 4,
-      "card_id": 804
-    },
-    {
-      "id": 5793,
-      "quantity": 4,
-      "card_id": 716
-    },
-    {
-      "id": 5794,
-      "quantity": 4,
-      "card_id": 805
-    },
-    {
-      "id": 5795,
-      "quantity": 1,
-      "card_id": 806
-    },
-    {
-      "id": 5796,
-      "quantity": 1,
-      "card_id": 808
-    },
-    {
-      "id": 5797,
+      "card_id": 2634,
+      "date_updated": null,
+      "id": "35007",
       "quantity": 1,
-      "card_id": 750
-    },
-    {
-      "id": 5798,
-      "quantity": 2,
-      "card_id": 810
-    },
-    {
-      "id": 5799,
-      "quantity": 2,
-      "card_id": 811
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5800,
+      "card_id": 2668,
+      "date_updated": null,
+      "id": "35008",
       "quantity": 1,
-      "card_id": 813
-    },
-    {
-      "id": 5801,
-      "quantity": 3,
-      "card_id": 814
-    },
-    {
-      "id": 5802,
-      "quantity": 2,
-      "card_id": 727
-    },
-    {
-      "id": 5803,
-      "quantity": 4,
-      "card_id": 815
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5804,
-      "quantity": 2,
-      "card_id": 751
-    },
-    {
-      "id": 5805,
-      "quantity": 4,
-      "card_id": 816
-    },
-    {
-      "id": 5806,
-      "quantity": 2,
-      "card_id": 817
-    },
-    {
-      "id": 5807,
+      "card_id": 2662,
+      "date_updated": null,
+      "id": "35009",
       "quantity": 1,
-      "card_id": 818
-    },
-    {
-      "id": 5808,
-      "quantity": 2,
-      "card_id": 820
-    },
-    {
-      "id": 5809,
-      "quantity": 4,
-      "card_id": 822
-    },
-    {
-      "id": 5810,
-      "quantity": 2,
-      "card_id": 752
-    },
-    {
-      "id": 5811,
-      "quantity": 2,
-      "card_id": 823
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5812,
-      "quantity": 4,
-      "card_id": 824
-    },
-    {
-      "id": 5813,
-      "quantity": 4,
-      "card_id": 723
-    },
-    {
-      "id": 5814,
-      "quantity": 2,
-      "card_id": 825
-    },
-    {
-      "id": 5815,
+      "card_id": 2572,
+      "date_updated": null,
+      "id": "35010",
       "quantity": 1,
-      "card_id": 826
-    },
-    {
-      "id": 5816,
-      "quantity": 4,
-      "card_id": 827
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5817,
+      "card_id": 2645,
+      "date_updated": null,
+      "id": "35011",
       "quantity": 1,
-      "card_id": 828
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5818,
+      "card_id": 2597,
+      "date_updated": null,
+      "id": "35012",
       "quantity": 1,
-      "card_id": 753
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5819,
-      "quantity": 2,
-      "card_id": 830
-    },
-    {
-      "id": 5820,
+      "card_id": 2622,
+      "date_updated": null,
+      "id": "35013",
       "quantity": 1,
-      "card_id": 728
-    },
-    {
-      "id": 5821,
-      "quantity": 3,
-      "card_id": 832
-    },
-    {
-      "id": 5822,
-      "quantity": 2,
-      "card_id": 833
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5823,
+      "card_id": 2626,
+      "date_updated": null,
+      "id": "35014",
       "quantity": 1,
-      "card_id": 834
-    },
-    {
-      "id": 5824,
-      "quantity": 2,
-      "card_id": 835
-    },
-    {
-      "id": 5825,
-      "quantity": 2,
-      "card_id": 837
-    },
-    {
-      "id": 5826,
-      "quantity": 2,
-      "card_id": 838
-    },
-    {
-      "id": 5827,
-      "quantity": 4,
-      "card_id": 840
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5828,
-      "quantity": 4,
-      "card_id": 841
-    },
-    {
-      "id": 5829,
-      "quantity": 2,
-      "card_id": 842
-    },
-    {
-      "id": 5830,
-      "quantity": 3,
-      "card_id": 843
-    },
-    {
-      "id": 5831,
-      "quantity": 2,
-      "card_id": 844
-    },
-    {
-      "id": 5832,
+      "card_id": 2545,
+      "date_updated": null,
+      "id": "35015",
       "quantity": 1,
-      "card_id": 719
-    },
-    {
-      "id": 5833,
-      "quantity": 4,
-      "card_id": 845
-    },
-    {
-      "id": 5834,
-      "quantity": 2,
-      "card_id": 846
-    },
-    {
-      "id": 5835,
-      "quantity": 2,
-      "card_id": 754
-    },
-    {
-      "id": 5836,
-      "quantity": 4,
-      "card_id": 755
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5837,
+      "card_id": 2590,
+      "date_updated": null,
+      "id": "35016",
       "quantity": 1,
-      "card_id": 850
-    },
-    {
-      "id": 5838,
-      "quantity": 4,
-      "card_id": 851
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5839,
-      "quantity": 4,
-      "card_id": 852
-    },
-    {
-      "id": 5840,
+      "card_id": 2629,
+      "date_updated": null,
+      "id": "35017",
       "quantity": 1,
-      "card_id": 732
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5841,
+      "card_id": 2702,
+      "date_updated": null,
+      "id": "35018",
       "quantity": 1,
-      "card_id": 733
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5842,
+      "card_id": 2550,
+      "date_updated": null,
+      "id": "35019",
       "quantity": 1,
-      "card_id": 714
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5843,
+      "card_id": 2595,
+      "date_updated": null,
+      "id": "35020",
       "quantity": 1,
-      "card_id": 756
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5844,
+      "card_id": 2610,
+      "date_updated": null,
+      "id": "35021",
       "quantity": 1,
-      "card_id": 711
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5845,
+      "card_id": 2646,
+      "date_updated": null,
+      "id": "35022",
       "quantity": 1,
-      "card_id": 737
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5846,
+      "card_id": 2608,
+      "date_updated": null,
+      "id": "35023",
       "quantity": 1,
-      "card_id": 740
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5847,
+      "card_id": 2548,
+      "date_updated": null,
+      "id": "35024",
       "quantity": 1,
-      "card_id": 742
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5848,
+      "card_id": 2669,
+      "date_updated": null,
+      "id": "35025",
       "quantity": 1,
-      "card_id": 718
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 5849,
+      "card_id": 2564,
+      "date_updated": null,
+      "id": "35026",
       "quantity": 1,
-      "card_id": 901
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 8645,
+      "card_id": 2580,
+      "date_updated": null,
+      "id": "35027",
       "quantity": 1,
-      "card_id": 243
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 8646,
+      "card_id": 2647,
+      "date_updated": null,
+      "id": "35028",
       "quantity": 1,
-      "card_id": 151
-    },
-    {
-      "id": 8647,
-      "quantity": 2,
-      "card_id": 108
-    },
-    {
-      "id": 8648,
-      "quantity": 5,
-      "card_id": 111
-    },
-    {
-      "id": 8649,
-      "quantity": 2,
-      "card_id": 157
-    },
-    {
-      "id": 8650,
-      "quantity": 4,
-      "card_id": 14
-    },
-    {
-      "id": 8651,
-      "quantity": 2,
-      "card_id": 544
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 8652,
+      "card_id": 2560,
+      "date_updated": null,
+      "id": "35029",
       "quantity": 1,
-      "card_id": 242
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     },
     {
-      "id": 8653,
+      "card_id": 2559,
+      "date_updated": null,
+      "id": "35030",
       "quantity": 1,
-      "card_id": 39
-    },
-    {
-      "id": 8654,
-      "quantity": 2,
-      "card_id": 41
-    },
-    {
-      "id": 8655,
-      "quantity": 4,
-      "card_id": 44
-    },
-    {
-      "id": 8656,
-      "quantity": 3,
-      "card_id": 132
-    },
-    {
-      "id": 8657,
-      "quantity": 2,
-      "card_id": 48
-    },
-    {
-      "id": 8658,
-      "quantity": 2,
-      "card_id": 164
-    },
-    {
-      "id": 8659,
-      "quantity": 2,
-      "card_id": 24
-    },
-    {
-      "id": 8660,
-      "quantity": 2,
-      "card_id": 169
+      "user_id": "c63c1e3a-9468-4a60-bd41-8af4700f1742"
     }
   ]
 }

@@ -6,7 +6,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.List;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 /**
  * The {@link JsonReader} deserializes a json file into a list of objects
@@ -34,12 +35,20 @@ public class JsonReader {
      * @throws IOException When an {@link InputStream} can not be created for the file
      */
     public <T> T readJsonFile(String filename, TypeReference<T> type) throws IOException {
-        try (InputStream inputStream = JsonReader.class.getClassLoader().getResourceAsStream(filename)) {
+        try (InputStream inputStream = openInputStream(filename)) {
             if (inputStream == null) {
                 throw new IllegalArgumentException("File not found: " + filename);
             }
             return objectMapper.readValue(inputStream, type);
         }
+    }
+
+    private InputStream openInputStream(String filename) throws IOException {
+        Path path = Path.of(filename);
+        if (Files.exists(path)) {
+            return Files.newInputStream(path);
+        }
+        return JsonReader.class.getClassLoader().getResourceAsStream(filename);
     }
 
 }

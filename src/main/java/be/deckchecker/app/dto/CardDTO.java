@@ -1,11 +1,13 @@
 
 package be.deckchecker.app.dto;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.List;
 
 /**
  * The {@link CardDTO}
@@ -18,7 +20,10 @@ public class CardDTO {
     private String id;
     private String cardColor;
     private String cardNumber;
+    @JsonAlias({"card_name"})
+    private String cardName;
     private int cardEnergyCost;
+    @JsonAlias({"card_name"})
     private String cardFrontName;
     private String cardFrontPower;
     private String cardFrontTrait;
@@ -42,6 +47,22 @@ public class CardDTO {
     private String digitalCardCode;
     private String cardFrontSkillUnstyled;
     private String cardBackSkillUnstyled;
-    private int variantOf;
+    private Integer variantOf;
+    private List<Integer> variants;
 
+    public String getDisplayName() {
+        if (cardName != null && !cardName.isBlank()) {
+            return cardName;
+        }
+
+        if (cardFrontName != null && !cardFrontName.isBlank()) {
+            return cardFrontName;
+        }
+
+        if (cardBackName != null && !cardBackName.isBlank()) {
+            return cardBackName;
+        }
+
+        return "Unknown name";
+    }
 }

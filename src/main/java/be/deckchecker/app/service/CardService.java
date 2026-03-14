@@ -1,5 +1,6 @@
 package be.deckchecker.app.service;
 
+import be.deckchecker.app.dto.DeckCheckResultDTO;
 import be.deckchecker.app.dto.DeckCardDTO;
 import be.deckchecker.app.dto.OwnedCardDTO;
 
@@ -17,5 +18,5 @@ public interface CardService {
      * @param deckCards  Needed cards for the deck
      * @return List of cards you don't own yet or don't have the required amount
      */
-    List<DeckCardDTO> findMissingCards(List<OwnedCardDTO> ownedCards, List<DeckCardDTO> deckCards);
+    DeckCheckResultDTO findMissingCards(List<OwnedCardDTO> ownedCards, List<DeckCardDTO> deckCards);
 }
