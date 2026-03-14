@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deck Checker</title>
     <link rel="stylesheet" th:href="@{/styles.css}">
+    <script defer th:src="@{/app.js}"></script>
 </head>
 <body>
 <main class="container">
@@ -67,6 +68,20 @@
         <h2>Duplicates (&gt; 4 copies)</h2>
         <p th:if="${#lists.isEmpty(result.duplicateCards)}">No duplicates found.</p>
         <div th:if="${!#lists.isEmpty(result.duplicateCards)}" class="table-wrap">
+            <div class="duplicates-toolbar">
+                <label>
+                    <span>Search</span>
+                    <input type="text" id="duplicateSearch" placeholder="Card number or name">
+                </label>
+                <label>
+                    <span>Min duplicates</span>
+                    <input type="number" id="duplicateMin" min="1" value="1">
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="duplicatesVersionOnly">
+                    <span>Version check only</span>
+                </label>
+            </div>
             <table>
                 <thead>
                 <tr>
@@ -77,8 +92,12 @@
                     <th>Versions</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr th:each="card : ${result.duplicateCards}">
+                <tbody id="duplicateTableBody">
+                <tr th:each="card : ${result.duplicateCards}"
+                    th:attr="data-card-number=${card.cardNumber},
+                             data-card-name=${card.cardName},
+                             data-duplicates=${card.duplicateQuantity},
+                             data-has-versions=${card.multipleVersions}">
                     <td th:text="${card.cardNumber}"></td>
                     <td th:text="${card.cardName}"></td>
                     <td th:text="${card.ownedQuantity}"></td>
@@ -87,6 +106,7 @@
                 </tr>
                 </tbody>
             </table>
+            <p id="duplicateFilterInfo" class="filter-info"></p>
         </div>
     </section>
 

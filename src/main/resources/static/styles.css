@@ -101,6 +101,42 @@ button {
     overflow-x: auto;
 }
 
+.duplicates-toolbar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.duplicates-toolbar label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.9rem;
+}
+
+.duplicates-toolbar input[type="text"],
+.duplicates-toolbar input[type="number"] {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.checkbox-label {
+    justify-content: flex-end;
+}
+
+.checkbox-label input {
+    margin-right: 6px;
+}
+
+.filter-info {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: #59524a;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
