@@ -24,5 +24,7 @@ Then run:
 
 ```bash
 ./mvnw -DskipTests package
-java -jar target/app-0.0.1-SNAPSHOT.jar --deck=src/main/resources/deck.txt
+java -jar target/app-0.0.1-SNAPSHOT.jar
 ```
+
+Open `http://localhost:8080` and paste your deck list.

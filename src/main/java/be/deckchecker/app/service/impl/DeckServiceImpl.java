@@ -9,6 +9,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.StringReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -31,55 +32,22 @@ public class DeckServiceImpl implements DeckService {
                 throw new IllegalArgumentException("File not found: " + filename);
             }
 
-            List<DeckCardDTO> deckCards = new ArrayList<>();
-
             try (BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
-                String line;
-                int lineIndex = 0;
-
-                while ((line = reader.readLine()) != null) {
-                    line = line.trim();
-                    if (line.isEmpty()) {
-                        log.debug("Skipping empty line in line {}", lineIndex);
-                        continue;
-                    }
-
-                    lineIndex++;
-                    if (lineIndex == 1) {
-                        log.debug("Skipping deck name in line {}", lineIndex);
-                        continue;
-                    }
-
-                    if (line.startsWith("#")) {
-                        log.debug("Skipping comment line {}", lineIndex);
-                        continue;
-                    }
-
-                    String[] parts = line.split("\\s+", 3);
-                    if (parts.length < 1) {
-                        log.debug("Skipping malformed line in line {}", lineIndex);
-                        continue;
-                    }
-
-                    if (Character.isDigit(parts[0].charAt(0))) {
-                        if (parts.length < 2) {
-                            log.warn("Skipping malformed regular card line {}: {}", lineIndex, line);
-                            continue;
-                        }
-                        try {
-                            int quantity = Integer.parseInt(parts[0]);
-                            String cardId = parts[1];
-                            deckCards.add(new DeckCardDTO(cardId, quantity));
-                        } catch (NumberFormatException e) {
-                            log.warn("Skipping line with invalid quantity {}: {}", lineIndex, line);
-                        }
-                    } else {
-                        String cardId = parts[0];
-                        deckCards.add(new DeckCardDTO(cardId, 1));
-                    }
-                }
+                return parseDeck(reader);
             }
-            return deckCards;
+        }
+    }
+
+    @Override
+    public List<DeckCardDTO> parseDeckText(String deckText) {
+        if (deckText == null || deckText.isBlank()) {
+            return List.of();
+        }
+
+        try (BufferedReader reader = new BufferedReader(new StringReader(deckText))) {
+            return parseDeck(reader);
+        } catch (IOException e) {
+            throw new IllegalStateException("Unexpected error while parsing deck text.", e);
         }
     }
 
@@ -89,5 +57,55 @@ public class DeckServiceImpl implements DeckService {
             return Files.newInputStream(path);
         }
         return getClass().getClassLoader().getResourceAsStream(filename);
+    }
+
+    private List<DeckCardDTO> parseDeck(BufferedReader reader) throws IOException {
+        List<DeckCardDTO> deckCards = new ArrayList<>();
+        String line;
+        int lineIndex = 0;
+
+        while ((line = reader.readLine()) != null) {
+            line = line.trim();
+            if (line.isEmpty()) {
+                log.debug("Skipping empty line in line {}", lineIndex);
+                continue;
+            }
+
+            lineIndex++;
+            if (lineIndex == 1) {
+                log.debug("Skipping deck name in line {}", lineIndex);
+                continue;
+            }
+
+            if (line.startsWith("#")) {
+                log.debug("Skipping comment line {}", lineIndex);
+                continue;
+            }
+
+            String[] parts = line.split("\\s+", 3);
+            if (parts.length < 1) {
+                log.debug("Skipping malformed line in line {}", lineIndex);
+                continue;
+            }
+
+            if (Character.isDigit(parts[0].charAt(0))) {
+                if (parts.length < 2) {
+                    log.warn("Skipping malformed regular card line {}: {}", lineIndex, line);
+                    continue;
+                }
+                try {
+                    int quantity = Integer.parseInt(parts[0]);
+                    String cardId = parts[1];
+                    deckCards.add(new DeckCardDTO(cardId, quantity));
+                } catch (NumberFormatException e) {
+                    log.warn("Skipping line with invalid quantity {}: {}", lineIndex, line);
+                }
+            } else {
+                String cardId = parts[0];
+                deckCards.add(new DeckCardDTO(cardId, 1));
+            }
+        }
+
+        return deckCards;
     }
 }

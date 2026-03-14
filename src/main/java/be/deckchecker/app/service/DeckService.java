@@ -3,7 +3,6 @@ package be.deckchecker.app.service;
 import be.deckchecker.app.dto.DeckCardDTO;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
 
 /**
@@ -16,7 +15,15 @@ public interface DeckService {
      *
      * @param filename The filename that contains the deck in digital client format
      * @return List of {@link DeckCardDTO}
-     * @throws IOException If the application fails to create an {@link InputStream}
+     * @throws IOException If the application fails to read the file
      */
     List<DeckCardDTO> parseDeckFile(String filename) throws IOException;
+
+    /**
+     * Parses deck text content to a list of {@link DeckCardDTO}
+     *
+     * @param deckText Deck contents in digital client format
+     * @return List of {@link DeckCardDTO}
+     */
+    List<DeckCardDTO> parseDeckText(String deckText);
 }

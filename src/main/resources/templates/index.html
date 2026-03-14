@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deck Checker</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
+<main class="container">
+    <h1>Deck Checker</h1>
+    <p class="subtitle">Paste a deck list, then compare against your cached API collection.</p>
+
+    <form method="post" th:action="@{/check}" class="panel form-panel">
+        <label for="deckText">Deck List</label>
+        <textarea id="deckText" name="deckText" rows="16" th:text="${deckText}"></textarea>
+        <button type="submit">Check Deck</button>
+    </form>
+
+    <section th:if="${error}" class="panel error" th:text="${error}"></section>
+
+    <section th:if="${result}" class="panel">
+        <h2>Deck Summary</h2>
+        <div class="summary-grid">
+            <div><span class="k">Need</span><span class="v" th:text="${result.totalDeckCopies}"></span></div>
+            <div><span class="k">Own (in deck)</span><span class="v" th:text="${result.totalOwnedCopiesInDeck}"></span></div>
+            <div><span class="k">Missing</span><span class="v" th:text="${result.totalMissingCopies}"></span></div>
+            <div><span class="k">Duplicate copies</span><span class="v" th:text="${result.totalDuplicateCopies}"></span></div>
+        </div>
+    </section>
+
+    <section th:if="${result != null and !#lists.isEmpty(result.unknownDeckCards)}" class="panel warning">
+        <h2>Unknown Card Numbers</h2>
+        <ul>
+            <li th:each="cardNumber : ${result.unknownDeckCards}" th:text="${cardNumber}"></li>
+        </ul>
+    </section>
+
+    <section th:if="${result}" class="panel">
+        <h2>Missing Cards</h2>
+        <p th:if="${#lists.isEmpty(result.missingCards)}">You already own all cards needed for this deck.</p>
+        <div th:if="${!#lists.isEmpty(result.missingCards)}" class="table-wrap">
+            <table>
+                <thead>
+                <tr>
+                    <th>Card</th>
+                    <th>Name</th>
+                    <th>Need</th>
+                    <th>Own</th>
+                    <th>Missing</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="card : ${result.missingCards}">
+                    <td th:text="${card.cardNumber}"></td>
+                    <td th:text="${card.cardName}"></td>
+                    <td th:text="${card.neededQuantity}"></td>
+                    <td th:text="${card.ownedQuantity}"></td>
+                    <td th:text="${card.missingQuantity}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section th:if="${result}" class="panel">
+        <h2>Duplicates (&gt; 4 copies)</h2>
+        <p th:if="${#lists.isEmpty(result.duplicateCards)}">No duplicates found.</p>
+        <div th:if="${!#lists.isEmpty(result.duplicateCards)}" class="table-wrap">
+            <table>
+                <thead>
+                <tr>
+                    <th>Card</th>
+                    <th>Name</th>
+                    <th>Owned</th>
+                    <th>Duplicates</th>
+                    <th>Versions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="card : ${result.duplicateCards}">
+                    <td th:text="${card.cardNumber}"></td>
+                    <td th:text="${card.cardName}"></td>
+                    <td th:text="${card.ownedQuantity}"></td>
+                    <td th:text="${card.duplicateQuantity}"></td>
+                    <td th:text="${card.multipleVersions ? card.versionCount : '-'}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section th:if="${result != null and !#lists.isEmpty(result.duplicateCards.?[multipleVersions])}" class="panel warning">
+        <h2>Version Check Needed</h2>
+        <p>Before selling/trading duplicates, verify which print versions you actually own:</p>
+        <ul>
+            <li th:each="card : ${result.duplicateCards.?[multipleVersions]}"
+                th:text="${card.cardNumber + ' (' + card.versionCount + ' versions)'}"></li>
+        </ul>
+    </section>
+</main>
+</body>
+</html>
