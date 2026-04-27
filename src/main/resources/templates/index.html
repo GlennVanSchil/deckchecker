@@ -32,7 +32,6 @@
             <div><span class="k">Need</span><span class="v" th:text="${result.totalDeckCopies}"></span></div>
             <div><span class="k">Own (in deck)</span><span class="v" th:text="${result.totalOwnedCopiesInDeck}"></span></div>
             <div><span class="k">Missing</span><span class="v" th:text="${result.totalMissingCopies}"></span></div>
-            <div><span class="k">Duplicate copies</span><span class="v" th:text="${result.totalDuplicateCopies}"></span></div>
         </div>
     </section>
 
@@ -70,10 +69,14 @@
         </div>
     </section>
 
-    <section th:if="${result}" class="panel">
+    <section th:if="${duplicateCards != null}" class="panel">
         <h2>Duplicates (&gt; 4 copies per exact variant)</h2>
-        <p th:if="${#lists.isEmpty(result.duplicateCards)}">No duplicates found.</p>
-        <div th:if="${!#lists.isEmpty(result.duplicateCards)}" class="table-wrap">
+        <p>
+            Total duplicate copies:
+            <strong th:text="${totalDuplicateCopies}"></strong>
+        </p>
+        <p th:if="${#lists.isEmpty(duplicateCards)}">No duplicates found.</p>
+        <div th:if="${!#lists.isEmpty(duplicateCards)}" class="table-wrap">
             <div class="duplicates-toolbar">
                 <label>
                     <span>Search</span>
@@ -95,7 +98,7 @@
                 </tr>
                 </thead>
                 <tbody id="duplicateTableBody">
-                <tr th:each="card : ${result.duplicateCards}"
+                <tr th:each="card : ${duplicateCards}"
                     th:attr="data-card-id=${card.cardId},
                              data-card-number=${card.cardNumber},
                              data-card-name=${card.cardName},

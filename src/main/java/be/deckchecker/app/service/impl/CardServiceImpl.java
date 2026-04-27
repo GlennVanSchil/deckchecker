@@ -47,7 +47,6 @@ public class CardServiceImpl implements CardService {
     @Override
     public DeckCheckResultDTO findMissingCards(List<OwnedCardDTO> ownedCards, List<DeckCardDTO> deckCards) {
         Map<String, Integer> ownedQuantityByVariantGroup = new HashMap<>();
-        Map<String, Integer> ownedQuantityByCardId = new HashMap<>();
         List<String> unknownDeckCards = new ArrayList<>();
 
         for (OwnedCardDTO owned : ownedCards) {
@@ -60,7 +59,6 @@ public class CardServiceImpl implements CardService {
 
             String variantGroupId = resolveVariantRootId(card);
             ownedQuantityByVariantGroup.merge(variantGroupId, owned.getQuantity(), Integer::sum);
-            ownedQuantityByCardId.merge(cardId, owned.getQuantity(), Integer::sum);
         }
 
         Map<String, Integer> neededQuantityByVariantGroup = new HashMap<>();
@@ -84,11 +82,9 @@ public class CardServiceImpl implements CardService {
         }
 
         List<MissingCardDTO> missingCards = new ArrayList<>();
-        List<DuplicateCardDTO> duplicateCards = new ArrayList<>();
         int totalDeckCopies = 0;
         int totalOwnedCopiesInDeck = 0;
         int totalMissingCopies = 0;
-        int totalDuplicateCopies = 0;
 
         for (Map.Entry<String, Integer> deckEntry : neededQuantityByVariantGroup.entrySet()) {
             String variantGroupId = deckEntry.getKey();
@@ -132,32 +128,10 @@ public class CardServiceImpl implements CardService {
                         .thenComparing(MissingCardDTO::getCardNumber)
         );
 
-        for (Map.Entry<String, Integer> ownedEntry : ownedQuantityByCardId.entrySet()) {
-            String cardId = ownedEntry.getKey();
-            int ownedQuantity = ownedEntry.getValue();
-            int duplicateQuantity = Math.max(ownedQuantity - 4, 0);
-
-            if (duplicateQuantity > 0) {
-                CardDTO card = cardIndex.get(cardId);
-                String cardNumber = card != null ? normalizeCardNumber(card.getCardNumber()) : cardId;
-                String cardName = card != null ? card.getDisplayName() : "Unknown card";
-
-                duplicateCards.add(new DuplicateCardDTO(
-                        cardId,
-                        cardNumber,
-                        cardName,
-                        ownedQuantity,
-                        duplicateQuantity
-                ));
-                totalDuplicateCopies += duplicateQuantity;
-            }
-        }
-
-        duplicateCards.sort(
-                Comparator.comparingInt(DuplicateCardDTO::getDuplicateQuantity).reversed()
-                        .thenComparing(DuplicateCardDTO::getCardNumber)
-                        .thenComparing(DuplicateCardDTO::getCardId)
-        );
+        List<DuplicateCardDTO> duplicateCards = findDuplicateCards(ownedCards);
+        int totalDuplicateCopies = duplicateCards.stream()
+                .mapToInt(DuplicateCardDTO::getDuplicateQuantity)
+                .sum();
 
         return new DeckCheckResultDTO(
                 missingCards,
@@ -168,6 +142,48 @@ public class CardServiceImpl implements CardService {
                 totalMissingCopies,
                 totalDuplicateCopies
         );
+    }
+
+    @Override
+    public List<DuplicateCardDTO> findDuplicateCards(List<OwnedCardDTO> ownedCards) {
+        Map<String, Integer> ownedQuantityByCardId = new HashMap<>();
+        for (OwnedCardDTO owned : ownedCards) {
+            String cardId = normalizeId(owned.getCardId());
+            ownedQuantityByCardId.merge(cardId, owned.getQuantity(), Integer::sum);
+        }
+
+        List<DuplicateCardDTO> duplicateCards = new ArrayList<>();
+        for (Map.Entry<String, Integer> ownedEntry : ownedQuantityByCardId.entrySet()) {
+            String cardId = ownedEntry.getKey();
+            int ownedQuantity = ownedEntry.getValue();
+            int duplicateQuantity = Math.max(ownedQuantity - 4, 0);
+
+            if (duplicateQuantity > 0) {
+                CardDTO card = cardIndex.get(cardId);
+                if (card == null) {
+                    log.warn("Owned card with id {} was not found in cards.json", cardId);
+                }
+
+                String cardNumber = card != null ? normalizeCardNumber(card.getCardNumber()) : cardId;
+                String cardName = card != null ? card.getDisplayName() : "Unknown card";
+
+                duplicateCards.add(new DuplicateCardDTO(
+                        cardId,
+                        cardNumber,
+                        cardName,
+                        ownedQuantity,
+                        duplicateQuantity
+                ));
+            }
+        }
+
+        duplicateCards.sort(
+                Comparator.comparingInt(DuplicateCardDTO::getDuplicateQuantity).reversed()
+                        .thenComparing(DuplicateCardDTO::getCardNumber)
+                        .thenComparing(DuplicateCardDTO::getCardId)
+        );
+
+        return duplicateCards;
     }
 
     private String normalizeCardNumber(String value) {
