@@ -3,6 +3,7 @@ package be.deckchecker.app.service;
 import be.deckchecker.app.dto.DeckCheckResultDTO;
 import be.deckchecker.app.dto.DeckCardDTO;
 import be.deckchecker.app.dto.DuplicateCardDTO;
+import be.deckchecker.app.dto.DuplicateWithVariantsDTO;
 import be.deckchecker.app.dto.OwnedCardDTO;
 import be.deckchecker.app.dto.VariantGroupOverflowDTO;
 
@@ -37,4 +38,12 @@ public interface CardService {
      * @return Sorted variant group overflow warnings
      */
     List<VariantGroupOverflowDTO> findVariantGroupOverflows(List<OwnedCardDTO> ownedCards);
+
+    /**
+     * Returns exact duplicates where additional variants are also owned, while those additional variants stay at or below 4.
+     *
+     * @param ownedCards already owned cards
+     * @return Sorted duplicate-with-variants details for trading decisions
+     */
+    List<DuplicateWithVariantsDTO> findDuplicatesWithAdditionalVariants(List<OwnedCardDTO> ownedCards);
 }

@@ -119,6 +119,46 @@
         </div>
     </section>
 
+    <section th:if="${duplicatesWithVariants != null}" class="panel warning">
+        <h2>Exact Duplicates With Additional Owned Variants</h2>
+        <p>
+            These are exact duplicates where you also own other variants of the same card, and those additional variants are each at or below 4 copies.
+        </p>
+        <p>
+            Combined above-4 copies in these cases:
+            <strong th:text="${totalDuplicatesWithVariantsCombinedOverflowCopies}"></strong>
+        </p>
+        <p th:if="${#lists.isEmpty(duplicatesWithVariants)}">No exact-duplicate rows with additional non-duplicate variants found.</p>
+        <div th:if="${!#lists.isEmpty(duplicatesWithVariants)}" class="table-wrap">
+            <table>
+                <thead>
+                <tr>
+                    <th>Duplicate Card</th>
+                    <th>Name</th>
+                    <th>Exact Owned</th>
+                    <th>Exact Duplicates</th>
+                    <th>Variant Group</th>
+                    <th>Combined Owned</th>
+                    <th>Combined Above 4</th>
+                    <th>Additional Variants Owned</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="item : ${duplicatesWithVariants}" class="variant-group-overflow">
+                    <td th:text="${item.duplicateCardNumber}"></td>
+                    <td th:text="${item.duplicateCardName}"></td>
+                    <td th:text="${item.duplicateOwnedQuantity}"></td>
+                    <td th:text="${item.duplicateQuantity}"></td>
+                    <td th:text="${item.variantGroupCardNumber}"></td>
+                    <td th:text="${item.combinedOwnedQuantity}"></td>
+                    <td th:text="${item.combinedDuplicateQuantity}"></td>
+                    <td th:text="${item.additionalOwnedVariantsSummary}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
     <section th:if="${variantGroupOverflows != null}" class="panel warning">
         <h2>Variant Group Trade Warnings</h2>
         <p>

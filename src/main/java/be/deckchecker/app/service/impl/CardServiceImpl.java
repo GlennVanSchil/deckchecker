@@ -4,6 +4,7 @@ import be.deckchecker.app.dto.CardDTO;
 import be.deckchecker.app.dto.DeckCheckResultDTO;
 import be.deckchecker.app.dto.DeckCardDTO;
 import be.deckchecker.app.dto.DuplicateCardDTO;
+import be.deckchecker.app.dto.DuplicateWithVariantsDTO;
 import be.deckchecker.app.dto.MissingCardDTO;
 import be.deckchecker.app.dto.OwnedCardDTO;
 import be.deckchecker.app.dto.VariantGroupOverflowDTO;
@@ -285,6 +286,99 @@ public class CardServiceImpl implements CardService {
         return overflows;
     }
 
+    @Override
+    public List<DuplicateWithVariantsDTO> findDuplicatesWithAdditionalVariants(List<OwnedCardDTO> ownedCards) {
+        Map<String, Integer> ownedQuantityByCardId = new HashMap<>();
+        for (OwnedCardDTO owned : ownedCards) {
+            String cardId = normalizeId(owned.getCardId());
+            ownedQuantityByCardId.merge(cardId, owned.getQuantity(), Integer::sum);
+        }
+
+        Map<String, List<OwnedVariantDetailedEntry>> ownedByVariantGroup = new HashMap<>();
+        for (Map.Entry<String, Integer> entry : ownedQuantityByCardId.entrySet()) {
+            String cardId = entry.getKey();
+            int quantity = entry.getValue();
+            if (quantity <= 0) {
+                continue;
+            }
+
+            CardDTO card = cardIndex.get(cardId);
+            if (card == null) {
+                log.warn("Owned card with id {} was not found in cards.json", cardId);
+                continue;
+            }
+
+            String variantGroupId = resolveVariantRootId(card);
+            String cardNumber = normalizeCardNumber(card.getCardNumber());
+            String cardName = card.getDisplayName();
+            ownedByVariantGroup.computeIfAbsent(variantGroupId, ignored -> new ArrayList<>())
+                    .add(new OwnedVariantDetailedEntry(cardId, cardNumber, cardName, quantity));
+        }
+
+        List<DuplicateWithVariantsDTO> rows = new ArrayList<>();
+        for (Map.Entry<String, List<OwnedVariantDetailedEntry>> groupEntry : ownedByVariantGroup.entrySet()) {
+            String variantGroupId = groupEntry.getKey();
+            List<OwnedVariantDetailedEntry> entries = groupEntry.getValue();
+
+            int combinedOwned = entries.stream().mapToInt(OwnedVariantDetailedEntry::quantity).sum();
+            int combinedDuplicateQuantity = Math.max(combinedOwned - 4, 0);
+            if (combinedDuplicateQuantity <= 0) {
+                continue;
+            }
+
+            CardDTO root = cardIndex.get(variantGroupId);
+            String rootCardNumber = root != null ? normalizeCardNumber(root.getCardNumber()) : variantGroupId;
+
+            for (OwnedVariantDetailedEntry duplicateEntry : entries) {
+                if (duplicateEntry.quantity() <= 4) {
+                    continue;
+                }
+
+                List<OwnedVariantDetailedEntry> additionalVariants = entries.stream()
+                        .filter(entry -> !entry.cardId().equals(duplicateEntry.cardId()))
+                        .filter(entry -> entry.quantity() > 0)
+                        .toList();
+
+                if (additionalVariants.isEmpty()) {
+                    continue;
+                }
+
+                boolean additionalVariantsContainDuplicates = additionalVariants.stream()
+                        .anyMatch(entry -> entry.quantity() > 4);
+                if (additionalVariantsContainDuplicates) {
+                    continue;
+                }
+
+                List<OwnedVariantDetailedEntry> sortedAdditionalVariants = new ArrayList<>(additionalVariants);
+                sortedAdditionalVariants.sort(Comparator.comparing(OwnedVariantDetailedEntry::cardNumber));
+
+                StringJoiner additionalSummary = new StringJoiner(", ");
+                for (OwnedVariantDetailedEntry additionalVariant : sortedAdditionalVariants) {
+                    additionalSummary.add(additionalVariant.cardNumber() + " x" + additionalVariant.quantity());
+                }
+
+                rows.add(new DuplicateWithVariantsDTO(
+                        duplicateEntry.cardNumber(),
+                        duplicateEntry.cardName(),
+                        duplicateEntry.quantity(),
+                        duplicateEntry.quantity() - 4,
+                        rootCardNumber,
+                        combinedOwned,
+                        combinedDuplicateQuantity,
+                        additionalSummary.toString()
+                ));
+            }
+        }
+
+        rows.sort(
+                Comparator.comparing(DuplicateWithVariantsDTO::getDuplicateCardNumber)
+                        .thenComparing(DuplicateWithVariantsDTO::getDuplicateCardName)
+                        .thenComparing(Comparator.comparingInt(DuplicateWithVariantsDTO::getDuplicateQuantity).reversed())
+        );
+
+        return rows;
+    }
+
     private String normalizeCardNumber(String value) {
         if (value == null) {
             return "";
@@ -336,6 +430,14 @@ public class CardServiceImpl implements CardService {
     }
 
     private record OwnedVariantEntry(
+            String cardNumber,
+            String cardName,
+            int quantity
+    ) {
+    }
+
+    private record OwnedVariantDetailedEntry(
+            String cardId,
             String cardNumber,
             String cardName,
             int quantity
