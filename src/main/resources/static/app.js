@@ -1,13 +1,41 @@
 function setupDuplicateFilters() {
-    const searchInput = document.getElementById("duplicateSearch");
-    const minInput = document.getElementById("duplicateMin");
-    const tableBody = document.getElementById("duplicateTableBody");
-    const filterInfo = document.getElementById("duplicateFilterInfo");
+    setupTableFilters({
+        searchInputId: "duplicateSearch",
+        minInputId: "duplicateMin",
+        tableBodyId: "duplicateTableBody",
+        filterInfoId: "duplicateFilterInfo",
+        minDataField: "duplicates",
+        textDataFields: ["cardNumber", "cardName"],
+        label: "duplicate cards",
+    });
+    setupTableFilters({
+        searchInputId: "combinedVariantsSearch",
+        minInputId: "combinedVariantsMin",
+        tableBodyId: "combinedVariantsTableBody",
+        filterInfoId: "combinedVariantsFilterInfo",
+        minDataField: "overflow",
+        textDataFields: ["duplicateCard", "name", "variantGroup", "additional"],
+        label: "combined-variant duplicate rows",
+    });
+    setupTableFilters({
+        searchInputId: "variantGroupOverflowSearch",
+        minInputId: "variantGroupOverflowMin",
+        tableBodyId: "variantGroupOverflowTableBody",
+        filterInfoId: "variantGroupOverflowFilterInfo",
+        minDataField: "overflow",
+        textDataFields: ["variantGroup", "name", "ownedVariants"],
+        label: "variant-group overflow rows",
+    });
+}
 
+function setupTableFilters(config) {
+    const searchInput = document.getElementById(config.searchInputId);
+    const minInput = document.getElementById(config.minInputId);
+    const tableBody = document.getElementById(config.tableBodyId);
+    const filterInfo = document.getElementById(config.filterInfoId);
     if (!searchInput || !minInput || !tableBody || !filterInfo) {
         return;
     }
-
     if (tableBody.dataset.filtersInitialized === "true") {
         return;
     }
@@ -19,17 +47,17 @@ function setupDuplicateFilters() {
     const applyFilters = () => {
         const query = searchInput.value.trim().toLowerCase();
         const parsedMin = Number.parseInt(minInput.value || "1", 10);
-        const minDuplicates = Number.isFinite(parsedMin) ? Math.max(parsedMin, 1) : 1;
+        const minValue = Number.isFinite(parsedMin) ? Math.max(parsedMin, 1) : 1;
 
         let visible = 0;
         for (const row of rows) {
-            const card = (row.dataset.cardNumber || "").toLowerCase();
-            const name = (row.dataset.cardName || "").toLowerCase();
-            const duplicates = Number.parseInt(row.dataset.duplicates || "0", 10);
+            const searchable = config.textDataFields
+                .map((field) => (row.dataset[field] || "").toLowerCase())
+                .join(" ");
+            const numericValue = Number.parseInt(row.dataset[config.minDataField] || "0", 10);
 
-            const matchesQuery = query.length === 0 || card.includes(query) || name.includes(query);
-            const matchesMin = duplicates >= minDuplicates;
-
+            const matchesQuery = query.length === 0 || searchable.includes(query);
+            const matchesMin = numericValue >= minValue;
             const show = matchesQuery && matchesMin;
             row.style.display = show ? "" : "none";
             if (show) {
@@ -37,7 +65,7 @@ function setupDuplicateFilters() {
             }
         }
 
-        filterInfo.textContent = `Showing ${visible} of ${totalRows} duplicate cards`;
+        filterInfo.textContent = `Showing ${visible} of ${totalRows} ${config.label}`;
     };
 
     searchInput.addEventListener("input", applyFilters);
