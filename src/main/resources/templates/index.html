@@ -80,7 +80,7 @@
             <div class="duplicates-toolbar">
                 <label>
                     <span>Search</span>
-                    <input type="text" id="duplicateSearch" placeholder="Card id, number or name">
+                    <input type="text" id="duplicateSearch" placeholder="Card number or name">
                 </label>
                 <label>
                     <span>Min duplicates</span>
@@ -90,22 +90,26 @@
             <table>
                 <thead>
                 <tr>
-                    <th>Card ID</th>
                     <th>Card</th>
                     <th>Name</th>
+                    <th>Variant Group</th>
                     <th>Owned</th>
                     <th>Duplicates</th>
                 </tr>
                 </thead>
                 <tbody id="duplicateTableBody">
                 <tr th:each="card : ${duplicateCards}"
-                    th:attr="data-card-id=${card.cardId},
-                             data-card-number=${card.cardNumber},
+                    th:classappend="${card.variantGroupSize > 1} ? 'variant-related' : ''"
+                    th:attr="data-card-number=${card.cardNumber},
                              data-card-name=${card.cardName},
                              data-duplicates=${card.duplicateQuantity}">
-                    <td th:text="${card.cardId}"></td>
                     <td th:text="${card.cardNumber}"></td>
                     <td th:text="${card.cardName}"></td>
+                    <td>
+                        <span th:text="${card.variantGroupCardNumber}"></span>
+                        <span th:if="${card.variantGroupSize > 1}" class="variant-badge"
+                              th:text="'Shared by ' + ${card.variantGroupSize} + ' duplicate variants'"></span>
+                    </td>
                     <td th:text="${card.ownedQuantity}"></td>
                     <td th:text="${card.duplicateQuantity}"></td>
                 </tr>

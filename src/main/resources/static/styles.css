@@ -176,6 +176,22 @@ th, td {
     padding: 8px 6px;
 }
 
+.variant-related td {
+    background: #fff9ed;
+}
+
+.variant-badge {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid #e6d6b8;
+    background: #fff3d9;
+    color: #7a4b00;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
 .manual-check-row td {
     background: #fff3d9;
 }

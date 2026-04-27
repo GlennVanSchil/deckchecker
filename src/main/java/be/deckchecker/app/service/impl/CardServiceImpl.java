@@ -152,34 +152,61 @@ public class CardServiceImpl implements CardService {
             ownedQuantityByCardId.merge(cardId, owned.getQuantity(), Integer::sum);
         }
 
-        List<DuplicateCardDTO> duplicateCards = new ArrayList<>();
+        List<DuplicateCandidate> candidates = new ArrayList<>();
+        Map<String, Integer> duplicateEntriesByVariantGroup = new HashMap<>();
+
         for (Map.Entry<String, Integer> ownedEntry : ownedQuantityByCardId.entrySet()) {
             String cardId = ownedEntry.getKey();
             int ownedQuantity = ownedEntry.getValue();
             int duplicateQuantity = Math.max(ownedQuantity - 4, 0);
 
-            if (duplicateQuantity > 0) {
-                CardDTO card = cardIndex.get(cardId);
-                if (card == null) {
-                    log.warn("Owned card with id {} was not found in cards.json", cardId);
-                }
-
-                String cardNumber = card != null ? normalizeCardNumber(card.getCardNumber()) : cardId;
-                String cardName = card != null ? card.getDisplayName() : "Unknown card";
-
-                duplicateCards.add(new DuplicateCardDTO(
-                        cardId,
-                        cardNumber,
-                        cardName,
-                        ownedQuantity,
-                        duplicateQuantity
-                ));
+            if (duplicateQuantity <= 0) {
+                continue;
             }
+
+            CardDTO card = cardIndex.get(cardId);
+            if (card == null) {
+                log.warn("Owned card with id {} was not found in cards.json", cardId);
+            }
+
+            String cardNumber = card != null ? normalizeCardNumber(card.getCardNumber()) : cardId;
+            String cardName = card != null ? card.getDisplayName() : "Unknown card";
+            String variantGroupId = card != null ? resolveVariantRootId(card) : cardId;
+
+            CardDTO variantRootCard = cardIndex.get(variantGroupId);
+            String variantGroupCardNumber = variantRootCard != null
+                    ? normalizeCardNumber(variantRootCard.getCardNumber())
+                    : cardNumber;
+
+            candidates.add(new DuplicateCandidate(
+                    cardId,
+                    cardNumber,
+                    cardName,
+                    ownedQuantity,
+                    duplicateQuantity,
+                    variantGroupId,
+                    variantGroupCardNumber
+            ));
+            duplicateEntriesByVariantGroup.merge(variantGroupId, 1, Integer::sum);
+        }
+
+        List<DuplicateCardDTO> duplicateCards = new ArrayList<>();
+        for (DuplicateCandidate candidate : candidates) {
+            int variantGroupSize = duplicateEntriesByVariantGroup.getOrDefault(candidate.variantGroupId(), 1);
+            duplicateCards.add(new DuplicateCardDTO(
+                    candidate.cardId(),
+                    candidate.cardNumber(),
+                    candidate.cardName(),
+                    candidate.ownedQuantity(),
+                    candidate.duplicateQuantity(),
+                    candidate.variantGroupCardNumber(),
+                    variantGroupSize
+            ));
         }
 
         duplicateCards.sort(
-                Comparator.comparingInt(DuplicateCardDTO::getDuplicateQuantity).reversed()
-                        .thenComparing(DuplicateCardDTO::getCardNumber)
+                Comparator.comparing(DuplicateCardDTO::getCardNumber)
+                        .thenComparing(DuplicateCardDTO::getCardName)
                         .thenComparing(DuplicateCardDTO::getCardId)
         );
 
@@ -223,5 +250,16 @@ public class CardServiceImpl implements CardService {
         }
 
         return currentId;
+    }
+
+    private record DuplicateCandidate(
+            String cardId,
+            String cardNumber,
+            String cardName,
+            int ownedQuantity,
+            int duplicateQuantity,
+            String variantGroupId,
+            String variantGroupCardNumber
+    ) {
     }
 }

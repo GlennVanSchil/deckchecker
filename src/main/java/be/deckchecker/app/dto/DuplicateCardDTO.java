@@ -11,4 +11,6 @@ public class DuplicateCardDTO {
     private String cardName;
     private int ownedQuantity;
     private int duplicateQuantity;
+    private String variantGroupCardNumber;
+    private int variantGroupSize;
 }
