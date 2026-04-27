@@ -206,6 +206,7 @@ th, td {
     border-bottom: 1px solid var(--line);
     text-align: left;
     padding: 8px 6px;
+    vertical-align: middle;
 }
 
 th {
@@ -213,6 +214,16 @@ th {
     top: 0;
     z-index: 1;
     background: #f8f4ee;
+}
+
+.card-thumb {
+    display: block;
+    width: 52px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid var(--line);
+    background: #fff;
 }
 
 .variant-related td {

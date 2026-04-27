@@ -9,6 +9,7 @@ public class DuplicateCardDTO {
     private String cardId;
     private String cardNumber;
     private String cardName;
+    private String imgLink;
     private int ownedQuantity;
     private int duplicateQuantity;
     private String variantGroupCardNumber;

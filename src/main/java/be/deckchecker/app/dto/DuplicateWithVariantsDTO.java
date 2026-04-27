@@ -8,9 +8,11 @@ import lombok.Getter;
 public class DuplicateWithVariantsDTO {
     private String duplicateCardNumber;
     private String duplicateCardName;
+    private String duplicateImgLink;
     private int duplicateOwnedQuantity;
     private int duplicateQuantity;
     private String variantGroupCardNumber;
+    private String variantGroupImgLink;
     private int combinedOwnedQuantity;
     private int combinedDuplicateQuantity;
     private String additionalOwnedVariantsSummary;

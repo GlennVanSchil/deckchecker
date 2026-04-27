@@ -47,6 +47,7 @@ public class CardDTO {
     private String digitalCardCode;
     private String cardFrontSkillUnstyled;
     private String cardBackSkillUnstyled;
+    private String imgLink;
     private Integer variantOf;
     private List<Integer> variants;
 

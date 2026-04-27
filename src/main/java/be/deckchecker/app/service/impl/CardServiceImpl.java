@@ -67,6 +67,7 @@ public class CardServiceImpl implements CardService {
         Map<String, Integer> neededQuantityByVariantGroup = new HashMap<>();
         Map<String, String> displayCardNumberByVariantGroup = new HashMap<>();
         Map<String, String> displayCardNameByVariantGroup = new HashMap<>();
+        Map<String, String> displayImgLinkByVariantGroup = new HashMap<>();
         Map<String, Integer> unknownQuantityByCardNumber = new HashMap<>();
 
         for (DeckCardDTO deckCard : deckCards) {
@@ -82,6 +83,7 @@ public class CardServiceImpl implements CardService {
             neededQuantityByVariantGroup.merge(variantGroupId, deckCard.getQuantity(), Integer::sum);
             displayCardNumberByVariantGroup.putIfAbsent(variantGroupId, cardNumber);
             displayCardNameByVariantGroup.putIfAbsent(variantGroupId, card.getDisplayName());
+            displayImgLinkByVariantGroup.putIfAbsent(variantGroupId, card.getImgLink());
         }
 
         List<MissingCardDTO> missingCards = new ArrayList<>();
@@ -103,6 +105,7 @@ public class CardServiceImpl implements CardService {
                 missingCards.add(new MissingCardDTO(
                         displayCardNumberByVariantGroup.getOrDefault(variantGroupId, variantGroupId),
                         displayCardNameByVariantGroup.getOrDefault(variantGroupId, "Unknown card"),
+                        displayImgLinkByVariantGroup.getOrDefault(variantGroupId, null),
                         neededQuantity,
                         ownedQuantity,
                         missingQuantity
@@ -120,6 +123,7 @@ public class CardServiceImpl implements CardService {
             missingCards.add(new MissingCardDTO(
                     cardNumber,
                     "Unknown card",
+                    null,
                     neededQuantity,
                     0,
                     neededQuantity
@@ -185,6 +189,7 @@ public class CardServiceImpl implements CardService {
                     cardId,
                     cardNumber,
                     cardName,
+                    card != null ? card.getImgLink() : null,
                     ownedQuantity,
                     duplicateQuantity,
                     variantGroupId,
@@ -200,6 +205,7 @@ public class CardServiceImpl implements CardService {
                     candidate.cardId(),
                     candidate.cardNumber(),
                     candidate.cardName(),
+                    candidate.imgLink(),
                     candidate.ownedQuantity(),
                     candidate.duplicateQuantity(),
                     candidate.variantGroupCardNumber(),
@@ -270,6 +276,7 @@ public class CardServiceImpl implements CardService {
             overflows.add(new VariantGroupOverflowDTO(
                     rootCardNumber,
                     rootCardName,
+                    root != null ? root.getImgLink() : null,
                     combinedOwned,
                     combinedOwned - 4,
                     maxSingleVariantOwned,
@@ -312,7 +319,7 @@ public class CardServiceImpl implements CardService {
             String cardNumber = normalizeCardNumber(card.getCardNumber());
             String cardName = card.getDisplayName();
             ownedByVariantGroup.computeIfAbsent(variantGroupId, ignored -> new ArrayList<>())
-                    .add(new OwnedVariantDetailedEntry(cardId, cardNumber, cardName, quantity));
+                    .add(new OwnedVariantDetailedEntry(cardId, cardNumber, cardName, card.getImgLink(), quantity));
         }
 
         List<DuplicateWithVariantsDTO> rows = new ArrayList<>();
@@ -360,9 +367,11 @@ public class CardServiceImpl implements CardService {
                 rows.add(new DuplicateWithVariantsDTO(
                         duplicateEntry.cardNumber(),
                         duplicateEntry.cardName(),
+                        duplicateEntry.imgLink(),
                         duplicateEntry.quantity(),
                         duplicateEntry.quantity() - 4,
                         rootCardNumber,
+                        root != null ? root.getImgLink() : null,
                         combinedOwned,
                         combinedDuplicateQuantity,
                         additionalSummary.toString()
@@ -422,6 +431,7 @@ public class CardServiceImpl implements CardService {
             String cardId,
             String cardNumber,
             String cardName,
+            String imgLink,
             int ownedQuantity,
             int duplicateQuantity,
             String variantGroupId,
@@ -440,6 +450,7 @@ public class CardServiceImpl implements CardService {
             String cardId,
             String cardNumber,
             String cardName,
+            String imgLink,
             int quantity
     ) {
     }

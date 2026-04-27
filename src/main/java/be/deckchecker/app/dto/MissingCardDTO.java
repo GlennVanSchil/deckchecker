@@ -8,6 +8,7 @@ import lombok.Getter;
 public class MissingCardDTO {
     private String cardNumber;
     private String cardName;
+    private String imgLink;
     private int neededQuantity;
     private int ownedQuantity;
     private int missingQuantity;

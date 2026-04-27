@@ -8,6 +8,7 @@ import lombok.Getter;
 public class VariantGroupOverflowDTO {
     private String variantGroupCardNumber;
     private String variantGroupName;
+    private String variantGroupImgLink;
     private int combinedOwnedQuantity;
     private int overflowQuantity;
     private int maxSingleVariantOwned;
