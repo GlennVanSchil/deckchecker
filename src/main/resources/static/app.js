@@ -104,9 +104,91 @@ function setupTabs() {
     activateTab(defaultButton.dataset.tabTarget);
 }
 
+function setupImageHoverPreview() {
+    if (document.body.dataset.imageHoverPreviewInitialized === "true") {
+        return;
+    }
+    document.body.dataset.imageHoverPreviewInitialized = "true";
+
+    const preview = document.createElement("div");
+    preview.id = "imageHoverPreview";
+    preview.hidden = true;
+
+    const previewImage = document.createElement("img");
+    previewImage.alt = "Card preview";
+    preview.appendChild(previewImage);
+    document.body.appendChild(preview);
+
+    const offset = 18;
+
+    const positionPreview = (event) => {
+        const rect = preview.getBoundingClientRect();
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+
+        let left = event.clientX + offset;
+        let top = event.clientY + offset;
+
+        if (left + rect.width > viewportWidth - 12) {
+            left = event.clientX - rect.width - offset;
+        }
+        if (top + rect.height > viewportHeight - 12) {
+            top = event.clientY - rect.height - offset;
+        }
+
+        preview.style.left = `${Math.max(12, left)}px`;
+        preview.style.top = `${Math.max(12, top)}px`;
+    };
+
+    const showPreview = (target, event) => {
+        const src = target.getAttribute("src");
+        if (!src) {
+            return;
+        }
+        previewImage.src = src;
+        preview.hidden = false;
+        positionPreview(event);
+    };
+
+    const hidePreview = () => {
+        preview.hidden = true;
+        previewImage.removeAttribute("src");
+    };
+
+    document.addEventListener("mouseover", (event) => {
+        const target = event.target.closest("img.card-thumb");
+        if (!target) {
+            return;
+        }
+        showPreview(target, event);
+    });
+
+    document.addEventListener("mousemove", (event) => {
+        if (preview.hidden) {
+            return;
+        }
+        positionPreview(event);
+    });
+
+    document.addEventListener("mouseout", (event) => {
+        const target = event.target.closest("img.card-thumb");
+        if (!target) {
+            return;
+        }
+        hidePreview();
+    });
+
+    document.addEventListener("scroll", () => {
+        if (!preview.hidden) {
+            hidePreview();
+        }
+    }, true);
+}
+
 function initializePageFeatures() {
     setupTabs();
     setupDuplicateFilters();
+    setupImageHoverPreview();
 }
 
 document.addEventListener("DOMContentLoaded", initializePageFeatures);

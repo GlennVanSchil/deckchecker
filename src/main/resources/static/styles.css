@@ -224,6 +224,30 @@ th {
     border-radius: 6px;
     border: 1px solid var(--line);
     background: #fff;
+    cursor: zoom-in;
+}
+
+#imageHoverPreview {
+    position: fixed;
+    z-index: 9999;
+    width: min(320px, 42vw);
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+}
+
+#imageHoverPreview[hidden] {
+    display: none;
+}
+
+#imageHoverPreview img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 .variant-related td {
