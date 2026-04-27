@@ -18,11 +18,12 @@ function setupDuplicateFilters() {
 
         let visible = 0;
         for (const row of rows) {
+            const cardId = (row.dataset.cardId || "").toLowerCase();
             const card = (row.dataset.cardNumber || "").toLowerCase();
             const name = (row.dataset.cardName || "").toLowerCase();
             const duplicates = Number.parseInt(row.dataset.duplicates || "0", 10);
 
-            const matchesQuery = query.length === 0 || card.includes(query) || name.includes(query);
+            const matchesQuery = query.length === 0 || cardId.includes(query) || card.includes(query) || name.includes(query);
             const matchesMin = duplicates >= minDuplicates;
 
             const show = matchesQuery && matchesMin;

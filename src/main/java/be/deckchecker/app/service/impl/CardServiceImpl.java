@@ -25,8 +25,6 @@ public class CardServiceImpl implements CardService {
 
     private final Map<String, CardDTO> cardIndex;
     private final Map<String, CardDTO> cardNumberIndex;
-    private final Map<String, Integer> cardNumberVersionCount;
-    private final Map<String, Integer> cardVariantGroupSizeById;
 
     /**
      * Creates a new instance of the {@link CardServiceImpl} class.
@@ -36,23 +34,10 @@ public class CardServiceImpl implements CardService {
     public CardServiceImpl(Map<String, CardDTO> cardIndex) {
         this.cardIndex = cardIndex;
         this.cardNumberIndex = new HashMap<>();
-        this.cardNumberVersionCount = new HashMap<>();
-        this.cardVariantGroupSizeById = new HashMap<>();
 
         for (CardDTO card : cardIndex.values()) {
-            String cardNumber = normalize(card.getCardNumber());
+            String cardNumber = normalizeCardNumber(card.getCardNumber());
             cardNumberIndex.put(cardNumber, card);
-            cardNumberVersionCount.merge(cardNumber, 1, Integer::sum);
-        }
-
-        Map<String, Integer> groupSizeByRootId = new HashMap<>();
-        for (CardDTO card : cardIndex.values()) {
-            String rootId = resolveVariantRootId(card);
-            groupSizeByRootId.merge(rootId, 1, Integer::sum);
-        }
-        for (CardDTO card : cardIndex.values()) {
-            String rootId = resolveVariantRootId(card);
-            cardVariantGroupSizeById.put(card.getId(), groupSizeByRootId.getOrDefault(rootId, 1));
         }
     }
 
@@ -61,30 +46,41 @@ public class CardServiceImpl implements CardService {
      */
     @Override
     public DeckCheckResultDTO findMissingCards(List<OwnedCardDTO> ownedCards, List<DeckCardDTO> deckCards) {
-        Map<String, Integer> ownedMap = new HashMap<>();
-        Map<String, Integer> ownedVersionCountByCardNumber = new HashMap<>();
+        Map<String, Integer> ownedQuantityByVariantGroup = new HashMap<>();
+        Map<String, Integer> ownedQuantityByCardId = new HashMap<>();
         List<String> unknownDeckCards = new ArrayList<>();
 
         for (OwnedCardDTO owned : ownedCards) {
-            CardDTO card = cardIndex.get(owned.getCardId());
+            String cardId = normalizeId(owned.getCardId());
+            CardDTO card = cardIndex.get(cardId);
             if (card == null) {
                 log.warn("Owned card with id {} was not found in cards.json", owned.getCardId());
                 continue;
             }
 
-            String cardNumber = normalize(card.getCardNumber());
-            ownedMap.merge(cardNumber, owned.getQuantity(), Integer::sum);
-            ownedVersionCountByCardNumber.merge(cardNumber, getCardVersionCount(card), Math::max);
+            String variantGroupId = resolveVariantRootId(card);
+            ownedQuantityByVariantGroup.merge(variantGroupId, owned.getQuantity(), Integer::sum);
+            ownedQuantityByCardId.merge(cardId, owned.getQuantity(), Integer::sum);
         }
 
-        Map<String, Integer> deckMap = new HashMap<>();
-        for (DeckCardDTO deckCard : deckCards) {
-            String cardNumber = normalize(deckCard.getCardId());
-            deckMap.merge(cardNumber, deckCard.getQuantity(), Integer::sum);
+        Map<String, Integer> neededQuantityByVariantGroup = new HashMap<>();
+        Map<String, String> displayCardNumberByVariantGroup = new HashMap<>();
+        Map<String, String> displayCardNameByVariantGroup = new HashMap<>();
+        Map<String, Integer> unknownQuantityByCardNumber = new HashMap<>();
 
-            if (!cardNumberIndex.containsKey(cardNumber)) {
+        for (DeckCardDTO deckCard : deckCards) {
+            String cardNumber = normalizeCardNumber(deckCard.getCardId());
+            CardDTO card = cardNumberIndex.get(cardNumber);
+            if (card == null) {
                 unknownDeckCards.add(cardNumber);
+                unknownQuantityByCardNumber.merge(cardNumber, deckCard.getQuantity(), Integer::sum);
+                continue;
             }
+
+            String variantGroupId = resolveVariantRootId(card);
+            neededQuantityByVariantGroup.merge(variantGroupId, deckCard.getQuantity(), Integer::sum);
+            displayCardNumberByVariantGroup.putIfAbsent(variantGroupId, cardNumber);
+            displayCardNameByVariantGroup.putIfAbsent(variantGroupId, card.getDisplayName());
         }
 
         List<MissingCardDTO> missingCards = new ArrayList<>();
@@ -94,10 +90,10 @@ public class CardServiceImpl implements CardService {
         int totalMissingCopies = 0;
         int totalDuplicateCopies = 0;
 
-        for (Map.Entry<String, Integer> deckEntry : deckMap.entrySet()) {
-            String cardNumber = deckEntry.getKey();
+        for (Map.Entry<String, Integer> deckEntry : neededQuantityByVariantGroup.entrySet()) {
+            String variantGroupId = deckEntry.getKey();
             int neededQuantity = deckEntry.getValue();
-            int ownedQuantity = ownedMap.getOrDefault(cardNumber, 0);
+            int ownedQuantity = ownedQuantityByVariantGroup.getOrDefault(variantGroupId, 0);
             int missingQuantity = Math.max(neededQuantity - ownedQuantity, 0);
 
             totalDeckCopies += neededQuantity;
@@ -105,12 +101,9 @@ public class CardServiceImpl implements CardService {
             totalMissingCopies += missingQuantity;
 
             if (missingQuantity > 0) {
-                CardDTO card = cardNumberIndex.get(cardNumber);
-                String cardName = card != null ? card.getDisplayName() : "Unknown card";
-
                 missingCards.add(new MissingCardDTO(
-                        cardNumber,
-                        cardName,
+                        displayCardNumberByVariantGroup.getOrDefault(variantGroupId, variantGroupId),
+                        displayCardNameByVariantGroup.getOrDefault(variantGroupId, "Unknown card"),
                         neededQuantity,
                         ownedQuantity,
                         missingQuantity
@@ -118,32 +111,43 @@ public class CardServiceImpl implements CardService {
             }
         }
 
+        for (Map.Entry<String, Integer> unknownEntry : unknownQuantityByCardNumber.entrySet()) {
+            String cardNumber = unknownEntry.getKey();
+            int neededQuantity = unknownEntry.getValue();
+
+            totalDeckCopies += neededQuantity;
+            totalMissingCopies += neededQuantity;
+
+            missingCards.add(new MissingCardDTO(
+                    cardNumber,
+                    "Unknown card",
+                    neededQuantity,
+                    0,
+                    neededQuantity
+            ));
+        }
+
         missingCards.sort(
                 Comparator.comparingInt(MissingCardDTO::getMissingQuantity).reversed()
                         .thenComparing(MissingCardDTO::getCardNumber)
         );
 
-        for (Map.Entry<String, Integer> ownedEntry : ownedMap.entrySet()) {
-            String cardNumber = ownedEntry.getKey();
+        for (Map.Entry<String, Integer> ownedEntry : ownedQuantityByCardId.entrySet()) {
+            String cardId = ownedEntry.getKey();
             int ownedQuantity = ownedEntry.getValue();
             int duplicateQuantity = Math.max(ownedQuantity - 4, 0);
 
             if (duplicateQuantity > 0) {
-                CardDTO card = cardNumberIndex.get(cardNumber);
+                CardDTO card = cardIndex.get(cardId);
+                String cardNumber = card != null ? normalizeCardNumber(card.getCardNumber()) : cardId;
                 String cardName = card != null ? card.getDisplayName() : "Unknown card";
-                int versionCount = Math.max(
-                        cardNumberVersionCount.getOrDefault(cardNumber, 1),
-                        ownedVersionCountByCardNumber.getOrDefault(cardNumber, 1)
-                );
-                boolean multipleVersions = versionCount > 1;
 
                 duplicateCards.add(new DuplicateCardDTO(
+                        cardId,
                         cardNumber,
                         cardName,
                         ownedQuantity,
-                        duplicateQuantity,
-                        multipleVersions,
-                        versionCount
+                        duplicateQuantity
                 ));
                 totalDuplicateCopies += duplicateQuantity;
             }
@@ -152,6 +156,7 @@ public class CardServiceImpl implements CardService {
         duplicateCards.sort(
                 Comparator.comparingInt(DuplicateCardDTO::getDuplicateQuantity).reversed()
                         .thenComparing(DuplicateCardDTO::getCardNumber)
+                        .thenComparing(DuplicateCardDTO::getCardId)
         );
 
         return new DeckCheckResultDTO(
@@ -165,11 +170,18 @@ public class CardServiceImpl implements CardService {
         );
     }
 
-    private String normalize(String value) {
+    private String normalizeCardNumber(String value) {
         if (value == null) {
             return "";
         }
         return value.trim().toUpperCase();
+    }
+
+    private String normalizeId(String value) {
+        if (value == null) {
+            return "";
+        }
+        return value.trim();
     }
 
     private String resolveVariantRootId(CardDTO card) {
@@ -177,7 +189,7 @@ public class CardServiceImpl implements CardService {
             return "";
         }
 
-        String currentId = card.getId();
+        String currentId = normalizeId(card.getId());
         int guard = 0;
         while (guard < 10) {
             CardDTO current = cardIndex.get(currentId);
@@ -185,7 +197,7 @@ public class CardServiceImpl implements CardService {
                 return currentId;
             }
 
-            String nextId = String.valueOf(current.getVariantOf());
+            String nextId = normalizeId(String.valueOf(current.getVariantOf()));
             if (nextId.equals(currentId)) {
                 return currentId;
             }
@@ -195,12 +207,5 @@ public class CardServiceImpl implements CardService {
         }
 
         return currentId;
-    }
-
-    private int getCardVersionCount(CardDTO card) {
-        if (card == null || card.getId() == null) {
-            return 1;
-        }
-        return cardVariantGroupSizeById.getOrDefault(card.getId(), 1);
     }
 }
