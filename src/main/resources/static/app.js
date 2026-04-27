@@ -8,6 +8,11 @@ function setupDuplicateFilters() {
         return;
     }
 
+    if (tableBody.dataset.filtersInitialized === "true") {
+        return;
+    }
+    tableBody.dataset.filtersInitialized = "true";
+
     const rows = Array.from(tableBody.querySelectorAll("tr"));
     const totalRows = rows.length;
 
@@ -40,5 +45,41 @@ function setupDuplicateFilters() {
     applyFilters();
 }
 
-document.addEventListener("DOMContentLoaded", setupDuplicateFilters);
-window.addEventListener("pageshow", setupDuplicateFilters);
+function setupTabs() {
+    if (document.body.dataset.tabsInitialized === "true") {
+        return;
+    }
+    document.body.dataset.tabsInitialized = "true";
+
+    const tabButtons = Array.from(document.querySelectorAll(".tab-btn"));
+    const tabPanels = Array.from(document.querySelectorAll(".tab-panel"));
+    if (tabButtons.length === 0 || tabPanels.length === 0) {
+        return;
+    }
+
+    const activateTab = (targetId) => {
+        for (const button of tabButtons) {
+            const active = button.dataset.tabTarget === targetId;
+            button.classList.toggle("active", active);
+            button.setAttribute("aria-selected", active ? "true" : "false");
+        }
+        for (const panel of tabPanels) {
+            panel.classList.toggle("active", panel.id === targetId);
+        }
+    };
+
+    for (const button of tabButtons) {
+        button.addEventListener("click", () => activateTab(button.dataset.tabTarget));
+    }
+
+    const defaultButton = tabButtons.find((button) => button.classList.contains("active")) || tabButtons[0];
+    activateTab(defaultButton.dataset.tabTarget);
+}
+
+function initializePageFeatures() {
+    setupTabs();
+    setupDuplicateFilters();
+}
+
+document.addEventListener("DOMContentLoaded", initializePageFeatures);
+window.addEventListener("pageshow", initializePageFeatures);
