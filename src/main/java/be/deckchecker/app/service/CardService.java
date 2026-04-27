@@ -4,6 +4,7 @@ import be.deckchecker.app.dto.DeckCheckResultDTO;
 import be.deckchecker.app.dto.DeckCardDTO;
 import be.deckchecker.app.dto.DuplicateCardDTO;
 import be.deckchecker.app.dto.OwnedCardDTO;
+import be.deckchecker.app.dto.VariantGroupOverflowDTO;
 
 import java.util.List;
 
@@ -28,4 +29,12 @@ public interface CardService {
      * @return Sorted duplicate cards
      */
     List<DuplicateCardDTO> findDuplicateCards(List<OwnedCardDTO> ownedCards);
+
+    /**
+     * Returns variant groups where total owned copies exceed 4 while each exact variant stays at or below 4.
+     *
+     * @param ownedCards already owned cards
+     * @return Sorted variant group overflow warnings
+     */
+    List<VariantGroupOverflowDTO> findVariantGroupOverflows(List<OwnedCardDTO> ownedCards);
 }

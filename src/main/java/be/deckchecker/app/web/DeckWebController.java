@@ -3,6 +3,7 @@ package be.deckchecker.app.web;
 import be.deckchecker.app.dto.DeckCardDTO;
 import be.deckchecker.app.dto.DuplicateCardDTO;
 import be.deckchecker.app.dto.OwnedCardDTO;
+import be.deckchecker.app.dto.VariantGroupOverflowDTO;
 import be.deckchecker.app.dto.WrapperDTO;
 import be.deckchecker.app.service.CardService;
 import be.deckchecker.app.service.DeckDataProvider;
@@ -70,6 +71,8 @@ public class DeckWebController {
         } catch (Exception e) {
             model.addAttribute("duplicateCards", Collections.emptyList());
             model.addAttribute("totalDuplicateCopies", 0);
+            model.addAttribute("variantGroupOverflows", Collections.emptyList());
+            model.addAttribute("totalVariantGroupOverflowCopies", 0);
             model.addAttribute("error", e.getMessage());
         }
 
@@ -120,6 +123,8 @@ public class DeckWebController {
         } catch (Exception e) {
             model.addAttribute("duplicateCards", Collections.emptyList());
             model.addAttribute("totalDuplicateCopies", 0);
+            model.addAttribute("variantGroupOverflows", Collections.emptyList());
+            model.addAttribute("totalVariantGroupOverflowCopies", 0);
             model.addAttribute("error", e.getMessage());
         }
     }
@@ -137,8 +142,14 @@ public class DeckWebController {
         int totalDuplicateCopies = duplicateCards.stream()
                 .mapToInt(DuplicateCardDTO::getDuplicateQuantity)
                 .sum();
+        List<VariantGroupOverflowDTO> variantGroupOverflows = cardService.findVariantGroupOverflows(ownedCards);
+        int totalVariantGroupOverflowCopies = variantGroupOverflows.stream()
+                .mapToInt(VariantGroupOverflowDTO::getOverflowQuantity)
+                .sum();
         model.addAttribute("duplicateCards", duplicateCards);
         model.addAttribute("totalDuplicateCopies", totalDuplicateCopies);
+        model.addAttribute("variantGroupOverflows", variantGroupOverflows);
+        model.addAttribute("totalVariantGroupOverflowCopies", totalVariantGroupOverflowCopies);
     }
 
     private String loadDefaultDeckText() {

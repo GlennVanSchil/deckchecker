@@ -118,6 +118,43 @@
             <p id="duplicateFilterInfo" class="filter-info"></p>
         </div>
     </section>
+
+    <section th:if="${variantGroupOverflows != null}" class="panel warning">
+        <h2>Variant Group Trade Warnings</h2>
+        <p>
+            These are groups where no exact variant is above 4, but the combined owned amount across variants is above 4.
+            Decide yourself if you want to treat these as tradable duplicates.
+        </p>
+        <p>
+            Combined overflow copies:
+            <strong th:text="${totalVariantGroupOverflowCopies}"></strong>
+        </p>
+        <p th:if="${#lists.isEmpty(variantGroupOverflows)}">No variant group overflows found.</p>
+        <div th:if="${!#lists.isEmpty(variantGroupOverflows)}" class="table-wrap">
+            <table>
+                <thead>
+                <tr>
+                    <th>Variant Group</th>
+                    <th>Name</th>
+                    <th>Combined Owned</th>
+                    <th>Above 4 By</th>
+                    <th>Highest Single Variant</th>
+                    <th>Owned Variants</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="item : ${variantGroupOverflows}" class="variant-group-overflow">
+                    <td th:text="${item.variantGroupCardNumber}"></td>
+                    <td th:text="${item.variantGroupName}"></td>
+                    <td th:text="${item.combinedOwnedQuantity}"></td>
+                    <td th:text="${item.overflowQuantity}"></td>
+                    <td th:text="${item.maxSingleVariantOwned}"></td>
+                    <td th:text="${item.ownedVariantSummary}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 </main>
 </body>
 </html>

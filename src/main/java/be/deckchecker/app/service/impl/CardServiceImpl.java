@@ -6,6 +6,7 @@ import be.deckchecker.app.dto.DeckCardDTO;
 import be.deckchecker.app.dto.DuplicateCardDTO;
 import be.deckchecker.app.dto.MissingCardDTO;
 import be.deckchecker.app.dto.OwnedCardDTO;
+import be.deckchecker.app.dto.VariantGroupOverflowDTO;
 import be.deckchecker.app.service.CardService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -15,6 +16,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.StringJoiner;
 
 /**
  * The {@link CardServiceImpl} is the default implementation of the {@link CardService}
@@ -213,6 +215,76 @@ public class CardServiceImpl implements CardService {
         return duplicateCards;
     }
 
+    @Override
+    public List<VariantGroupOverflowDTO> findVariantGroupOverflows(List<OwnedCardDTO> ownedCards) {
+        Map<String, Integer> ownedQuantityByCardId = new HashMap<>();
+        for (OwnedCardDTO owned : ownedCards) {
+            String cardId = normalizeId(owned.getCardId());
+            ownedQuantityByCardId.merge(cardId, owned.getQuantity(), Integer::sum);
+        }
+
+        Map<String, List<OwnedVariantEntry>> ownedByVariantGroup = new HashMap<>();
+        for (Map.Entry<String, Integer> entry : ownedQuantityByCardId.entrySet()) {
+            String cardId = entry.getKey();
+            int quantity = entry.getValue();
+            if (quantity <= 0) {
+                continue;
+            }
+
+            CardDTO card = cardIndex.get(cardId);
+            if (card == null) {
+                log.warn("Owned card with id {} was not found in cards.json", cardId);
+                continue;
+            }
+
+            String variantGroupId = resolveVariantRootId(card);
+            String cardNumber = normalizeCardNumber(card.getCardNumber());
+            String cardName = card.getDisplayName();
+            ownedByVariantGroup.computeIfAbsent(variantGroupId, ignored -> new ArrayList<>())
+                    .add(new OwnedVariantEntry(cardNumber, cardName, quantity));
+        }
+
+        List<VariantGroupOverflowDTO> overflows = new ArrayList<>();
+        for (Map.Entry<String, List<OwnedVariantEntry>> groupEntry : ownedByVariantGroup.entrySet()) {
+            String variantGroupId = groupEntry.getKey();
+            List<OwnedVariantEntry> entries = groupEntry.getValue();
+            int combinedOwned = entries.stream().mapToInt(OwnedVariantEntry::quantity).sum();
+            int maxSingleVariantOwned = entries.stream().mapToInt(OwnedVariantEntry::quantity).max().orElse(0);
+
+            // Warning scenario for trading: total variants exceed 4 while each exact variant is not a duplicate.
+            if (combinedOwned <= 4 || maxSingleVariantOwned > 4) {
+                continue;
+            }
+
+            CardDTO root = cardIndex.get(variantGroupId);
+            String rootCardNumber = root != null ? normalizeCardNumber(root.getCardNumber()) : variantGroupId;
+            String rootCardName = root != null ? root.getDisplayName() : "Unknown card";
+
+            entries.sort(Comparator.comparing(OwnedVariantEntry::cardNumber));
+            StringJoiner summary = new StringJoiner(", ");
+            for (OwnedVariantEntry entry : entries) {
+                summary.add(entry.cardNumber() + " x" + entry.quantity());
+            }
+
+            overflows.add(new VariantGroupOverflowDTO(
+                    rootCardNumber,
+                    rootCardName,
+                    combinedOwned,
+                    combinedOwned - 4,
+                    maxSingleVariantOwned,
+                    summary.toString()
+            ));
+        }
+
+        overflows.sort(
+                Comparator.comparingInt(VariantGroupOverflowDTO::getOverflowQuantity).reversed()
+                        .thenComparing(VariantGroupOverflowDTO::getVariantGroupCardNumber)
+                        .thenComparing(VariantGroupOverflowDTO::getVariantGroupName)
+        );
+
+        return overflows;
+    }
+
     private String normalizeCardNumber(String value) {
         if (value == null) {
             return "";
@@ -260,6 +332,13 @@ public class CardServiceImpl implements CardService {
             int duplicateQuantity,
             String variantGroupId,
             String variantGroupCardNumber
+    ) {
+    }
+
+    private record OwnedVariantEntry(
+            String cardNumber,
+            String cardName,
+            int quantity
     ) {
     }
 }

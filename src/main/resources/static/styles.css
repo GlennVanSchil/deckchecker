@@ -176,6 +176,13 @@ th, td {
     padding: 8px 6px;
 }
 
+th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #f8f4ee;
+}
+
 .variant-related td {
     background: #fff9ed;
 }
@@ -194,6 +201,10 @@ th, td {
 
 .manual-check-row td {
     background: #fff3d9;
+}
+
+.variant-group-overflow td {
+    background: #fff7e6;
 }
 
 .warning {
