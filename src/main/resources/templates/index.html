@@ -29,7 +29,7 @@
     <div id="tab-deck" class="tab-panel active">
         <form method="post" th:action="@{/check}" class="panel form-panel">
             <label for="deckText">Deck List</label>
-            <textarea id="deckText" name="deckText" rows="16" th:text="${deckText}"></textarea>
+            <textarea id="deckText" name="deckText" rows="16" th:placeholder="${deckText}"></textarea>
             <button type="submit">Check Deck</button>
         </form>
 
