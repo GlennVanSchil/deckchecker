@@ -35,6 +35,12 @@ body {
     margin-bottom: 14px;
 }
 
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .user-pill {
     font-size: 0.85rem;
     padding: 7px 10px;
@@ -306,4 +312,10 @@ th {
     border-color: #d58c8c;
     background: #fff2f2;
     color: #822a2a;
+}
+
+.success {
+    border-color: #9dce9d;
+    background: #f1fbf1;
+    color: #1f5f1f;
 }

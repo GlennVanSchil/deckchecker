@@ -59,7 +59,7 @@ public class DeckWebController {
         model.addAttribute("loggedInEmail", session.getAttribute(SESSION_EMAIL));
 
         try {
-            List<OwnedCardDTO> ownedCards = loadOwnedCards(session);
+            List<OwnedCardDTO> ownedCards = loadOwnedCards(session, false);
             addDuplicatesToModel(model, ownedCards);
 
             if (deckText == null || deckText.isBlank()) {
@@ -115,13 +115,29 @@ public class DeckWebController {
         return "redirect:/login";
     }
 
+    @PostMapping("/refresh")
+    public String refreshData(HttpSession session, RedirectAttributes redirectAttributes) {
+        if (!isLoggedIn(session)) {
+            return "redirect:/login";
+        }
+
+        try {
+            loadOwnedCards(session, true);
+            redirectAttributes.addFlashAttribute("message", "Collection refreshed from API.");
+        } catch (Exception e) {
+            redirectAttributes.addFlashAttribute("error", "Refresh failed: " + e.getMessage());
+        }
+
+        return "redirect:/";
+    }
+
     private boolean isLoggedIn(HttpSession session) {
         return session.getAttribute(SESSION_EMAIL) != null && session.getAttribute(SESSION_PASSWORD) != null;
     }
 
     private void loadAndAddDuplicates(Model model, HttpSession session) {
         try {
-            List<OwnedCardDTO> ownedCards = loadOwnedCards(session);
+            List<OwnedCardDTO> ownedCards = loadOwnedCards(session, false);
             addDuplicatesToModel(model, ownedCards);
         } catch (Exception e) {
             model.addAttribute("duplicateCards", Collections.emptyList());
@@ -134,11 +150,11 @@ public class DeckWebController {
         }
     }
 
-    private List<OwnedCardDTO> loadOwnedCards(HttpSession session) throws IOException {
+    private List<OwnedCardDTO> loadOwnedCards(HttpSession session, boolean forceRefresh) throws IOException {
         String email = (String) session.getAttribute(SESSION_EMAIL);
         String password = (String) session.getAttribute(SESSION_PASSWORD);
         DeckDataProvider.AuthContext authContext = dataProvider.authenticate(email, password);
-        WrapperDTO<OwnedCardDTO> ownedCards = dataProvider.loadOwnedCards(authContext);
+        WrapperDTO<OwnedCardDTO> ownedCards = dataProvider.loadOwnedCards(authContext, forceRefresh);
         return ownedCards.getData();
     }
 

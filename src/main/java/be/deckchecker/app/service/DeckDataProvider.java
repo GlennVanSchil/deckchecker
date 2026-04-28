@@ -47,17 +47,26 @@ public class DeckDataProvider {
     }
 
     public WrapperDTO<CardDTO> loadCards() throws IOException {
+        return loadCards(false);
+    }
+
+    public WrapperDTO<CardDTO> loadCards(boolean forceRefresh) throws IOException {
         return readWithCache(
                 resolveCachePath("cards_cache.json"),
                 buildCardsUri(),
                 null,
-                CARD_WRAPPER_TYPE
+                CARD_WRAPPER_TYPE,
+                forceRefresh
         );
     }
 
     public WrapperDTO<OwnedCardDTO> loadOwnedCards(AuthContext authContext) throws IOException {
+        return loadOwnedCards(authContext, false);
+    }
+
+    public WrapperDTO<OwnedCardDTO> loadOwnedCards(AuthContext authContext, boolean forceRefresh) throws IOException {
         Path cachePath = resolveCachePath("owned_cards_cache_" + sanitizeFilePart(authContext.userId()) + ".json");
-        return readWithCache(cachePath, buildOwnedUri(authContext.userId()), authContext.bearerToken(), OWNED_WRAPPER_TYPE);
+        return readWithCache(cachePath, buildOwnedUri(authContext.userId()), authContext.bearerToken(), OWNED_WRAPPER_TYPE, forceRefresh);
     }
 
     public AuthContext authenticate(String email, String password) throws IOException {
@@ -67,9 +76,9 @@ public class DeckDataProvider {
         return loginAndFetchAuthContext(email, password);
     }
 
-    private <T> T readWithCache(Path cachePath, URI uri, String bearerToken, TypeReference<T> typeReference)
+    private <T> T readWithCache(Path cachePath, URI uri, String bearerToken, TypeReference<T> typeReference, boolean forceRefresh)
             throws IOException {
-        if (!apiProperties.isForceRefresh() && isFresh(cachePath)) {
+        if (!forceRefresh && !apiProperties.isForceRefresh() && isFresh(cachePath)) {
             return readFromCache(cachePath, typeReference);
         }
 

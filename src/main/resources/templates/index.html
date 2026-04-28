@@ -11,9 +11,14 @@
 <main class="container">
     <div class="topbar">
         <div class="user-pill" th:text="${loggedInEmail}"></div>
-        <form method="post" th:action="@{/logout}">
-            <button type="submit" class="secondary-btn">Logout</button>
-        </form>
+        <div class="topbar-actions">
+            <form method="post" th:action="@{/refresh}">
+                <button type="submit">Refresh Data</button>
+            </form>
+            <form method="post" th:action="@{/logout}">
+                <button type="submit" class="secondary-btn">Logout</button>
+            </form>
+        </div>
     </div>
     <h1>Deck Checker</h1>
     <p class="subtitle">Paste a deck list in the online client format, then compare it against your API collection.</p>
@@ -25,6 +30,7 @@
     </div>
 
     <section th:if="${error}" class="panel error" th:text="${error}"></section>
+    <section th:if="${message}" class="panel success" th:text="${message}"></section>
 
     <div id="tab-deck" class="tab-panel active">
         <form method="post" th:action="@{/check}" class="panel form-panel">
