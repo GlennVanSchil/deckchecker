@@ -16,12 +16,12 @@
         </form>
     </div>
     <h1>Deck Checker</h1>
-    <p class="subtitle">Paste a deck list, then compare against your cached API collection.</p>
+    <p class="subtitle">Paste a deck list in the online client format, then compare it against your API collection.</p>
 
     <div class="tab-nav" role="tablist" aria-label="Deck checker tabs">
         <button type="button" class="tab-btn active" data-tab-target="tab-deck" aria-selected="true">Deck checker</button>
-        <button type="button" class="tab-btn" data-tab-target="tab-duplicates" aria-selected="false">Duplicates</button>
-        <button type="button" class="tab-btn" data-tab-target="tab-combined-variants" aria-selected="false">Combined with variants duplicates</button>
+        <button type="button" class="tab-btn" data-tab-target="tab-duplicates" aria-selected="false">Duplicates - Version Specific</button>
+        <button type="button" class="tab-btn" data-tab-target="tab-combined-variants" aria-selected="false">Duplicates - Non Version Specific</button>
     </div>
 
     <section th:if="${error}" class="panel error" th:text="${error}"></section>
@@ -146,7 +146,7 @@
     </div>
 
     <div id="tab-combined-variants" class="tab-panel">
-        <section th:if="${duplicatesWithVariants != null}" class="panel warning">
+        <section th:if="${duplicatesWithVariants != null}" class="panel">
             <h2>Exact Duplicates With Additional Owned Variants</h2>
             <p>
                 These are exact duplicates where you also own other variants of the same card, and those additional variants are each at or below 4 copies.
@@ -170,47 +170,32 @@
                 <table>
                     <thead>
                     <tr>
-                        <th>Duplicate Image</th>
-                        <th>Duplicate Card</th>
-                        <th>Name</th>
-                        <th>Exact Owned</th>
-                        <th>Exact Duplicates</th>
-                        <th>Variant Group Image</th>
-                        <th>Variant Group</th>
-                        <th>Combined Owned</th>
-                        <th>Combined Above 4</th>
-                        <th>Additional Variants Owned</th>
+                        <th>Card Name</th>
+                        <th>Total Owned</th>
+                        <th>Variants (Image / Card / Owned)</th>
                     </tr>
                     </thead>
                     <tbody id="combinedVariantsTableBody">
-                    <tr th:each="item : ${duplicatesWithVariants}" class="variant-group-overflow"
+                    <tr th:each="item : ${duplicatesWithVariants}"
                         th:attr="data-duplicate-card=${item.duplicateCardNumber},
                                  data-name=${item.duplicateCardName},
                                  data-variant-group=${item.variantGroupCardNumber},
                                  data-additional=${item.additionalOwnedVariantsSummary},
                                  data-overflow=${item.combinedDuplicateQuantity}">
-                        <td>
-                            <img th:if="${item.duplicateImgLink != null and !#strings.isEmpty(item.duplicateImgLink)}"
-                                 class="card-thumb"
-                                 th:src="'https://multi-deckplanet.us-southeast-1.linodeobjects.com/fusion_world/' + ${item.duplicateImgLink} + '.webp'"
-                                 th:alt="${item.duplicateCardNumber + ' image'}"
-                                 loading="lazy">
-                        </td>
-                        <td th:text="${item.duplicateCardNumber}"></td>
                         <td th:text="${item.duplicateCardName}"></td>
-                        <td th:text="${item.duplicateOwnedQuantity}"></td>
-                        <td th:text="${item.duplicateQuantity}"></td>
-                        <td>
-                            <img th:if="${item.variantGroupImgLink != null and !#strings.isEmpty(item.variantGroupImgLink)}"
-                                 class="card-thumb"
-                                 th:src="'https://multi-deckplanet.us-southeast-1.linodeobjects.com/fusion_world/' + ${item.variantGroupImgLink} + '.webp'"
-                                 th:alt="${item.variantGroupCardNumber + ' image'}"
-                                 loading="lazy">
-                        </td>
-                        <td th:text="${item.variantGroupCardNumber}"></td>
                         <td th:text="${item.combinedOwnedQuantity}"></td>
-                        <td th:text="${item.combinedDuplicateQuantity}"></td>
-                        <td th:text="${item.additionalOwnedVariantsSummary}"></td>
+                        <td>
+                            <div class="variant-list">
+                                <div class="variant-chip" th:each="variant : ${item.ownedVariants}">
+                                    <img th:if="${variant.imgLink != null and !#strings.isEmpty(variant.imgLink)}"
+                                         class="card-thumb tiny"
+                                         th:src="'https://multi-deckplanet.us-southeast-1.linodeobjects.com/fusion_world/' + ${variant.imgLink} + '.webp'"
+                                         th:alt="${variant.cardNumber + ' image'}"
+                                         loading="lazy">
+                                    <span th:text="${variant.cardNumber + ' x' + variant.quantity}"></span>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
@@ -218,7 +203,7 @@
             </div>
         </section>
 
-        <section th:if="${variantGroupOverflows != null}" class="panel warning">
+        <section th:if="${variantGroupOverflows != null}" class="panel">
             <h2>Variant Group Trade Warnings</h2>
             <p>
                 These are groups where no exact variant is above 4, but the combined owned amount across variants is above 4.
@@ -243,34 +228,31 @@
                 <table>
                     <thead>
                     <tr>
-                        <th>Image</th>
-                        <th>Variant Group</th>
-                        <th>Name</th>
-                        <th>Combined Owned</th>
-                        <th>Above 4 By</th>
-                        <th>Highest Single Variant</th>
-                        <th>Owned Variants</th>
+                        <th>Card Name</th>
+                        <th>Total Owned</th>
+                        <th>Variants (Image / Card / Owned)</th>
                     </tr>
                     </thead>
                     <tbody id="variantGroupOverflowTableBody">
-                    <tr th:each="item : ${variantGroupOverflows}" class="variant-group-overflow"
+                    <tr th:each="item : ${variantGroupOverflows}"
                         th:attr="data-variant-group=${item.variantGroupCardNumber},
                                  data-name=${item.variantGroupName},
                                  data-owned-variants=${item.ownedVariantSummary},
                                  data-overflow=${item.overflowQuantity}">
-                        <td>
-                            <img th:if="${item.variantGroupImgLink != null and !#strings.isEmpty(item.variantGroupImgLink)}"
-                                 class="card-thumb"
-                                 th:src="'https://multi-deckplanet.us-southeast-1.linodeobjects.com/fusion_world/' + ${item.variantGroupImgLink} + '.webp'"
-                                 th:alt="${item.variantGroupCardNumber + ' image'}"
-                                 loading="lazy">
-                        </td>
-                        <td th:text="${item.variantGroupCardNumber}"></td>
                         <td th:text="${item.variantGroupName}"></td>
                         <td th:text="${item.combinedOwnedQuantity}"></td>
-                        <td th:text="${item.overflowQuantity}"></td>
-                        <td th:text="${item.maxSingleVariantOwned}"></td>
-                        <td th:text="${item.ownedVariantSummary}"></td>
+                        <td>
+                            <div class="variant-list">
+                                <div class="variant-chip" th:each="variant : ${item.ownedVariants}">
+                                    <img th:if="${variant.imgLink != null and !#strings.isEmpty(variant.imgLink)}"
+                                         class="card-thumb tiny"
+                                         th:src="'https://multi-deckplanet.us-southeast-1.linodeobjects.com/fusion_world/' + ${variant.imgLink} + '.webp'"
+                                         th:alt="${variant.cardNumber + ' image'}"
+                                         loading="lazy">
+                                    <span th:text="${variant.cardNumber + ' x' + variant.quantity}"></span>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     </tbody>
                 </table>

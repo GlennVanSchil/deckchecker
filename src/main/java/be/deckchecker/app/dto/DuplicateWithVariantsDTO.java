@@ -3,6 +3,8 @@ package be.deckchecker.app.dto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
+import java.util.List;
+
 @Getter
 @AllArgsConstructor
 public class DuplicateWithVariantsDTO {
@@ -16,4 +18,5 @@ public class DuplicateWithVariantsDTO {
     private int combinedOwnedQuantity;
     private int combinedDuplicateQuantity;
     private String additionalOwnedVariantsSummary;
+    private List<OwnedVariantDisplayDTO> ownedVariants;
 }

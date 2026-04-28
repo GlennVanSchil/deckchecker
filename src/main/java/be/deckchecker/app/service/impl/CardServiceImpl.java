@@ -6,6 +6,7 @@ import be.deckchecker.app.dto.DeckCardDTO;
 import be.deckchecker.app.dto.DuplicateCardDTO;
 import be.deckchecker.app.dto.DuplicateWithVariantsDTO;
 import be.deckchecker.app.dto.MissingCardDTO;
+import be.deckchecker.app.dto.OwnedVariantDisplayDTO;
 import be.deckchecker.app.dto.OwnedCardDTO;
 import be.deckchecker.app.dto.VariantGroupOverflowDTO;
 import be.deckchecker.app.service.CardService;
@@ -248,7 +249,7 @@ public class CardServiceImpl implements CardService {
             String cardNumber = normalizeCardNumber(card.getCardNumber());
             String cardName = card.getDisplayName();
             ownedByVariantGroup.computeIfAbsent(variantGroupId, ignored -> new ArrayList<>())
-                    .add(new OwnedVariantEntry(cardNumber, cardName, quantity));
+                    .add(new OwnedVariantEntry(cardNumber, cardName, card.getImgLink(), quantity));
         }
 
         List<VariantGroupOverflowDTO> overflows = new ArrayList<>();
@@ -272,6 +273,14 @@ public class CardServiceImpl implements CardService {
             for (OwnedVariantEntry entry : entries) {
                 summary.add(entry.cardNumber() + " x" + entry.quantity());
             }
+            List<OwnedVariantDisplayDTO> ownedVariants = entries.stream()
+                    .map(entry -> new OwnedVariantDisplayDTO(
+                            entry.cardNumber(),
+                            entry.cardName(),
+                            entry.imgLink(),
+                            entry.quantity()
+                    ))
+                    .toList();
 
             overflows.add(new VariantGroupOverflowDTO(
                     rootCardNumber,
@@ -280,7 +289,8 @@ public class CardServiceImpl implements CardService {
                     combinedOwned,
                     combinedOwned - 4,
                     maxSingleVariantOwned,
-                    summary.toString()
+                    summary.toString(),
+                    ownedVariants
             ));
         }
 
@@ -364,6 +374,16 @@ public class CardServiceImpl implements CardService {
                     additionalSummary.add(additionalVariant.cardNumber() + " x" + additionalVariant.quantity());
                 }
 
+                String variantGroupImgLink = root != null ? root.getImgLink() : null;
+                if (isBlank(variantGroupImgLink) || variantGroupImgLink.equals(duplicateEntry.imgLink())) {
+                    variantGroupImgLink = sortedAdditionalVariants.stream()
+                            .map(OwnedVariantDetailedEntry::imgLink)
+                            .filter(this::isNotBlank)
+                            .filter(img -> !img.equals(duplicateEntry.imgLink()))
+                            .findFirst()
+                            .orElse(variantGroupImgLink);
+                }
+
                 rows.add(new DuplicateWithVariantsDTO(
                         duplicateEntry.cardNumber(),
                         duplicateEntry.cardName(),
@@ -371,10 +391,19 @@ public class CardServiceImpl implements CardService {
                         duplicateEntry.quantity(),
                         duplicateEntry.quantity() - 4,
                         rootCardNumber,
-                        root != null ? root.getImgLink() : null,
+                        variantGroupImgLink,
                         combinedOwned,
                         combinedDuplicateQuantity,
-                        additionalSummary.toString()
+                        additionalSummary.toString(),
+                        entries.stream()
+                                .sorted(Comparator.comparing(OwnedVariantDetailedEntry::cardNumber))
+                                .map(entry -> new OwnedVariantDisplayDTO(
+                                        entry.cardNumber(),
+                                        entry.cardName(),
+                                        entry.imgLink(),
+                                        entry.quantity()
+                                ))
+                                .toList()
                 ));
             }
         }
@@ -427,6 +456,14 @@ public class CardServiceImpl implements CardService {
         return currentId;
     }
 
+    private boolean isBlank(String value) {
+        return value == null || value.isBlank();
+    }
+
+    private boolean isNotBlank(String value) {
+        return !isBlank(value);
+    }
+
     private record DuplicateCandidate(
             String cardId,
             String cardNumber,
@@ -442,6 +479,7 @@ public class CardServiceImpl implements CardService {
     private record OwnedVariantEntry(
             String cardNumber,
             String cardName,
+            String imgLink,
             int quantity
     ) {
     }

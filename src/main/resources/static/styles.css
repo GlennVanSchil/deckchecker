@@ -227,6 +227,29 @@ th {
     cursor: zoom-in;
 }
 
+.card-thumb.tiny {
+    width: 34px;
+    height: 46px;
+    border-radius: 4px;
+}
+
+.variant-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.variant-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 6px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #fff;
+    white-space: nowrap;
+}
+
 #imageHoverPreview {
     position: fixed;
     z-index: 9999;
